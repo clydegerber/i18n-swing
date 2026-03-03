@@ -36,7 +36,7 @@ public class TestResourcefulJPanel
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJPanel panel = ResourcefulJPanel.create(new Resource(source, "TestPanel"));
         assertEquals("TestPanel name", panel.getName());
         assertEquals("Test panel tooltip", panel.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJPanel
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJPanel panel = ResourcefulJPanel.create(new Resource(source, "TestPanel"));
         assertEquals("TestPanel name", panel.getName());
         source.setBundleLocale(Locale.FRANCE);

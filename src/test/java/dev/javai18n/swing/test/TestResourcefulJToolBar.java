@@ -36,7 +36,7 @@ public class TestResourcefulJToolBar
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolBar toolBar = ResourcefulJToolBar.create(new Resource(source, "TestToolBar"));
         assertEquals("TestToolBar name", toolBar.getName());
         assertEquals("Test toolbar tooltip", toolBar.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJToolBar
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolBar toolBar = ResourcefulJToolBar.create(new Resource(source, "TestToolBar"));
         assertEquals("TestToolBar name", toolBar.getName());
         source.setBundleLocale(Locale.FRANCE);

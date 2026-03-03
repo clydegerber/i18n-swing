@@ -36,7 +36,7 @@ public class TestResourcefulJMenuItem
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJMenuItem menuItem = ResourcefulJMenuItem.create(new Resource(source, "TestMenuItem"));
         assertEquals("Test MenuItem", menuItem.getText());
         assertEquals("Test menu item tooltip", menuItem.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJMenuItem
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJMenuItem menuItem = ResourcefulJMenuItem.create(new Resource(source, "TestMenuItem"));
         assertEquals("Test MenuItem", menuItem.getText());
         source.setBundleLocale(Locale.FRANCE);

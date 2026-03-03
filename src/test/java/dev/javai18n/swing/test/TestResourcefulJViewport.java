@@ -28,7 +28,7 @@ public class TestResourcefulJViewport
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJViewport viewport = ResourcefulJViewport.create(new Resource(source, "TestViewport"));
         assertEquals("TestViewport name", viewport.getName());
         assertEquals("Test viewport tooltip", viewport.getToolTipText());
@@ -38,7 +38,7 @@ public class TestResourcefulJViewport
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJViewport viewport = ResourcefulJViewport.create(new Resource(source, "TestViewport"));
         assertEquals("TestViewport name", viewport.getName());
         source.setBundleLocale(Locale.FRANCE);

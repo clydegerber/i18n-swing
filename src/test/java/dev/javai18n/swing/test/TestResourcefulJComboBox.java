@@ -36,7 +36,7 @@ public class TestResourcefulJComboBox
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJComboBox<String> comboBox = ResourcefulJComboBox.create(new Resource(source, "TestComboBox"));
         assertEquals("TestComboBox name", comboBox.getName());
         assertEquals("Test combo box tooltip", comboBox.getToolTipText());
@@ -51,7 +51,7 @@ public class TestResourcefulJComboBox
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJComboBox<String> comboBox = ResourcefulJComboBox.create(new Resource(source, "TestComboBox"));
         assertEquals("TestComboBox name", comboBox.getName());
         source.setBundleLocale(Locale.FRANCE);

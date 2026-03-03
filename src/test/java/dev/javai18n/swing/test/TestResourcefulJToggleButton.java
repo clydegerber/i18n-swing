@@ -36,7 +36,7 @@ public class TestResourcefulJToggleButton
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToggleButton button = ResourcefulJToggleButton.create(new Resource(source, "TestToggleButton"));
         assertEquals("Test Toggle", button.getText());
         assertEquals("Test toggle tooltip", button.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJToggleButton
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToggleButton button = ResourcefulJToggleButton.create(new Resource(source, "TestToggleButton"));
         assertEquals("Test Toggle", button.getText());
         source.setBundleLocale(Locale.FRANCE);

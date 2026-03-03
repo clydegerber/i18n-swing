@@ -36,7 +36,7 @@ public class TestResourcefulJCheckBox
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJCheckBox checkBox = ResourcefulJCheckBox.create(new Resource(source, "TestCheckBox"));
         assertEquals("Test CheckBox", checkBox.getText());
         assertEquals("Test checkbox tooltip", checkBox.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJCheckBox
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJCheckBox checkBox = ResourcefulJCheckBox.create(new Resource(source, "TestCheckBox"));
         assertEquals("Test CheckBox", checkBox.getText());
         source.setBundleLocale(Locale.FRANCE);

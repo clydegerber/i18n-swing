@@ -37,7 +37,7 @@ public class TestResourcefulJToolTip
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolTip toolTip =
                 ResourcefulJToolTip.create(new Resource(source, "TestToolTip"));
         assertEquals("TestToolTip name", toolTip.getName());
@@ -52,7 +52,7 @@ public class TestResourcefulJToolTip
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolTip toolTip =
                 ResourcefulJToolTip.create(new Resource(source, "TestToolTip"));
         assertEquals("TestToolTip name", toolTip.getName());

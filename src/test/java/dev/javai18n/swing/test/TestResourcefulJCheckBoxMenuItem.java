@@ -36,7 +36,7 @@ public class TestResourcefulJCheckBoxMenuItem
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJCheckBoxMenuItem menuItem = ResourcefulJCheckBoxMenuItem.create(
                 new Resource(source, "TestCheckBoxMenuItem"));
         assertEquals("Test CheckBox MenuItem", menuItem.getText());
@@ -49,7 +49,7 @@ public class TestResourcefulJCheckBoxMenuItem
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJCheckBoxMenuItem menuItem = ResourcefulJCheckBoxMenuItem.create(
                 new Resource(source, "TestCheckBoxMenuItem"));
         assertEquals("Test CheckBox MenuItem", menuItem.getText());

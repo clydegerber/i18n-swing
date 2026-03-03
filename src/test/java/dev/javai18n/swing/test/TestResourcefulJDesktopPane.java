@@ -28,7 +28,7 @@ public class TestResourcefulJDesktopPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJDesktopPane desktopPane = ResourcefulJDesktopPane.create(new Resource(source, "TestDesktopPane"));
         assertEquals("TestDesktopPane name", desktopPane.getName());
         assertEquals("Test desktop pane tooltip", desktopPane.getToolTipText());
@@ -38,7 +38,7 @@ public class TestResourcefulJDesktopPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJDesktopPane desktopPane = ResourcefulJDesktopPane.create(new Resource(source, "TestDesktopPane"));
         assertEquals("TestDesktopPane name", desktopPane.getName());
         source.setBundleLocale(Locale.FRANCE);

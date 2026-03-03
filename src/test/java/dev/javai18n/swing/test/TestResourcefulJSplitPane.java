@@ -36,7 +36,7 @@ public class TestResourcefulJSplitPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJSplitPane splitPane = ResourcefulJSplitPane.create(new Resource(source, "TestSplitPane"));
         assertEquals("TestSplitPane name", splitPane.getName());
         assertEquals("Test split pane tooltip", splitPane.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJSplitPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJSplitPane splitPane = ResourcefulJSplitPane.create(new Resource(source, "TestSplitPane"));
         assertEquals("TestSplitPane name", splitPane.getName());
         source.setBundleLocale(Locale.FRANCE);

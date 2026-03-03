@@ -36,7 +36,7 @@ public class TestResourcefulJInternalFrame
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJInternalFrame frame = ResourcefulJInternalFrame.create(
                 new Resource(source, "TestInternalFrame"));
         assertEquals("TestInternalFrame name", frame.getName());
@@ -50,7 +50,7 @@ public class TestResourcefulJInternalFrame
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJInternalFrame frame = ResourcefulJInternalFrame.create(
                 new Resource(source, "TestInternalFrame"));
         assertEquals("Test Internal Frame", frame.getTitle());

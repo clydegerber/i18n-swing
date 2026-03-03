@@ -37,7 +37,7 @@ public class TestResourcefulJTabbedPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTabbedPane tabbedPane = ResourcefulJTabbedPane.create(
                 new Resource(source, "TestTabbedPane"));
         assertEquals("TestTabbedPane name", tabbedPane.getName());
@@ -50,7 +50,7 @@ public class TestResourcefulJTabbedPane
     @Test
     public void testTabProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTabbedPane tabbedPane = ResourcefulJTabbedPane.create(
                 new Resource(source, "TestTabbedPane"));
         tabbedPane.addResourcefulTab(new Resource(source, "TestTab1"), new JLabel("Content 1"));
@@ -68,7 +68,7 @@ public class TestResourcefulJTabbedPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTabbedPane tabbedPane = ResourcefulJTabbedPane.create(
                 new Resource(source, "TestTabbedPane"));
         tabbedPane.addResourcefulTab(new Resource(source, "TestTab1"), new JLabel("Content 1"));

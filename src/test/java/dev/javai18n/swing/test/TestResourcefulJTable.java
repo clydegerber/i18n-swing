@@ -36,7 +36,7 @@ public class TestResourcefulJTable
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTable table = ResourcefulJTable.create(new Resource(source, "TestTable"));
         assertEquals("TestTable name", table.getName());
         assertEquals("Test table tooltip", table.getToolTipText());
@@ -49,7 +49,7 @@ public class TestResourcefulJTable
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTable table = ResourcefulJTable.create(new Resource(source, "TestTable"));
         assertEquals("TestTable name", table.getName());
 
@@ -73,7 +73,7 @@ public class TestResourcefulJTable
     public void testColumnHeaderRefreshOnLocaleChange()
            
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         DefaultTableModel model = new DefaultTableModel(new Object[]{"Col1", "Col2", "Col3"}, 0);
         ResourcefulJTable table = ResourcefulJTable.create(new Resource(source, "TestTable"), model);
         assertEquals(3, table.getColumnCount());
@@ -99,7 +99,7 @@ public class TestResourcefulJTable
     @Test
     public void testWithModel()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         DefaultTableModel model = new DefaultTableModel(new Object[]{"Name", "Size"}, 0);
         model.addRow(new Object[]{"file.txt", 1024});
 

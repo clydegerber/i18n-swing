@@ -38,7 +38,7 @@ public class TestResourcefulJFileChooser
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJFileChooser chooser =
                 ResourcefulJFileChooser.create(new Resource(source, "TestFileChooser"));
         assertEquals("TestFileChooser name", chooser.getName());
@@ -54,7 +54,7 @@ public class TestResourcefulJFileChooser
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJFileChooser chooser =
                 ResourcefulJFileChooser.create(new Resource(source, "TestFileChooser"));
         assertEquals("TestFileChooser name", chooser.getName());

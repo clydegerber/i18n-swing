@@ -36,7 +36,7 @@ public class TestResourcefulJScrollBar
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJScrollBar scrollBar = ResourcefulJScrollBar.create(new Resource(source, "TestScrollBar"));
         assertEquals("TestScrollBar name", scrollBar.getName());
         assertEquals("Test scroll bar tooltip", scrollBar.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJScrollBar
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJScrollBar scrollBar = ResourcefulJScrollBar.create(new Resource(source, "TestScrollBar"));
         assertEquals("TestScrollBar name", scrollBar.getName());
         source.setBundleLocale(Locale.FRANCE);

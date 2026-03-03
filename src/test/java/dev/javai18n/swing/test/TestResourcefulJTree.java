@@ -37,7 +37,7 @@ public class TestResourcefulJTree
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTree tree = ResourcefulJTree.create(new Resource(source, "TestTree"));
         assertEquals("TestTree name", tree.getName());
         assertEquals("Test tree tooltip", tree.getToolTipText());
@@ -50,7 +50,7 @@ public class TestResourcefulJTree
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTree tree = ResourcefulJTree.create(new Resource(source, "TestTree"));
         assertEquals("TestTree name", tree.getName());
 
@@ -69,7 +69,7 @@ public class TestResourcefulJTree
     @Test
     public void testWithModel()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
         root.add(new DefaultMutableTreeNode("Child A"));
         root.add(new DefaultMutableTreeNode("Child B"));

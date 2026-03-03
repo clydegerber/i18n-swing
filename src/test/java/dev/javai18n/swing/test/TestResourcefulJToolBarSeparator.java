@@ -30,7 +30,7 @@ public class TestResourcefulJToolBarSeparator
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"));
         assertEquals("TestToolBarSeparator name", separator.getName());
         assertEquals("Test toolbar separator tooltip", separator.getToolTipText());
@@ -40,7 +40,7 @@ public class TestResourcefulJToolBarSeparator
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"));
         assertEquals("TestToolBarSeparator name", separator.getName());
         source.setBundleLocale(Locale.FRANCE);
@@ -53,7 +53,7 @@ public class TestResourcefulJToolBarSeparator
     @Test
     public void testAlternativeFactory()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"), new Dimension(5, 5));
         assertNotNull(separator);
     }

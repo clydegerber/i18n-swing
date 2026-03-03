@@ -38,7 +38,7 @@ public class TestResourcefulJOptionPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJOptionPane pane = ResourcefulJOptionPane.create(new Resource(source, "TestOptionPane"));
         assertEquals("Test dialog tooltip", pane.getToolTipText());
         assertEquals("Test dialog accessible name", pane.getAccessibleContext().getAccessibleName());
@@ -53,7 +53,7 @@ public class TestResourcefulJOptionPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJOptionPane pane = ResourcefulJOptionPane.create(new Resource(source, "TestOptionPane"));
         assertEquals("Test Dialog", cachedTitle(pane));
         assertArrayEquals(new String[]{"OK", "Cancel"}, cachedOptions(pane));

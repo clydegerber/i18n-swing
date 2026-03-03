@@ -36,7 +36,7 @@ public class TestResourcefulJTextField
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTextField textField = ResourcefulJTextField.create(new Resource(source, "TestTextField"));
         assertEquals("TestTextField name", textField.getName());
         assertEquals("Test text field tooltip", textField.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJTextField
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTextField textField = ResourcefulJTextField.create(new Resource(source, "TestTextField"));
         assertEquals("TestTextField name", textField.getName());
         source.setBundleLocale(Locale.FRANCE);

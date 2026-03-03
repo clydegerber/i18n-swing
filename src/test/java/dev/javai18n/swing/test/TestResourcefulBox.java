@@ -29,7 +29,7 @@ public class TestResourcefulBox
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulBox box = ResourcefulBox.create(new Resource(source, "TestBox"), BoxLayout.X_AXIS);
         assertEquals("TestBox name", box.getName());
         assertEquals("Test box tooltip", box.getToolTipText());
@@ -39,7 +39,7 @@ public class TestResourcefulBox
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulBox box = ResourcefulBox.create(new Resource(source, "TestBox"), BoxLayout.X_AXIS);
         assertEquals("TestBox name", box.getName());
         source.setBundleLocale(Locale.FRANCE);

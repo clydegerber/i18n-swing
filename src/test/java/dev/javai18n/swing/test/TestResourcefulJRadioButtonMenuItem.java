@@ -36,7 +36,7 @@ public class TestResourcefulJRadioButtonMenuItem
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRadioButtonMenuItem menuItem = ResourcefulJRadioButtonMenuItem.create(
                 new Resource(source, "TestRadioButtonMenuItem"));
         assertEquals("Test RadioButton MenuItem", menuItem.getText());
@@ -49,7 +49,7 @@ public class TestResourcefulJRadioButtonMenuItem
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRadioButtonMenuItem menuItem = ResourcefulJRadioButtonMenuItem.create(
                 new Resource(source, "TestRadioButtonMenuItem"));
         assertEquals("Test RadioButton MenuItem", menuItem.getText());

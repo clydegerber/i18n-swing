@@ -38,7 +38,7 @@ public class TestResourcefulJSpinnerNumberEditor
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
         ResourcefulJSpinnerNumberEditor editor =
                 ResourcefulJSpinnerNumberEditor.create(
@@ -55,7 +55,7 @@ public class TestResourcefulJSpinnerNumberEditor
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
         ResourcefulJSpinnerNumberEditor editor =
                 ResourcefulJSpinnerNumberEditor.create(
@@ -78,7 +78,7 @@ public class TestResourcefulJSpinnerNumberEditor
     @Test
     public void testWithDecimalFormatPattern()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
         ResourcefulJSpinnerNumberEditor editor =
                 ResourcefulJSpinnerNumberEditor.create(

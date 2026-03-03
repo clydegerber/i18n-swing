@@ -37,7 +37,7 @@ public class TestResourcefulJProgressBar
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJProgressBar progressBar = ResourcefulJProgressBar.create(new Resource(source, "TestProgressBar"));
         assertEquals("TestProgressBar name", progressBar.getName());
         assertEquals("Test progress bar tooltip", progressBar.getToolTipText());
@@ -51,7 +51,7 @@ public class TestResourcefulJProgressBar
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJProgressBar progressBar = ResourcefulJProgressBar.create(new Resource(source, "TestProgressBar"));
         assertEquals("Loading...", progressBar.getString());
         source.setBundleLocale(Locale.FRANCE);

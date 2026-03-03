@@ -36,7 +36,7 @@ public class TestResourcefulJLabel
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJLabel label = ResourcefulJLabel.create(new Resource(source, "TestLabel"));
         assertEquals("Test Label", label.getText());
         assertEquals("Test label tooltip", label.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJLabel
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJLabel label = ResourcefulJLabel.create(new Resource(source, "TestLabel"));
         assertEquals("Test Label", label.getText());
         source.setBundleLocale(Locale.FRANCE);

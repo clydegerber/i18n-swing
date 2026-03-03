@@ -37,7 +37,7 @@ public class TestResourcefulJSpinnerListEditor
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerListModel(new Object[]{"A", "B", "C"}));
         ResourcefulJSpinnerListEditor editor =
                 ResourcefulJSpinnerListEditor.create(
@@ -54,7 +54,7 @@ public class TestResourcefulJSpinnerListEditor
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerListModel(new Object[]{"A", "B", "C"}));
         ResourcefulJSpinnerListEditor editor =
                 ResourcefulJSpinnerListEditor.create(

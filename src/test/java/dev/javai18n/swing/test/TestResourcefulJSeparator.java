@@ -36,7 +36,7 @@ public class TestResourcefulJSeparator
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJSeparator separator = ResourcefulJSeparator.create(new Resource(source, "TestSeparator"));
         assertEquals("TestSeparator name", separator.getName());
         assertEquals("Test separator tooltip", separator.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJSeparator
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJSeparator separator = ResourcefulJSeparator.create(new Resource(source, "TestSeparator"));
         assertEquals("TestSeparator name", separator.getName());
         source.setBundleLocale(Locale.FRANCE);

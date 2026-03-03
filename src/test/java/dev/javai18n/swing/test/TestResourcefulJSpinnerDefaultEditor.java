@@ -36,7 +36,7 @@ public class TestResourcefulJSpinnerDefaultEditor
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner();
         ResourcefulJSpinnerDefaultEditor editor =
                 ResourcefulJSpinnerDefaultEditor.create(
@@ -53,7 +53,7 @@ public class TestResourcefulJSpinnerDefaultEditor
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner();
         ResourcefulJSpinnerDefaultEditor editor =
                 ResourcefulJSpinnerDefaultEditor.create(

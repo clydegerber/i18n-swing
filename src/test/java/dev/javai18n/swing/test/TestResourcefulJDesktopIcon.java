@@ -38,7 +38,7 @@ public class TestResourcefulJDesktopIcon
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JInternalFrame frame = new JInternalFrame("Test");
         ResourcefulJDesktopIcon icon =
                 ResourcefulJDesktopIcon.create(new Resource(source, "TestDesktopIcon"), frame);
@@ -54,7 +54,7 @@ public class TestResourcefulJDesktopIcon
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JInternalFrame frame = new JInternalFrame("Test");
         ResourcefulJDesktopIcon icon =
                 ResourcefulJDesktopIcon.create(new Resource(source, "TestDesktopIcon"), frame);

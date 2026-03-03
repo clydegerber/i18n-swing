@@ -36,7 +36,7 @@ public class TestResourcefulJRadioButton
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRadioButton button = ResourcefulJRadioButton.create(new Resource(source, "TestRadioButton"));
         assertEquals("Test RadioButton", button.getText());
         assertEquals("Test radio tooltip", button.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJRadioButton
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRadioButton button = ResourcefulJRadioButton.create(new Resource(source, "TestRadioButton"));
         assertEquals("Test RadioButton", button.getText());
         source.setBundleLocale(Locale.FRANCE);

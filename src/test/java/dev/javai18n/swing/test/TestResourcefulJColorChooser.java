@@ -31,7 +31,7 @@ public class TestResourcefulJColorChooser
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJColorChooser colorChooser = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"));
         assertEquals("TestColorChooser name", colorChooser.getName());
         assertEquals("Test color chooser tooltip", colorChooser.getToolTipText());
@@ -41,7 +41,7 @@ public class TestResourcefulJColorChooser
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJColorChooser colorChooser = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"));
         assertEquals("TestColorChooser name", colorChooser.getName());
         source.setBundleLocale(Locale.FRANCE);
@@ -54,7 +54,7 @@ public class TestResourcefulJColorChooser
     @Test
     public void testAlternativeFactories()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJColorChooser colorChooserWithColor = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"), Color.RED);
         assertNotNull(colorChooserWithColor);
         ResourcefulJColorChooser colorChooserWithModel = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"), new DefaultColorSelectionModel());

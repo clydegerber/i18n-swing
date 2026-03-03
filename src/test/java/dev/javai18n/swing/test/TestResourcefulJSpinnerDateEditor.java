@@ -38,7 +38,7 @@ public class TestResourcefulJSpinnerDateEditor
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerDateModel());
         ResourcefulJSpinnerDateEditor editor =
                 ResourcefulJSpinnerDateEditor.create(
@@ -55,7 +55,7 @@ public class TestResourcefulJSpinnerDateEditor
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerDateModel());
         ResourcefulJSpinnerDateEditor editor =
                 ResourcefulJSpinnerDateEditor.create(
@@ -78,7 +78,7 @@ public class TestResourcefulJSpinnerDateEditor
     @Test
     public void testWithDateFormatPattern()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         JSpinner spinner = new JSpinner(new SpinnerDateModel());
         ResourcefulJSpinnerDateEditor editor =
                 ResourcefulJSpinnerDateEditor.create(

@@ -36,7 +36,7 @@ public class TestResourcefulJLayeredPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJLayeredPane layeredPane = ResourcefulJLayeredPane.create(new Resource(source, "TestLayeredPane"));
         assertEquals("TestLayeredPane name", layeredPane.getName());
         assertEquals("Test layered pane tooltip", layeredPane.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJLayeredPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJLayeredPane layeredPane = ResourcefulJLayeredPane.create(new Resource(source, "TestLayeredPane"));
         assertEquals("TestLayeredPane name", layeredPane.getName());
         source.setBundleLocale(Locale.FRANCE);

@@ -29,7 +29,7 @@ public class TestResourcefulBoxFiller
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulBoxFiller filler = ResourcefulBoxFiller.create(new Resource(source, "TestBoxFiller"), new Dimension(10, 10), new Dimension(20, 20), new Dimension(30, 30));
         assertEquals("TestBoxFiller name", filler.getName());
         assertEquals("Test box filler tooltip", filler.getToolTipText());
@@ -39,7 +39,7 @@ public class TestResourcefulBoxFiller
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulBoxFiller filler = ResourcefulBoxFiller.create(new Resource(source, "TestBoxFiller"), new Dimension(10, 10), new Dimension(20, 20), new Dimension(30, 30));
         assertEquals("TestBoxFiller name", filler.getName());
         source.setBundleLocale(Locale.FRANCE);

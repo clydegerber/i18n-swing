@@ -36,7 +36,7 @@ public class TestResourcefulJEditorPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJEditorPane editorPane = ResourcefulJEditorPane.create(new Resource(source, "TestEditorPane"));
         assertEquals("TestEditorPane name", editorPane.getName());
         assertEquals("Test editor pane tooltip", editorPane.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJEditorPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJEditorPane editorPane = ResourcefulJEditorPane.create(new Resource(source, "TestEditorPane"));
         assertEquals("TestEditorPane name", editorPane.getName());
         source.setBundleLocale(Locale.FRANCE);

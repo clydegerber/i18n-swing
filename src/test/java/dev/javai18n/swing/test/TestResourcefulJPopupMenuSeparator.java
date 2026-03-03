@@ -28,7 +28,7 @@ public class TestResourcefulJPopupMenuSeparator
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJPopupMenuSeparator separator = ResourcefulJPopupMenuSeparator.create(new Resource(source, "TestPopupMenuSeparator"));
         assertEquals("TestPopupMenuSeparator name", separator.getName());
         assertEquals("Test popup menu separator tooltip", separator.getToolTipText());
@@ -38,7 +38,7 @@ public class TestResourcefulJPopupMenuSeparator
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJPopupMenuSeparator separator = ResourcefulJPopupMenuSeparator.create(new Resource(source, "TestPopupMenuSeparator"));
         assertEquals("TestPopupMenuSeparator name", separator.getName());
         source.setBundleLocale(Locale.FRANCE);

@@ -28,7 +28,7 @@ public class TestResourcefulJRootPane
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRootPane rootPane = ResourcefulJRootPane.create(new Resource(source, "TestRootPane"));
         assertEquals("TestRootPane name", rootPane.getName());
         assertEquals("Test root pane tooltip", rootPane.getToolTipText());
@@ -38,7 +38,7 @@ public class TestResourcefulJRootPane
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJRootPane rootPane = ResourcefulJRootPane.create(new Resource(source, "TestRootPane"));
         assertEquals("TestRootPane name", rootPane.getName());
         source.setBundleLocale(Locale.FRANCE);

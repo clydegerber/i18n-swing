@@ -39,7 +39,7 @@ public class TestResourcefulJTableHeader
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTableHeader header =
                 ResourcefulJTableHeader.create(new Resource(source, "TestTableHeader"));
         assertEquals("TestTableHeader name", header.getName());
@@ -54,7 +54,7 @@ public class TestResourcefulJTableHeader
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTableHeader header =
                 ResourcefulJTableHeader.create(new Resource(source, "TestTableHeader"));
         assertEquals("TestTableHeader name", header.getName());
@@ -74,7 +74,7 @@ public class TestResourcefulJTableHeader
     @Test
     public void testWithColumnModel()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJTableHeader header = ResourcefulJTableHeader.create(
                 new Resource(source, "TestTableHeader"), new DefaultTableColumnModel());
         assertNotNull(header);

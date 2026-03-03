@@ -36,7 +36,7 @@ public class TestResourcefulJButton
     @Test
     public void testInitialProperties()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJButton button = ResourcefulJButton.create(new Resource(source, "TestButton"));
         assertEquals("Test Button", button.getText());
         assertEquals("Test button tooltip", button.getToolTipText());
@@ -48,7 +48,7 @@ public class TestResourcefulJButton
     @Test
     public void testLocaleChange()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJButton button = ResourcefulJButton.create(new Resource(source, "TestButton"));
         assertEquals("Test Button", button.getText());
         source.setBundleLocale(Locale.FRANCE);
@@ -63,7 +63,7 @@ public class TestResourcefulJButton
     @Test
     public void testSetResource()
     {
-        AppFrame source = AppFrame.create();
+        TestComponentSource source = TestComponentSource.create();
         ResourcefulJButton button = ResourcefulJButton.create(new Resource(source, "TestButton"));
         assertEquals("Test Button", button.getText());
         button.setResource(new Resource(source, "TestToggleButton"));

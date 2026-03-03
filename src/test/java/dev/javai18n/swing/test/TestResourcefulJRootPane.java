@@ -15,11 +15,11 @@
  */
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJRootPane;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -36,13 +36,13 @@ public class TestResourcefulJRootPane
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJRootPane rootPane = ResourcefulJRootPane.create(new Resource(source, "TestRootPane"));
         assertEquals("TestRootPane name", rootPane.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestRootPane nom", rootPane.getName());
         assertEquals("Info-bulle volet racine test", rootPane.getToolTipText());
         assertEquals("Nom accessible volet racine test", rootPane.getAccessibleContext().getAccessibleName());

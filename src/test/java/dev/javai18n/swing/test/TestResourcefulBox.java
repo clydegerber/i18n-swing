@@ -15,12 +15,12 @@
  */
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.BoxLayout;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulBox;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -37,13 +37,13 @@ public class TestResourcefulBox
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulBox box = ResourcefulBox.create(new Resource(source, "TestBox"), BoxLayout.X_AXIS);
         assertEquals("TestBox name", box.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestBox nom", box.getName());
         assertEquals("Info-bulle boîte test", box.getToolTipText());
         assertEquals("Nom accessible boîte test", box.getAccessibleContext().getAccessibleName());

@@ -16,11 +16,11 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJMenu;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -46,13 +46,13 @@ public class TestResourcefulJMenu
      * Verify that properties update when the locale is changed.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJMenu menu = ResourcefulJMenu.create(new Resource(source, "TestMenu"));
         assertEquals("Test Menu", menu.getText());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("Menu Test", menu.getText());
         assertEquals("Info-bulle menu test", menu.getToolTipText());
     }

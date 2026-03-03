@@ -16,11 +16,11 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJButton;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -46,13 +46,13 @@ public class TestResourcefulJButton
      * Verify that properties update when the locale is changed.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJButton button = ResourcefulJButton.create(new Resource(source, "TestButton"));
         assertEquals("Test Button", button.getText());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("Bouton Test", button.getText());
         assertEquals("Info-bulle bouton test", button.getToolTipText());
     }
@@ -61,13 +61,13 @@ public class TestResourcefulJButton
      * Verify that setResource() updates properties from the new Resource.
      */
     @Test
-    public void testSetResource() throws InterruptedException, InvocationTargetException
+    public void testSetResource()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJButton button = ResourcefulJButton.create(new Resource(source, "TestButton"));
         assertEquals("Test Button", button.getText());
         button.setResource(new Resource(source, "TestToggleButton"));
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("Test Toggle", button.getText());
     }
 }

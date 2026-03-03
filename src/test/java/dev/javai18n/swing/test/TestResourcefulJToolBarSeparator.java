@@ -16,11 +16,11 @@
 package dev.javai18n.swing.test;
 
 import java.awt.Dimension;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJToolBarSeparator;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
@@ -38,13 +38,13 @@ public class TestResourcefulJToolBarSeparator
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"));
         assertEquals("TestToolBarSeparator name", separator.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestToolBarSeparator nom", separator.getName());
         assertEquals("Info-bulle séparateur barre outils test", separator.getToolTipText());
         assertEquals("Nom accessible séparateur barre outils test", separator.getAccessibleContext().getAccessibleName());

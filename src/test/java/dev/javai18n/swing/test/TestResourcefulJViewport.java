@@ -15,11 +15,11 @@
  */
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJViewport;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -36,13 +36,13 @@ public class TestResourcefulJViewport
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJViewport viewport = ResourcefulJViewport.create(new Resource(source, "TestViewport"));
         assertEquals("TestViewport name", viewport.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestViewport nom", viewport.getName());
         assertEquals("Info-bulle fenêtre vue test", viewport.getToolTipText());
         assertEquals("Nom accessible fenêtre vue test", viewport.getAccessibleContext().getAccessibleName());

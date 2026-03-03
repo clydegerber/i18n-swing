@@ -16,12 +16,12 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJTable;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -47,14 +47,14 @@ public class TestResourcefulJTable
      * Verify that properties update when the application locale changes.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJTable table = ResourcefulJTable.create(new Resource(source, "TestTable"));
         assertEquals("TestTable name", table.getName());
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         assertEquals("TestTable nom", table.getName());
         assertEquals("Info-bulle tableau test", table.getToolTipText());
@@ -71,7 +71,7 @@ public class TestResourcefulJTable
      */
     @Test
     public void testColumnHeaderRefreshOnLocaleChange()
-            throws InterruptedException, InvocationTargetException
+           
     {
         AppFrame source = AppFrame.create();
         DefaultTableModel model = new DefaultTableModel(new Object[]{"Col1", "Col2", "Col3"}, 0);
@@ -87,7 +87,7 @@ public class TestResourcefulJTable
 
         // Locale change must call createDefaultColumnsFromModel(), restoring columns from the model
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         assertEquals(3, table.getColumnCount());
     }
@@ -97,7 +97,7 @@ public class TestResourcefulJTable
      * and still responds to locale changes.
      */
     @Test
-    public void testWithModel() throws InterruptedException, InvocationTargetException
+    public void testWithModel()
     {
         AppFrame source = AppFrame.create();
         DefaultTableModel model = new DefaultTableModel(new Object[]{"Name", "Size"}, 0);
@@ -110,7 +110,7 @@ public class TestResourcefulJTable
         assertEquals(model, table.getModel());
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         // Properties update; model reference and data are unchanged
         assertEquals("TestTable nom", table.getName());

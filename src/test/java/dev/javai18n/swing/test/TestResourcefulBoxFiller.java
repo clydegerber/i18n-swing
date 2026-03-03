@@ -16,11 +16,11 @@
 package dev.javai18n.swing.test;
 
 import java.awt.Dimension;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulBoxFiller;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -37,13 +37,13 @@ public class TestResourcefulBoxFiller
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulBoxFiller filler = ResourcefulBoxFiller.create(new Resource(source, "TestBoxFiller"), new Dimension(10, 10), new Dimension(20, 20), new Dimension(30, 30));
         assertEquals("TestBoxFiller name", filler.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestBoxFiller nom", filler.getName());
         assertEquals("Info-bulle remplissage boîte test", filler.getToolTipText());
         assertEquals("Nom accessible remplissage boîte test", filler.getAccessibleContext().getAccessibleName());

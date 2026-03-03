@@ -16,11 +16,11 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJCheckBoxMenuItem;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -47,14 +47,14 @@ public class TestResourcefulJCheckBoxMenuItem
      * Verify that properties update when the locale is changed.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJCheckBoxMenuItem menuItem = ResourcefulJCheckBoxMenuItem.create(
                 new Resource(source, "TestCheckBoxMenuItem"));
         assertEquals("Test CheckBox MenuItem", menuItem.getText());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("Case Menu Test", menuItem.getText());
         assertEquals("Info-bulle case menu test", menuItem.getToolTipText());
     }

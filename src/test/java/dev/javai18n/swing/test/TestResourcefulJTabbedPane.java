@@ -16,12 +16,12 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJTabbedPane;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -66,7 +66,7 @@ public class TestResourcefulJTabbedPane
      * Verify that pane and tab properties update when the locale is changed.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJTabbedPane tabbedPane = ResourcefulJTabbedPane.create(
@@ -75,7 +75,7 @@ public class TestResourcefulJTabbedPane
         tabbedPane.addResourcefulTab(new Resource(source, "TestTab2"), new JLabel("Content 2"));
         assertEquals("Tab One", tabbedPane.getTitleAt(0));
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestTabbedPane nom", tabbedPane.getName());
         assertEquals("Onglet Un", tabbedPane.getTitleAt(0));
         assertEquals("Onglet Deux", tabbedPane.getTitleAt(1));

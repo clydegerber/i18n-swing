@@ -17,12 +17,12 @@
 package dev.javai18n.swing.test;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJOptionPane;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -36,7 +36,7 @@ public class TestResourcefulJOptionPane
      * are populated from the default-locale bundle on creation.
      */
     @Test
-    public void testInitialProperties() throws Exception
+    public void testInitialProperties()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJOptionPane pane = ResourcefulJOptionPane.create(new Resource(source, "TestOptionPane"));
@@ -51,7 +51,7 @@ public class TestResourcefulJOptionPane
      * when the application locale changes.
      */
     @Test
-    public void testLocaleChange() throws Exception
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJOptionPane pane = ResourcefulJOptionPane.create(new Resource(source, "TestOptionPane"));
@@ -59,7 +59,7 @@ public class TestResourcefulJOptionPane
         assertArrayEquals(new String[]{"OK", "Cancel"}, cachedOptions(pane));
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         assertEquals("Info-bulle dialogue test", pane.getToolTipText());
         assertEquals("Nom accessible dialogue test", pane.getAccessibleContext().getAccessibleName());
@@ -69,17 +69,23 @@ public class TestResourcefulJOptionPane
 
     // --- helpers ---
 
-    private static String cachedTitle(ResourcefulJOptionPane pane) throws Exception
+    private static String cachedTitle(ResourcefulJOptionPane pane)
     {
-        Field f = ResourcefulJOptionPane.class.getDeclaredField("cachedTitle");
-        f.setAccessible(true);
-        return (String) f.get(pane);
+        return assertDoesNotThrow(() ->
+        {
+            Field f = ResourcefulJOptionPane.class.getDeclaredField("cachedTitle");
+            f.setAccessible(true);
+            return (String) f.get(pane);
+        });
     }
 
-    private static String[] cachedOptions(ResourcefulJOptionPane pane) throws Exception
+    private static String[] cachedOptions(ResourcefulJOptionPane pane)
     {
-        Field f = ResourcefulJOptionPane.class.getDeclaredField("cachedOptions");
-        f.setAccessible(true);
-        return (String[]) f.get(pane);
+        return assertDoesNotThrow(() ->
+        {
+            Field f = ResourcefulJOptionPane.class.getDeclaredField("cachedOptions");
+            f.setAccessible(true);
+            return (String[]) f.get(pane);
+        });
     }
 }

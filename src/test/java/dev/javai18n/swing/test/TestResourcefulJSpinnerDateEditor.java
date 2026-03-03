@@ -16,13 +16,13 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerDateModel;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJSpinnerDateEditor;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
@@ -53,7 +53,7 @@ public class TestResourcefulJSpinnerDateEditor
      * Verify that properties update when the application locale changes.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         JSpinner spinner = new JSpinner(new SpinnerDateModel());
@@ -63,7 +63,7 @@ public class TestResourcefulJSpinnerDateEditor
         assertEquals("TestSpinnerDateEditor name", editor.getName());
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         assertEquals("TestSpinnerDateEditor nom", editor.getName());
         assertEquals("Info-bulle éditeur compteur date test", editor.getToolTipText());

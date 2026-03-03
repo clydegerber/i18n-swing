@@ -15,11 +15,11 @@
  */
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJPopupMenuSeparator;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -36,13 +36,13 @@ public class TestResourcefulJPopupMenuSeparator
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJPopupMenuSeparator separator = ResourcefulJPopupMenuSeparator.create(new Resource(source, "TestPopupMenuSeparator"));
         assertEquals("TestPopupMenuSeparator name", separator.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestPopupMenuSeparator nom", separator.getName());
         assertEquals("Info-bulle séparateur menu contextuel test", separator.getToolTipText());
         assertEquals("Nom accessible séparateur menu contextuel test", separator.getAccessibleContext().getAccessibleName());

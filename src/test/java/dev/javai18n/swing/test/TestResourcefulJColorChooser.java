@@ -16,12 +16,12 @@
 package dev.javai18n.swing.test;
 
 import java.awt.Color;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import javax.swing.colorchooser.DefaultColorSelectionModel;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJColorChooser;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
@@ -39,13 +39,13 @@ public class TestResourcefulJColorChooser
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJColorChooser colorChooser = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"));
         assertEquals("TestColorChooser name", colorChooser.getName());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestColorChooser nom", colorChooser.getName());
         assertEquals("Info-bulle sélecteur couleur test", colorChooser.getToolTipText());
         assertEquals("Nom accessible sélecteur couleur test", colorChooser.getAccessibleContext().getAccessibleName());

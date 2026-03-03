@@ -16,13 +16,13 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJTree;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -48,14 +48,14 @@ public class TestResourcefulJTree
      * Verify that properties update when the application locale changes.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJTree tree = ResourcefulJTree.create(new Resource(source, "TestTree"));
         assertEquals("TestTree name", tree.getName());
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         assertEquals("TestTree nom", tree.getName());
         assertEquals("Info-bulle arbre test", tree.getToolTipText());
@@ -67,7 +67,7 @@ public class TestResourcefulJTree
      * and still responds to locale changes.
      */
     @Test
-    public void testWithModel() throws InterruptedException, InvocationTargetException
+    public void testWithModel()
     {
         AppFrame source = AppFrame.create();
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
@@ -80,7 +80,7 @@ public class TestResourcefulJTree
         assertEquals(model, tree.getModel());
 
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
 
         // Properties update; model reference is unchanged
         assertEquals("TestTree nom", tree.getName());

@@ -16,11 +16,11 @@
 
 package dev.javai18n.swing.test;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import javax.swing.SwingUtilities;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.ResourcefulJInternalFrame;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -48,14 +48,14 @@ public class TestResourcefulJInternalFrame
      * Verify that properties update when the locale is changed.
      */
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    public void testLocaleChange()
     {
         AppFrame source = AppFrame.create();
         ResourcefulJInternalFrame frame = ResourcefulJInternalFrame.create(
                 new Resource(source, "TestInternalFrame"));
         assertEquals("Test Internal Frame", frame.getTitle());
         source.setBundleLocale(Locale.FRANCE);
-        SwingUtilities.invokeAndWait(() -> {});
+        assertDoesNotThrow(() -> SwingUtilities.invokeAndWait(() -> {}));
         assertEquals("TestInternalFrame nom", frame.getName());
         assertEquals("Cadre Interne Test", frame.getTitle());
     }

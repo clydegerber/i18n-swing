@@ -23,9 +23,11 @@ import dev.javai18n.swing.ResourcefulJRootPane;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulJRootPane {
+public class TestResourcefulJRootPane
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJRootPane rootPane = ResourcefulJRootPane.create(new Resource(source, "TestRootPane"));
         assertEquals("TestRootPane name", rootPane.getName());
@@ -34,7 +36,8 @@ public class TestResourcefulJRootPane {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJRootPane rootPane = ResourcefulJRootPane.create(new Resource(source, "TestRootPane"));
         assertEquals("TestRootPane name", rootPane.getName());

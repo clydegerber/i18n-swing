@@ -59,17 +59,21 @@ public class TestAppFrame
     {
         Module module = this.getClass().getModule();
 
-        if (module.isNamed()) {
+        if (module.isNamed())
+        {
             System.out.println(" Running in MODULE mode");
             System.out.println(" Module name: " + module.getName());
-        } else {
+        }
+        else
+        {
             System.out.println(" Running in CLASSPATH mode");
             System.out.println(" Module: unnamed");
         }
     }
 
     @Test
-    public void debugModulePathSetup() {
+    public void debugModulePathSetup()
+    {
         System.out.println("=== MODULE DEBUG INFO ===");
         Module module = this.getClass().getModule();
         System.out.println("Module isNamed: " + module.isNamed());

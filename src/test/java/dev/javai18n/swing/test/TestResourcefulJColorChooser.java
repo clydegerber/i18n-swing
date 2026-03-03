@@ -26,9 +26,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulJColorChooser {
+public class TestResourcefulJColorChooser
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJColorChooser colorChooser = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"));
         assertEquals("TestColorChooser name", colorChooser.getName());
@@ -37,7 +39,8 @@ public class TestResourcefulJColorChooser {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJColorChooser colorChooser = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"));
         assertEquals("TestColorChooser name", colorChooser.getName());
@@ -49,7 +52,8 @@ public class TestResourcefulJColorChooser {
     }
 
     @Test
-    public void testAlternativeFactories() {
+    public void testAlternativeFactories()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJColorChooser colorChooserWithColor = ResourcefulJColorChooser.create(new Resource(source, "TestColorChooser"), Color.RED);
         assertNotNull(colorChooserWithColor);

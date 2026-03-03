@@ -23,9 +23,11 @@ import dev.javai18n.swing.ResourcefulJViewport;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulJViewport {
+public class TestResourcefulJViewport
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJViewport viewport = ResourcefulJViewport.create(new Resource(source, "TestViewport"));
         assertEquals("TestViewport name", viewport.getName());
@@ -34,7 +36,8 @@ public class TestResourcefulJViewport {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJViewport viewport = ResourcefulJViewport.create(new Resource(source, "TestViewport"));
         assertEquals("TestViewport name", viewport.getName());

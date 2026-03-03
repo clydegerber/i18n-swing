@@ -24,9 +24,11 @@ import dev.javai18n.swing.ResourcefulBox;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulBox {
+public class TestResourcefulBox
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulBox box = ResourcefulBox.create(new Resource(source, "TestBox"), BoxLayout.X_AXIS);
         assertEquals("TestBox name", box.getName());
@@ -35,7 +37,8 @@ public class TestResourcefulBox {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulBox box = ResourcefulBox.create(new Resource(source, "TestBox"), BoxLayout.X_AXIS);
         assertEquals("TestBox name", box.getName());

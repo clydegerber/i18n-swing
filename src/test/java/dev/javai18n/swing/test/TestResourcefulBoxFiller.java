@@ -24,9 +24,11 @@ import dev.javai18n.swing.ResourcefulBoxFiller;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulBoxFiller {
+public class TestResourcefulBoxFiller
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulBoxFiller filler = ResourcefulBoxFiller.create(new Resource(source, "TestBoxFiller"), new Dimension(10, 10), new Dimension(20, 20), new Dimension(30, 30));
         assertEquals("TestBoxFiller name", filler.getName());
@@ -35,7 +37,8 @@ public class TestResourcefulBoxFiller {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulBoxFiller filler = ResourcefulBoxFiller.create(new Resource(source, "TestBoxFiller"), new Dimension(10, 10), new Dimension(20, 20), new Dimension(30, 30));
         assertEquals("TestBoxFiller name", filler.getName());

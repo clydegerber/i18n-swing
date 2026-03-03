@@ -23,9 +23,11 @@ import dev.javai18n.swing.ResourcefulJPopupMenuSeparator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulJPopupMenuSeparator {
+public class TestResourcefulJPopupMenuSeparator
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJPopupMenuSeparator separator = ResourcefulJPopupMenuSeparator.create(new Resource(source, "TestPopupMenuSeparator"));
         assertEquals("TestPopupMenuSeparator name", separator.getName());
@@ -34,7 +36,8 @@ public class TestResourcefulJPopupMenuSeparator {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJPopupMenuSeparator separator = ResourcefulJPopupMenuSeparator.create(new Resource(source, "TestPopupMenuSeparator"));
         assertEquals("TestPopupMenuSeparator name", separator.getName());

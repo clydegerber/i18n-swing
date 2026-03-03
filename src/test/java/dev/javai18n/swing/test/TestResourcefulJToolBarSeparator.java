@@ -25,9 +25,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
-public class TestResourcefulJToolBarSeparator {
+public class TestResourcefulJToolBarSeparator
+{
     @Test
-    public void testInitialProperties() {
+    public void testInitialProperties()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"));
         assertEquals("TestToolBarSeparator name", separator.getName());
@@ -36,7 +38,8 @@ public class TestResourcefulJToolBarSeparator {
     }
 
     @Test
-    public void testLocaleChange() throws InterruptedException, InvocationTargetException {
+    public void testLocaleChange() throws InterruptedException, InvocationTargetException
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"));
         assertEquals("TestToolBarSeparator name", separator.getName());
@@ -48,7 +51,8 @@ public class TestResourcefulJToolBarSeparator {
     }
 
     @Test
-    public void testAlternativeFactory() {
+    public void testAlternativeFactory()
+    {
         AppFrame source = AppFrame.create();
         ResourcefulJToolBarSeparator separator = ResourcefulJToolBarSeparator.create(new Resource(source, "TestToolBarSeparator"), new Dimension(5, 5));
         assertNotNull(separator);

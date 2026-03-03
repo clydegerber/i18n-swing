@@ -1,5 +1,6 @@
 {
-  "FrameProperties": {
+  "FrameProperties":
+  {
     "type": "dev.javai18n.swing.FramePropertyBundle",
     "Title": "Esplora file",
     "Font": "Arial-BOLD-28",
@@ -8,139 +9,163 @@
     "AccessibleDescription": "AppFrame Descrizione accessibile",
     "IconImages": "dev/javai18n/swing/test/MN_Flag.jpg"
   },
-  "MenuBarProps": {
+  "MenuBarProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "JMenuBar nome"
   },
-  "FileMenuProps": {
+  "FileMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "File",
     "Mnemonic": 70
   },
-  "NewFolderMenuItemProps": {
+  "NewFolderMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Nuova cartella",
     "Mnemonic": 78,
     "ToolTipText": "Crea una nuova cartella"
   },
-  "DeleteMenuItemProps": {
+  "DeleteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Elimina",
     "Mnemonic": 68,
     "ToolTipText": "Elimina l'elemento selezionato"
   },
-  "PropertiesMenuItemProps": {
+  "PropertiesMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Proprietà",
     "Mnemonic": 80,
     "ToolTipText": "Mostra proprietà file"
   },
-  "ExitMenuItemProps": {
+  "ExitMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Esci",
     "Mnemonic": 88,
     "ToolTipText": "Esci dall'applicazione"
   },
-  "EditMenuProps": {
+  "EditMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Modifica",
     "Mnemonic": 69
   },
-  "CopyMenuItemProps": {
+  "CopyMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Copia",
     "Mnemonic": 67,
     "ToolTipText": "Copia l'elemento selezionato"
   },
-  "CutMenuItemProps": {
+  "CutMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Taglia",
     "Mnemonic": 84,
     "ToolTipText": "Taglia l'elemento selezionato"
   },
-  "PasteMenuItemProps": {
+  "PasteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Incolla",
     "Mnemonic": 80,
     "ToolTipText": "Incolla elemento"
   },
-  "SelectAllMenuItemProps": {
+  "SelectAllMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Seleziona tutto",
     "Mnemonic": 65,
     "ToolTipText": "Seleziona tutti gli elementi"
   },
-  "ViewMenuProps": {
+  "ViewMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Visualizza",
     "Mnemonic": 86
   },
-  "RefreshMenuItemProps": {
+  "RefreshMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Aggiorna",
     "Mnemonic": 82,
     "ToolTipText": "Aggiorna la directory corrente"
   },
-  "SortByMenuProps": {
+  "SortByMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Ordina per",
     "Mnemonic": 83
   },
-  "SortByNameRadioProps": {
+  "SortByNameRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Nome",
     "Mnemonic": 78,
     "ToolTipText": "Ordina per nome file"
   },
-  "SortBySizeRadioProps": {
+  "SortBySizeRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Dimensione",
     "Mnemonic": 83,
     "ToolTipText": "Ordina per dimensione file"
   },
-  "SortByDateRadioProps": {
+  "SortByDateRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Data modifica",
     "Mnemonic": 68,
     "ToolTipText": "Ordina per data di modifica"
   },
-  "ShowHiddenCheckBoxProps": {
+  "ShowHiddenCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Mostra file nascosti",
     "Mnemonic": 72,
     "ToolTipText": "Attiva/disattiva la visualizzazione dei file nascosti"
   },
-  "ShowExtensionsCheckBoxProps": {
+  "ShowExtensionsCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Mostra estensioni file",
     "Mnemonic": 69,
     "ToolTipText": "Attiva/disattiva la visualizzazione delle estensioni file"
   },
-  "FilterMenuProps": {
+  "FilterMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Filtro",
     "Mnemonic": 70,
     "ToolTipText": "Filtra l'elenco file"
   },
-  "AllFileTypesRadioProps": {
+  "AllFileTypesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Tutti i tipi",
     "Mnemonic": 65,
     "ToolTipText": "Mostra tutti i tipi di file"
   },
-  "TextFilesRadioProps": {
+  "TextFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "File di testo",
     "Mnemonic": 88,
     "ToolTipText": "Mostra solo i file di testo"
   },
-  "ImageFilesRadioProps": {
+  "ImageFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "File immagine",
     "Mnemonic": 73,
     "ToolTipText": "Mostra solo i file immagine"
   },
-  "PreferencesMenuProps": {
+  "PreferencesMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "Preferenze menu nome",
     "ToolTipText": "Preferenze menu suggerimento",
@@ -149,7 +174,8 @@
     "AccessibleName": "Preferenze menu nome accessibile",
     "AccessibleDescription": "Preferenze menu descrizione accessibile"
   },
-  "LocaleMenuProps": {
+  "LocaleMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "Locale menu nome",
     "ToolTipText": "Locale menu suggerimento",
@@ -158,14 +184,16 @@
     "AccessibleName": "Locale menu nome accessibile",
     "AccessibleDescription": "Locale menu descrizione accessibile"
   },
-  "LocaleMenuItemProps": {
+  "LocaleMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "Locale voce menu nome",
     "ToolTipText": "Locale voce menu suggerimento",
     "AccessibleName": "Locale voce menu nome accessibile",
     "AccessibleDescription": "Locale voce menu descrizione accessibile"
   },
-  "LookAndFeelMenuProps": {
+  "LookAndFeelMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "Aspetto menu nome",
     "ToolTipText": "Aspetto menu suggerimento",
@@ -173,294 +201,345 @@
     "AccessibleName": "Aspetto menu nome accessibile",
     "AccessibleDescription": "Aspetto menu descrizione accessibile"
   },
-  "LookAndFeelMenuItemProps": {
+  "LookAndFeelMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "Aspetto voce menu nome",
     "ToolTipText": "Aspetto voce menu suggerimento",
     "AccessibleName": "Aspetto voce menu nome accessibile",
     "AccessibleDescription": "Aspetto voce menu descrizione accessibile"
   },
-  "LocaleSetMenuProps": {
+  "LocaleSetMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Set di locale",
     "Mnemonic": 83,
     "ToolTipText": "Scegli il set di locale disponibili"
   },
-  "LoggerLocalesRadioProps": {
+  "LoggerLocalesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Locale logger",
     "Mnemonic": 76,
     "ToolTipText": "Usa i locale del logger (8 locale)"
   },
-  "AllLocalesRadioProps": {
+  "AllLocalesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Tutti i locale JVM",
     "Mnemonic": 65,
     "ToolTipText": "Usa tutti i locale JVM"
   },
-  "LoggerLocaleMenuProps": {
+  "LoggerLocaleMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Locale logger",
     "Mnemonic": 71,
     "ToolTipText": "Controlla il locale del logger"
   },
-  "JvmDefaultLocaleRadioProps": {
+  "JvmDefaultLocaleRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Predefinito JVM",
     "Mnemonic": 74,
     "ToolTipText": "Usa il locale predefinito JVM per la registrazione"
   },
-  "CurrentLocaleRadioProps": {
+  "CurrentLocaleRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Selezione corrente",
     "Mnemonic": 67,
     "ToolTipText": "Usa la selezione locale corrente per la registrazione"
   },
-  "HelpMenuProps": {
+  "HelpMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Aiuto",
     "Mnemonic": 72
   },
-  "AboutMenuItemProps": {
+  "AboutMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Informazioni",
     "Mnemonic": 65,
     "ToolTipText": "Informazioni su questa applicazione"
   },
-  "NavToolBarProps": {
+  "NavToolBarProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Barra degli strumenti di navigazione",
     "ToolTipText": "Barra degli strumenti di navigazione"
   },
-  "BackButtonProps": {
+  "BackButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Indietro",
     "ToolTipText": "Vai indietro"
   },
-  "ForwardButtonProps": {
+  "ForwardButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Avanti",
     "ToolTipText": "Vai avanti"
   },
-  "UpButtonProps": {
+  "UpButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Su",
     "ToolTipText": "Vai su di un livello"
   },
-  "HomeButtonProps": {
+  "HomeButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Home",
     "ToolTipText": "Vai alla directory home"
   },
-  "RefreshButtonProps": {
+  "RefreshButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Aggiorna",
     "ToolTipText": "Aggiorna la directory corrente"
   },
-  "NewFolderButtonProps": {
+  "NewFolderButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Nuova cartella",
     "ToolTipText": "Crea nuova cartella"
   },
-  "ToolBarSeparatorProps": {
+  "ToolBarSeparatorProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Separatore barra strumenti"
   },
-  "ListViewToggleProps": {
+  "ListViewToggleProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Elenco",
     "ToolTipText": "Vista elenco"
   },
-  "DetailViewToggleProps": {
+  "DetailViewToggleProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Dettaglio",
     "ToolTipText": "Vista dettaglio"
   },
-  "MainSplitPaneProps": {
+  "MainSplitPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro diviso principale",
     "ToolTipText": "Riquadro diviso del contenuto principale"
   },
-  "TreeScrollPaneProps": {
+  "TreeScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento albero",
     "ToolTipText": "Riquadro a scorrimento dell'albero delle directory"
   },
-  "ContentTabbedPaneProps": {
+  "ContentTabbedPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a schede del contenuto",
     "ToolTipText": "Schede del contenuto"
   },
-  "FilesTabProps": {
+  "FilesTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "File",
     "ToolTipText": "Elenco file"
   },
-  "PreviewTabProps": {
+  "PreviewTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "Anteprima",
     "ToolTipText": "Anteprima file"
   },
-  "PropertiesTabProps": {
+  "PropertiesTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "Proprietà",
     "ToolTipText": "Proprietà file"
   },
-  "TableScrollPaneProps": {
+  "TableScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento tabella",
     "ToolTipText": "Riquadro a scorrimento della tabella file"
   },
-  "FileListViewProps": {
+  "FileListViewProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Vista elenco file",
     "ToolTipText": "Vista icone del contenuto della directory"
   },
-  "ListScrollPaneProps": {
+  "ListScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento elenco",
     "ToolTipText": "Riquadro a scorrimento dell'elenco file"
   },
-  "PreviewTextAreaProps": {
+  "PreviewTextAreaProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Area testo anteprima",
     "ToolTipText": "Anteprima file di testo normale"
   },
-  "PreviewEditorPaneProps": {
+  "PreviewEditorPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro editor anteprima",
     "ToolTipText": "Anteprima file di testo RTF"
   },
-  "PreviewScrollPaneProps": {
+  "PreviewScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento anteprima",
     "ToolTipText": "Riquadro a scorrimento anteprima"
   },
-  "PathPanelProps": {
+  "PathPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Pannello percorso",
     "ToolTipText": "Pannello barra percorso"
   },
-  "PathLabelProps": {
+  "PathLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Percorso:",
     "ToolTipText": "Etichetta percorso corrente"
   },
-  "PathTextFieldProps": {
+  "PathTextFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Campo testo percorso",
     "ToolTipText": "Inserisci un percorso per navigare"
   },
-  "FilterPanelProps": {
+  "FilterPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Pannello filtro",
     "ToolTipText": "Pannello filtro file"
   },
-  "AllFilesRadioProps": {
+  "AllFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Tutti i file",
     "ToolTipText": "Mostra tutti i file"
   },
-  "DirsOnlyRadioProps": {
+  "DirsOnlyRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Solo cartelle",
     "ToolTipText": "Mostra solo le cartelle"
   },
-  "ReadOnlyCheckBoxProps": {
+  "ReadOnlyCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Sola lettura",
     "ToolTipText": "Il file è di sola lettura"
   },
-  "StatusPanelProps": {
+  "StatusPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Pannello stato",
     "ToolTipText": "Pannello barra di stato"
   },
-  "FlagLabelProps": {
+  "FlagLabelProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "FlagLabel",
     "Text": "La mia bandiera",
     "Icon": "dev/javai18n/swing/test/MN_Flag.jpg"
   },
-  "StatusLabelProps": {
+  "StatusLabelProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Pronto",
     "ToolTipText": "Stato dell'applicazione"
   },
-  "FileCountLabelProps": {
+  "FileCountLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "0 elementi",
     "ToolTipText": "Numero di elementi nella directory corrente"
   },
-  "ScanProgressBarProps": {
+  "ScanProgressBarProps":
+  {
     "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
     "Name": "Barra avanzamento scansione",
     "ToolTipText": "Avanzamento scansione directory",
     "String": "Scansione in corso..."
   },
-  "FileTypeFilterComboBoxProps": {
+  "FileTypeFilterComboBoxProps":
+  {
     "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
     "Name": "Filtro tipo file",
     "ToolTipText": "Filtra per tipo di file",
-    "Values": [
-      "Tutti i file",
-      "File di testo",
-      "File immagine"
-    ]
+    "Values": ["Tutti i file", "File di testo", "File immagine"]
   },
-  "PanelProps": {
+  "PanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "JPanel nome",
     "ToolTipText": "JPanel suggerimento"
   },
-  "PropertiesPanelProps": {
+  "PropertiesPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Pannello proprietà",
     "ToolTipText": "Pannello proprietà file"
   },
-  "FileNameLabelProps": {
+  "FileNameLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Nome: {0}",
     "ToolTipText": "Nome file"
   },
-  "FileSizeLabelProps": {
+  "FileSizeLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Dimensione: {0}",
     "ToolTipText": "Dimensione file"
   },
-  "FileTypeLabelProps": {
+  "FileTypeLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Tipo: {0}",
     "ToolTipText": "Tipo di file"
   },
-  "FileModifiedLabelProps": {
+  "FileModifiedLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Modificato: {0}",
     "ToolTipText": "Data ultima modifica"
   },
-  "FilePathLabelProps": {
+  "FilePathLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Posizione: {0}",
     "ToolTipText": "Posizione file"
   },
-  "InfoDesktopPaneProps": {
+  "InfoDesktopPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro desktop info",
     "AccessibleName": "Riquadro desktop info rapide",
     "AccessibleDescription": "Riquadro desktop contenente il pannello info rapide"
   },
-  "InfoInternalFrameProps": {
+  "InfoInternalFrameProps":
+  {
     "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
     "Name": "Info rapide",
     "Title": "Info rapide",
     "ToolTipText": "Informazioni rapide sul file"
   },
-  "InfoContentLabelProps": {
+  "InfoContentLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Seleziona un file per visualizzare le info",
     "ToolTipText": "Informazioni rapide sul file"
   },
-  "StatusBarSeparatorProps": {
+  "StatusBarSeparatorProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": " | "
   },
@@ -482,139 +561,157 @@
   "SizeColumnText": "Dimensione",
   "TypeColumnText": "Tipo",
   "DateColumnText": "Data modifica",
-  "DirectoryTreeProps": {
+  "DirectoryTreeProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Albero directory",
     "AccessibleName": "Albero delle directory",
     "AccessibleDescription": "Vista gerarchica del file system",
     "ToolTipText": "Sfoglia le directory"
   },
-  "FileTableProps": {
+  "FileTableProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Tabella file",
     "AccessibleName": "Tabella elenco file",
     "AccessibleDescription": "Tabella con i file nella directory corrente",
     "ToolTipText": "Elenco file"
   },
-  "NewFolderDialogProps": {
+  "NewFolderDialogProps":
+  {
     "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
     "Title": "Nuova cartella",
-    "Options": [
-      "OK",
-      "Annulla"
-    ]
+    "Options": ["OK", "Annulla"]
   },
-  "ConfirmDeleteDialogProps": {
+  "ConfirmDeleteDialogProps":
+  {
     "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
     "Title": "Conferma eliminazione",
-    "Options": [
-      "Sì",
-      "No"
-    ]
+    "Options": ["Sì", "No"]
   },
-  "FileTablePopupMenuProps": {
+  "FileTablePopupMenuProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Menu contestuale tabella file",
     "AccessibleName": "Menu contestuale tabella file",
     "AccessibleDescription": "Menu contestuale per le operazioni sulla tabella file"
   },
-  "PopupRefreshMenuItemProps": {
+  "PopupRefreshMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Aggiorna",
     "ToolTipText": "Aggiorna l'elenco file"
   },
-  "PopupPropertiesMenuItemProps": {
+  "PopupPropertiesMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Proprietà",
     "ToolTipText": "Mostra proprietà file"
   },
-  "PopupDeleteMenuItemProps": {
+  "PopupDeleteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Elimina",
     "ToolTipText": "Elimina file selezionato"
   },
-  "WidgetsDemoTabProps": {
+  "WidgetsDemoTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "Widget",
     "ToolTipText": "Dimostrazione dei tipi di widget Resourceful aggiuntivi"
   },
-  "WidgetsPanelProps": {
+  "WidgetsPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Pannello demo widget",
     "AccessibleName": "Pannello demo widget",
     "AccessibleDescription": "Pannello che mostra tutti i tipi di widget Resourceful"
   },
-  "DemoPasswordLabelProps": {
+  "DemoPasswordLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Password:"
   },
-  "DemoPasswordFieldProps": {
+  "DemoPasswordFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Campo password demo",
     "AccessibleName": "Inserimento password",
     "AccessibleDescription": "Inserisci una password (solo dimostrazione)",
     "ToolTipText": "ResourcefulJPasswordField — il testo accessibile si aggiorna al cambio locale"
   },
-  "DemoFormattedLabelProps": {
+  "DemoFormattedLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Data/Ora:"
   },
-  "DemoFormattedTextFieldProps": {
+  "DemoFormattedTextFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Campo testo formattato demo",
     "AccessibleName": "Campo data/ora formattato",
     "AccessibleDescription": "Mostra la data e l''ora correnti nel formato locale",
     "ToolTipText": "ResourcefulJFormattedTextField — formato e testo accessibile si aggiornano al cambio locale"
   },
-  "DemoSpinnerLabelProps": {
+  "DemoSpinnerLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Selezione data:"
   },
-  "DemoSpinnerProps": {
+  "DemoSpinnerProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Spinner demo",
     "AccessibleName": "Spinner data",
     "AccessibleDescription": "Seleziona una data nel formato locale",
     "ToolTipText": "ResourcefulJSpinner — testo accessibile e formato editor si aggiornano al cambio locale"
   },
-  "DemoSliderLabelProps": {
+  "DemoSliderLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Valore:"
   },
-  "DemoSliderProps": {
+  "DemoSliderProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Dispositivo di scorrimento demo",
     "AccessibleName": "Dispositivo di scorrimento valore",
     "AccessibleDescription": "Scorri per selezionare un valore; le etichette dei tick usano la formattazione numerica locale",
     "ToolTipText": "ResourcefulJSlider — etichette tick e testo accessibile si aggiornano al cambio locale"
   },
-  "DemoListLabelProps": {
+  "DemoListLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Giorni:"
   },
-  "DemoListProps": {
+  "DemoListProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Elenco demo",
     "AccessibleName": "Elenco nomi giorni",
     "AccessibleDescription": "Giorni della settimana nel locale corrente",
     "ToolTipText": "ResourcefulJList — testo accessibile si aggiorna al cambio locale; elementi aggiornati dai simboli locali"
   },
-  "DemoListScrollPaneProps": {
+  "DemoListScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento elenco demo"
   },
-  "DemoTextPaneLabelProps": {
+  "DemoTextPaneLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "Note:"
   },
-  "DemoTextPaneProps": {
+  "DemoTextPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro testo demo",
     "AccessibleName": "Riquadro testo note",
     "AccessibleDescription": "Testo formattato con informazioni sul locale",
     "ToolTipText": "ResourcefulJTextPane — testo accessibile si aggiorna al cambio locale; clic destro per ResourcefulJPopupMenu"
   },
-  "DemoTextPaneScrollPaneProps": {
+  "DemoTextPaneScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "Riquadro a scorrimento riquadro testo demo"
   },

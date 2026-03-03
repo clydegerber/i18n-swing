@@ -1,254 +1,289 @@
 {
-  "TestButton": {
+  "TestButton":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Bouton Test",
     "Mnemonic": 84,
     "ToolTipText": "Info-bulle bouton test"
   },
-  "TestToggleButton": {
+  "TestToggleButton":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Bascule Test",
     "Mnemonic": 71,
     "ToolTipText": "Info-bulle bascule test"
   },
-  "TestCheckBox": {
+  "TestCheckBox":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Case Test",
     "Mnemonic": 67,
     "ToolTipText": "Info-bulle case test"
   },
-  "TestRadioButton": {
+  "TestRadioButton":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Bouton Radio Test",
     "Mnemonic": 82,
     "ToolTipText": "Info-bulle bouton radio test"
   },
-  "TestCheckBoxMenuItem": {
+  "TestCheckBoxMenuItem":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Case Menu Test",
     "Mnemonic": 72,
     "ToolTipText": "Info-bulle case menu test"
   },
-  "TestRadioButtonMenuItem": {
+  "TestRadioButtonMenuItem":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Radio Menu Test",
     "Mnemonic": 82,
     "ToolTipText": "Info-bulle radio menu test"
   },
-  "TestLabel": {
+  "TestLabel":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Name": "TestLabel",
     "Text": "Libellé Test",
     "ToolTipText": "Info-bulle libellé test"
   },
-  "TestMenu": {
+  "TestMenu":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Menu Test",
     "Mnemonic": 77,
     "ToolTipText": "Info-bulle menu test"
   },
-  "TestMenuItem": {
+  "TestMenuItem":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "Élément Menu Test",
     "Mnemonic": 73,
     "ToolTipText": "Info-bulle élément menu test"
   },
-  "TestMenuBar": {
+  "TestMenuBar":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestMenuBar nom",
     "ToolTipText": "Info-bulle barre de menus test"
   },
-  "TestPanel": {
+  "TestPanel":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestPanel nom",
     "ToolTipText": "Info-bulle panneau test"
   },
-  "TestComboBox": {
+  "TestComboBox":
+  {
     "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
     "Name": "TestComboBox nom",
     "ToolTipText": "Info-bulle liste déroulante test",
-    "Values": [
-      "Option A",
-      "Option B"
-    ]
+    "Values": ["Option A", "Option B"]
   },
-  "TestToolBar": {
+  "TestToolBar":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestToolBar nom",
     "ToolTipText": "Info-bulle barre d'outils test"
   },
-  "TestProgressBar": {
+  "TestProgressBar":
+  {
     "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
     "Name": "TestProgressBar nom",
     "ToolTipText": "Info-bulle barre de progression test",
     "String": "Chargement..."
   },
-  "TestInternalFrame": {
+  "TestInternalFrame":
+  {
     "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
     "Name": "TestInternalFrame nom",
     "Title": "Cadre Interne Test",
     "ToolTipText": "Info-bulle cadre interne test"
   },
-  "TestTabbedPane": {
+  "TestTabbedPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTabbedPane nom",
     "ToolTipText": "Info-bulle volet à onglets test"
   },
-  "TestTab1": {
+  "TestTab1":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "Onglet Un",
     "ToolTipText": "Info-bulle premier onglet",
     "Mnemonic": 49
   },
-  "TestTab2": {
+  "TestTab2":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "Onglet Deux",
     "ToolTipText": "Info-bulle deuxième onglet",
     "Mnemonic": 50
   },
-  "TestTextField": {
+  "TestTextField":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTextField nom",
     "ToolTipText": "Info-bulle champ de texte test"
   },
-  "TestTextArea": {
+  "TestTextArea":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTextArea nom",
     "ToolTipText": "Info-bulle zone de texte test"
   },
-  "TestEditorPane": {
+  "TestEditorPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestEditorPane nom",
     "ToolTipText": "Info-bulle volet éditeur test"
   },
-  "TestScrollPane": {
+  "TestScrollPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestScrollPane nom",
     "ToolTipText": "Info-bulle volet de défilement test"
   },
-  "TestSplitPane": {
+  "TestSplitPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSplitPane nom",
     "ToolTipText": "Info-bulle volet fractionné test"
   },
-  "TestLayeredPane": {
+  "TestLayeredPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestLayeredPane nom",
     "ToolTipText": "Info-bulle volet en couches test"
   },
-  "TestSeparator": {
+  "TestSeparator":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSeparator nom",
     "ToolTipText": "Info-bulle séparateur test"
   },
-  "TestScrollBar": {
+  "TestScrollBar":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestScrollBar nom",
     "ToolTipText": "Info-bulle barre de défilement test"
   },
-  "TestOptionPane": {
+  "TestOptionPane":
+  {
     "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
     "Title": "Dialogue Test",
-    "Options": [
-      "OK",
-      "Annuler"
-    ],
+    "Options": ["OK", "Annuler"],
     "ToolTipText": "Info-bulle dialogue test",
     "AccessibleName": "Nom accessible dialogue test",
     "AccessibleDescription": "Description accessible dialogue test"
   },
-  "TestTree": {
+  "TestTree":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTree nom",
     "ToolTipText": "Info-bulle arbre test",
     "AccessibleName": "Nom accessible arbre test",
     "AccessibleDescription": "Description accessible arbre test"
   },
-  "TestTable": {
+  "TestTable":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTable nom",
     "ToolTipText": "Info-bulle tableau test",
     "AccessibleName": "Nom accessible tableau test",
     "AccessibleDescription": "Description accessible tableau test"
   },
-  "TestDesktopPane": {
+  "TestDesktopPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestDesktopPane nom",
     "ToolTipText": "Info-bulle volet bureau test",
     "AccessibleName": "Nom accessible volet bureau test",
     "AccessibleDescription": "Description accessible volet bureau test"
   },
-  "TestColorChooser": {
+  "TestColorChooser":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestColorChooser nom",
     "ToolTipText": "Info-bulle sélecteur couleur test",
     "AccessibleName": "Nom accessible sélecteur couleur test",
     "AccessibleDescription": "Description accessible sélecteur couleur test"
   },
-  "TestViewport": {
+  "TestViewport":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestViewport nom",
     "ToolTipText": "Info-bulle fenêtre vue test",
     "AccessibleName": "Nom accessible fenêtre vue test",
     "AccessibleDescription": "Description accessible fenêtre vue test"
   },
-  "TestBox": {
+  "TestBox":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestBox nom",
     "ToolTipText": "Info-bulle boîte test",
     "AccessibleName": "Nom accessible boîte test",
     "AccessibleDescription": "Description accessible boîte test"
   },
-  "TestBoxFiller": {
+  "TestBoxFiller":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestBoxFiller nom",
     "ToolTipText": "Info-bulle remplissage boîte test",
     "AccessibleName": "Nom accessible remplissage boîte test",
     "AccessibleDescription": "Description accessible remplissage boîte test"
   },
-  "TestRootPane": {
+  "TestRootPane":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestRootPane nom",
     "ToolTipText": "Info-bulle volet racine test",
     "AccessibleName": "Nom accessible volet racine test",
     "AccessibleDescription": "Description accessible volet racine test"
   },
-  "TestToolBarSeparator": {
+  "TestToolBarSeparator":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestToolBarSeparator nom",
     "ToolTipText": "Info-bulle séparateur barre outils test",
     "AccessibleName": "Nom accessible séparateur barre outils test",
     "AccessibleDescription": "Description accessible séparateur barre outils test"
   },
-  "TestPopupMenuSeparator": {
+  "TestPopupMenuSeparator":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestPopupMenuSeparator nom",
     "ToolTipText": "Info-bulle séparateur menu contextuel test",
     "AccessibleName": "Nom accessible séparateur menu contextuel test",
     "AccessibleDescription": "Description accessible séparateur menu contextuel test"
   },
-  "TestTableHeader": {
+  "TestTableHeader":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestTableHeader nom",
     "ToolTipText": "Info-bulle en-tête tableau test",
     "AccessibleName": "Nom accessible en-tête tableau test",
     "AccessibleDescription": "Description accessible en-tête tableau test"
   },
-  "TestLayer": {
+  "TestLayer":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestLayer nom",
     "ToolTipText": "Info-bulle couche test",
     "AccessibleName": "Nom accessible couche test",
     "AccessibleDescription": "Description accessible couche test"
   },
-  "TestDesktopIcon": {
+  "TestDesktopIcon":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestDesktopIcon nom",
     "ToolTipText": "Info-bulle icône bureau test",
     "AccessibleName": "Nom accessible icône bureau test",
     "AccessibleDescription": "Description accessible icône bureau test"
   },
-  "TestFileChooser": {
+  "TestFileChooser":
+  {
     "type": "dev.javai18n.swing.JFileChooserPropertyBundle",
     "Name": "TestFileChooser nom",
     "ToolTipText": "Info-bulle sélecteur fichier test",
@@ -258,7 +293,8 @@
     "ApproveButtonText": "Ouvrir",
     "ApproveButtonToolTip": "Ouvrir le fichier sélectionné"
   },
-  "TestToolTip": {
+  "TestToolTip":
+  {
     "type": "dev.javai18n.swing.JToolTipPropertyBundle",
     "Name": "TestToolTip nom",
     "ToolTipText": "Info-bulle infobulle test",
@@ -266,28 +302,32 @@
     "AccessibleDescription": "Description accessible infobulle test",
     "TipText": "Texte d'infobulle test"
   },
-  "TestSpinnerDefaultEditor": {
+  "TestSpinnerDefaultEditor":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSpinnerDefaultEditor nom",
     "ToolTipText": "Info-bulle éditeur compteur défaut test",
     "AccessibleName": "Nom accessible éditeur compteur défaut test",
     "AccessibleDescription": "Description accessible éditeur compteur défaut test"
   },
-  "TestSpinnerDateEditor": {
+  "TestSpinnerDateEditor":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSpinnerDateEditor nom",
     "ToolTipText": "Info-bulle éditeur compteur date test",
     "AccessibleName": "Nom accessible éditeur compteur date test",
     "AccessibleDescription": "Description accessible éditeur compteur date test"
   },
-  "TestSpinnerNumberEditor": {
+  "TestSpinnerNumberEditor":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSpinnerNumberEditor nom",
     "ToolTipText": "Info-bulle éditeur compteur nombre test",
     "AccessibleName": "Nom accessible éditeur compteur nombre test",
     "AccessibleDescription": "Description accessible éditeur compteur nombre test"
   },
-  "TestSpinnerListEditor": {
+  "TestSpinnerListEditor":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "TestSpinnerListEditor nom",
     "ToolTipText": "Info-bulle éditeur compteur liste test",

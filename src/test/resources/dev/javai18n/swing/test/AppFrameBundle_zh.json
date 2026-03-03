@@ -1,5 +1,6 @@
 {
-  "FrameProperties": {
+  "FrameProperties":
+  {
     "type": "dev.javai18n.swing.FramePropertyBundle",
     "Title": "文件浏览器",
     "Font": "Arial-BOLD-28",
@@ -8,139 +9,163 @@
     "AccessibleDescription": "AppFrame 无障碍描述",
     "IconImages": "dev/javai18n/swing/test/MN_Flag.jpg"
   },
-  "MenuBarProps": {
+  "MenuBarProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "JMenuBar 名称"
   },
-  "FileMenuProps": {
+  "FileMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "文件",
     "Mnemonic": 70
   },
-  "NewFolderMenuItemProps": {
+  "NewFolderMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "新建文件夹",
     "Mnemonic": 78,
     "ToolTipText": "创建新文件夹"
   },
-  "DeleteMenuItemProps": {
+  "DeleteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "删除",
     "Mnemonic": 68,
     "ToolTipText": "删除所选项目"
   },
-  "PropertiesMenuItemProps": {
+  "PropertiesMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "属性",
     "Mnemonic": 80,
     "ToolTipText": "显示文件属性"
   },
-  "ExitMenuItemProps": {
+  "ExitMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "退出",
     "Mnemonic": 88,
     "ToolTipText": "退出应用程序"
   },
-  "EditMenuProps": {
+  "EditMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "编辑",
     "Mnemonic": 69
   },
-  "CopyMenuItemProps": {
+  "CopyMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "复制",
     "Mnemonic": 67,
     "ToolTipText": "复制所选项目"
   },
-  "CutMenuItemProps": {
+  "CutMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "剪切",
     "Mnemonic": 84,
     "ToolTipText": "剪切所选项目"
   },
-  "PasteMenuItemProps": {
+  "PasteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "粘贴",
     "Mnemonic": 80,
     "ToolTipText": "粘贴项目"
   },
-  "SelectAllMenuItemProps": {
+  "SelectAllMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "全选",
     "Mnemonic": 65,
     "ToolTipText": "选择所有项目"
   },
-  "ViewMenuProps": {
+  "ViewMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "视图",
     "Mnemonic": 86
   },
-  "RefreshMenuItemProps": {
+  "RefreshMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "刷新",
     "Mnemonic": 82,
     "ToolTipText": "刷新当前目录"
   },
-  "SortByMenuProps": {
+  "SortByMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "排序方式",
     "Mnemonic": 83
   },
-  "SortByNameRadioProps": {
+  "SortByNameRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "名称",
     "Mnemonic": 78,
     "ToolTipText": "按文件名排序"
   },
-  "SortBySizeRadioProps": {
+  "SortBySizeRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "大小",
     "Mnemonic": 83,
     "ToolTipText": "按文件大小排序"
   },
-  "SortByDateRadioProps": {
+  "SortByDateRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "修改日期",
     "Mnemonic": 68,
     "ToolTipText": "按修改日期排序"
   },
-  "ShowHiddenCheckBoxProps": {
+  "ShowHiddenCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "显示隐藏文件",
     "Mnemonic": 72,
     "ToolTipText": "切换隐藏文件的显示"
   },
-  "ShowExtensionsCheckBoxProps": {
+  "ShowExtensionsCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "显示文件扩展名",
     "Mnemonic": 69,
     "ToolTipText": "切换文件扩展名的显示"
   },
-  "FilterMenuProps": {
+  "FilterMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "筛选",
     "Mnemonic": 70,
     "ToolTipText": "筛选文件列表"
   },
-  "AllFileTypesRadioProps": {
+  "AllFileTypesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "所有类型",
     "Mnemonic": 65,
     "ToolTipText": "显示所有文件类型"
   },
-  "TextFilesRadioProps": {
+  "TextFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "文本文件",
     "Mnemonic": 88,
     "ToolTipText": "仅显示文本文件"
   },
-  "ImageFilesRadioProps": {
+  "ImageFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "图像文件",
     "Mnemonic": 73,
     "ToolTipText": "仅显示图像文件"
   },
-  "PreferencesMenuProps": {
+  "PreferencesMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "首选项菜单名称",
     "ToolTipText": "首选项菜单提示",
@@ -149,7 +174,8 @@
     "AccessibleName": "首选项菜单无障碍名称",
     "AccessibleDescription": "首选项菜单无障碍描述"
   },
-  "LocaleMenuProps": {
+  "LocaleMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "区域设置菜单名称",
     "ToolTipText": "区域设置菜单提示",
@@ -158,14 +184,16 @@
     "AccessibleName": "区域设置菜单无障碍名称",
     "AccessibleDescription": "区域设置菜单无障碍描述"
   },
-  "LocaleMenuItemProps": {
+  "LocaleMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "区域设置菜单项名称",
     "ToolTipText": "区域设置菜单项提示",
     "AccessibleName": "区域设置菜单项无障碍名称",
     "AccessibleDescription": "区域设置菜单项无障碍描述"
   },
-  "LookAndFeelMenuProps": {
+  "LookAndFeelMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "外观菜单名称",
     "ToolTipText": "外观菜单提示",
@@ -173,294 +201,345 @@
     "AccessibleName": "外观菜单无障碍名称",
     "AccessibleDescription": "外观菜单无障碍描述"
   },
-  "LookAndFeelMenuItemProps": {
+  "LookAndFeelMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "外观菜单项名称",
     "ToolTipText": "外观菜单项提示",
     "AccessibleName": "外观菜单项无障碍名称",
     "AccessibleDescription": "外观菜单项无障碍描述"
   },
-  "LocaleSetMenuProps": {
+  "LocaleSetMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "区域设置集",
     "Mnemonic": 83,
     "ToolTipText": "选择可用的区域设置集"
   },
-  "LoggerLocalesRadioProps": {
+  "LoggerLocalesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "日志区域设置",
     "Mnemonic": 76,
     "ToolTipText": "使用日志区域设置（8 个区域设置）"
   },
-  "AllLocalesRadioProps": {
+  "AllLocalesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "所有 JVM 区域设置",
     "Mnemonic": 65,
     "ToolTipText": "使用所有 JVM 区域设置"
   },
-  "LoggerLocaleMenuProps": {
+  "LoggerLocaleMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "日志区域设置",
     "Mnemonic": 71,
     "ToolTipText": "控制日志区域设置"
   },
-  "JvmDefaultLocaleRadioProps": {
+  "JvmDefaultLocaleRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "JVM 默认值",
     "Mnemonic": 74,
     "ToolTipText": "使用 JVM 默认区域设置进行日志记录"
   },
-  "CurrentLocaleRadioProps": {
+  "CurrentLocaleRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "当前选择",
     "Mnemonic": 67,
     "ToolTipText": "使用当前区域设置选择进行日志记录"
   },
-  "HelpMenuProps": {
+  "HelpMenuProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "帮助",
     "Mnemonic": 72
   },
-  "AboutMenuItemProps": {
+  "AboutMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "关于",
     "Mnemonic": 65,
     "ToolTipText": "关于此应用程序"
   },
-  "NavToolBarProps": {
+  "NavToolBarProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "导航工具栏",
     "ToolTipText": "导航工具栏"
   },
-  "BackButtonProps": {
+  "BackButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "后退",
     "ToolTipText": "后退"
   },
-  "ForwardButtonProps": {
+  "ForwardButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "前进",
     "ToolTipText": "前进"
   },
-  "UpButtonProps": {
+  "UpButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "向上",
     "ToolTipText": "向上一级"
   },
-  "HomeButtonProps": {
+  "HomeButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "主目录",
     "ToolTipText": "转到主目录"
   },
-  "RefreshButtonProps": {
+  "RefreshButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "刷新",
     "ToolTipText": "刷新当前目录"
   },
-  "NewFolderButtonProps": {
+  "NewFolderButtonProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "新建文件夹",
     "ToolTipText": "创建新文件夹"
   },
-  "ToolBarSeparatorProps": {
+  "ToolBarSeparatorProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "工具栏分隔符"
   },
-  "ListViewToggleProps": {
+  "ListViewToggleProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "列表",
     "ToolTipText": "列表视图"
   },
-  "DetailViewToggleProps": {
+  "DetailViewToggleProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "详细信息",
     "ToolTipText": "详细信息视图"
   },
-  "MainSplitPaneProps": {
+  "MainSplitPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "主分割窗格",
     "ToolTipText": "主内容分割窗格"
   },
-  "TreeScrollPaneProps": {
+  "TreeScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "树形滚动窗格",
     "ToolTipText": "目录树滚动窗格"
   },
-  "ContentTabbedPaneProps": {
+  "ContentTabbedPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "内容选项卡窗格",
     "ToolTipText": "内容选项卡"
   },
-  "FilesTabProps": {
+  "FilesTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "文件",
     "ToolTipText": "文件列表"
   },
-  "PreviewTabProps": {
+  "PreviewTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "预览",
     "ToolTipText": "文件预览"
   },
-  "PropertiesTabProps": {
+  "PropertiesTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "属性",
     "ToolTipText": "文件属性"
   },
-  "TableScrollPaneProps": {
+  "TableScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "表格滚动窗格",
     "ToolTipText": "文件表格滚动窗格"
   },
-  "FileListViewProps": {
+  "FileListViewProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "文件列表视图",
     "ToolTipText": "目录内容的图标视图"
   },
-  "ListScrollPaneProps": {
+  "ListScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "列表滚动窗格",
     "ToolTipText": "文件列表滚动窗格"
   },
-  "PreviewTextAreaProps": {
+  "PreviewTextAreaProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "预览文本区域",
     "ToolTipText": "纯文本文件预览"
   },
-  "PreviewEditorPaneProps": {
+  "PreviewEditorPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "预览编辑器窗格",
     "ToolTipText": "富文本文件预览"
   },
-  "PreviewScrollPaneProps": {
+  "PreviewScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "预览滚动窗格",
     "ToolTipText": "预览滚动窗格"
   },
-  "PathPanelProps": {
+  "PathPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "路径面板",
     "ToolTipText": "路径栏面板"
   },
-  "PathLabelProps": {
+  "PathLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "路径：",
     "ToolTipText": "当前路径标签"
   },
-  "PathTextFieldProps": {
+  "PathTextFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "路径文本框",
     "ToolTipText": "输入路径进行导航"
   },
-  "FilterPanelProps": {
+  "FilterPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "筛选面板",
     "ToolTipText": "文件筛选面板"
   },
-  "AllFilesRadioProps": {
+  "AllFilesRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "所有文件",
     "ToolTipText": "显示所有文件"
   },
-  "DirsOnlyRadioProps": {
+  "DirsOnlyRadioProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "仅目录",
     "ToolTipText": "仅显示目录"
   },
-  "ReadOnlyCheckBoxProps": {
+  "ReadOnlyCheckBoxProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "只读",
     "ToolTipText": "文件为只读"
   },
-  "StatusPanelProps": {
+  "StatusPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "状态面板",
     "ToolTipText": "状态栏面板"
   },
-  "FlagLabelProps": {
+  "FlagLabelProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "FlagLabel",
     "Text": "我的旗帜",
     "Icon": "dev/javai18n/swing/test/MN_Flag.jpg"
   },
-  "StatusLabelProps": {
+  "StatusLabelProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "就绪",
     "ToolTipText": "应用程序状态"
   },
-  "FileCountLabelProps": {
+  "FileCountLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "0 个项目",
     "ToolTipText": "当前目录中的项目数"
   },
-  "ScanProgressBarProps": {
+  "ScanProgressBarProps":
+  {
     "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
     "Name": "扫描进度条",
     "ToolTipText": "目录扫描进度",
     "String": "正在扫描..."
   },
-  "FileTypeFilterComboBoxProps": {
+  "FileTypeFilterComboBoxProps":
+  {
     "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
     "Name": "文件类型筛选",
     "ToolTipText": "按文件类型筛选",
-    "Values": [
-      "所有文件",
-      "文本文件",
-      "图像文件"
-    ]
+    "Values": ["所有文件", "文本文件", "图像文件"]
   },
-  "PanelProps": {
+  "PanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "JPanel 名称",
     "ToolTipText": "JPanel 提示"
   },
-  "PropertiesPanelProps": {
+  "PropertiesPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "属性面板",
     "ToolTipText": "文件属性面板"
   },
-  "FileNameLabelProps": {
+  "FileNameLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "名称：{0}",
     "ToolTipText": "文件名"
   },
-  "FileSizeLabelProps": {
+  "FileSizeLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "大小：{0}",
     "ToolTipText": "文件大小"
   },
-  "FileTypeLabelProps": {
+  "FileTypeLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "类型：{0}",
     "ToolTipText": "文件类型"
   },
-  "FileModifiedLabelProps": {
+  "FileModifiedLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "修改时间：{0}",
     "ToolTipText": "最后修改日期"
   },
-  "FilePathLabelProps": {
+  "FilePathLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "位置：{0}",
     "ToolTipText": "文件位置"
   },
-  "InfoDesktopPaneProps": {
+  "InfoDesktopPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "信息桌面窗格",
     "AccessibleName": "快速信息桌面窗格",
     "AccessibleDescription": "包含快速信息面板的桌面窗格"
   },
-  "InfoInternalFrameProps": {
+  "InfoInternalFrameProps":
+  {
     "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
     "Name": "快速信息",
     "Title": "快速信息",
     "ToolTipText": "文件快速信息"
   },
-  "InfoContentLabelProps": {
+  "InfoContentLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "选择文件以查看信息",
     "ToolTipText": "文件快速信息"
   },
-  "StatusBarSeparatorProps": {
+  "StatusBarSeparatorProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": " | "
   },
@@ -482,139 +561,157 @@
   "SizeColumnText": "大小",
   "TypeColumnText": "类型",
   "DateColumnText": "修改日期",
-  "DirectoryTreeProps": {
+  "DirectoryTreeProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "目录树",
     "AccessibleName": "目录树",
     "AccessibleDescription": "文件系统的层次结构视图",
     "ToolTipText": "浏览目录"
   },
-  "FileTableProps": {
+  "FileTableProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "文件表格",
     "AccessibleName": "文件列表表格",
     "AccessibleDescription": "显示当前目录中文件的表格",
     "ToolTipText": "文件列表"
   },
-  "NewFolderDialogProps": {
+  "NewFolderDialogProps":
+  {
     "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
     "Title": "新建文件夹",
-    "Options": [
-      "确定",
-      "取消"
-    ]
+    "Options": ["确定", "取消"]
   },
-  "ConfirmDeleteDialogProps": {
+  "ConfirmDeleteDialogProps":
+  {
     "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
     "Title": "确认删除",
-    "Options": [
-      "是",
-      "否"
-    ]
+    "Options": ["是", "否"]
   },
-  "FileTablePopupMenuProps": {
+  "FileTablePopupMenuProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "文件表格上下文菜单",
     "AccessibleName": "文件表格上下文菜单",
     "AccessibleDescription": "文件表格操作的上下文菜单"
   },
-  "PopupRefreshMenuItemProps": {
+  "PopupRefreshMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "刷新",
     "ToolTipText": "刷新文件列表"
   },
-  "PopupPropertiesMenuItemProps": {
+  "PopupPropertiesMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "属性",
     "ToolTipText": "显示文件属性"
   },
-  "PopupDeleteMenuItemProps": {
+  "PopupDeleteMenuItemProps":
+  {
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Text": "删除",
     "ToolTipText": "删除所选文件"
   },
-  "WidgetsDemoTabProps": {
+  "WidgetsDemoTabProps":
+  {
     "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
     "Title": "小部件",
     "ToolTipText": "演示其他 Resourceful 小部件类型"
   },
-  "WidgetsPanelProps": {
+  "WidgetsPanelProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "小部件演示面板",
     "AccessibleName": "小部件演示面板",
     "AccessibleDescription": "演示所有 Resourceful 小部件类型的面板"
   },
-  "DemoPasswordLabelProps": {
+  "DemoPasswordLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "密码："
   },
-  "DemoPasswordFieldProps": {
+  "DemoPasswordFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示密码框",
     "AccessibleName": "密码输入",
     "AccessibleDescription": "输入密码（仅供演示）",
     "ToolTipText": "ResourcefulJPasswordField — 区域设置更改时无障碍文本更新"
   },
-  "DemoFormattedLabelProps": {
+  "DemoFormattedLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "日期/时间："
   },
-  "DemoFormattedTextFieldProps": {
+  "DemoFormattedTextFieldProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示格式化文本框",
     "AccessibleName": "格式化日期/时间字段",
     "AccessibleDescription": "以区域设置格式显示当前日期和时间",
     "ToolTipText": "ResourcefulJFormattedTextField — 区域设置更改时格式和无障碍文本更新"
   },
-  "DemoSpinnerLabelProps": {
+  "DemoSpinnerLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "日期选择："
   },
-  "DemoSpinnerProps": {
+  "DemoSpinnerProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示微调器",
     "AccessibleName": "日期微调器",
     "AccessibleDescription": "使用区域设置格式选择日期",
     "ToolTipText": "ResourcefulJSpinner — 区域设置更改时无障碍文本和编辑器格式更新"
   },
-  "DemoSliderLabelProps": {
+  "DemoSliderLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "值："
   },
-  "DemoSliderProps": {
+  "DemoSliderProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示滑块",
     "AccessibleName": "值滑块",
     "AccessibleDescription": "滑动选择值；刻度标签使用区域设置数字格式",
     "ToolTipText": "ResourcefulJSlider — 区域设置更改时刻度标签和无障碍文本更新"
   },
-  "DemoListLabelProps": {
+  "DemoListLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "天："
   },
-  "DemoListProps": {
+  "DemoListProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示列表",
     "AccessibleName": "星期名称列表",
     "AccessibleDescription": "当前区域设置的星期名称",
     "ToolTipText": "ResourcefulJList — 区域设置更改时无障碍文本更新；从区域设置符号刷新项目"
   },
-  "DemoListScrollPaneProps": {
+  "DemoListScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示列表滚动窗格"
   },
-  "DemoTextPaneLabelProps": {
+  "DemoTextPaneLabelProps":
+  {
     "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "备注："
   },
-  "DemoTextPaneProps": {
+  "DemoTextPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示文本窗格",
     "AccessibleName": "备注文本窗格",
     "AccessibleDescription": "显示区域设置信息的样式文本",
     "ToolTipText": "ResourcefulJTextPane — 区域设置更改时无障碍文本更新；右键单击使用 ResourcefulJPopupMenu"
   },
-  "DemoTextPaneScrollPaneProps": {
+  "DemoTextPaneScrollPaneProps":
+  {
     "type": "dev.javai18n.swing.JComponentPropertyBundle",
     "Name": "演示文本窗格滚动窗格"
   },

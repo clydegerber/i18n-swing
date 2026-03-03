@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "About File Explorer",
+    "Name": "AboutDialog name",
+    "AccessibleName": "AboutDialog Accessible name",
+    "AccessibleDescription": "AboutDialog Accessible description"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "File Explorer",
+    "ToolTipText": "Application name"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Version 1.0",
+    "ToolTipText": "Application version"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Locale:",
+    "ToolTipText": "Current locale"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Close",
+    "Mnemonic": 67,
+    "ToolTipText": "Close this dialog"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "Current locale value"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "Current look and feel"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "Dialog Panel"
+  }
+}

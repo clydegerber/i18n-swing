@@ -6,24 +6,10 @@ This library provides locale-aware Swing components that automatically update
 their text, icons, fonts, mnemonics, tooltips, and accessibility attributes
 when the application locale changes.
 
-## Components
-
-| Class | Extends | Localized Properties |
-|---|---|---|
-| `ResourcefulJButton` | `JButton` | name, tooltip, font, text, mnemonic, accessible name/description, icons (normal, pressed, selected, disabled, disabled selected, rollover, rollover selected) |
-| `ResourcefulJLabel` | `JLabel` | name, tooltip, font, text, mnemonic, icons (normal, disabled) |
-| `ResourcefulJMenu` | `JMenu` | name, tooltip, font, text, mnemonic, accessible name/description |
-| `ResourcefulJMenuBar` | `JMenuBar` | name, tooltip, font, accessible name/description |
-| `ResourcefulJMenuItem` | `JMenuItem` | name, tooltip, font, text, mnemonic, accessible name/description |
-| `ResourcefulJPanel` | `JPanel` | name, tooltip, font, accessible name/description |
-| `ResourcefulJComboBox` | `JComboBox` | name, tooltip, font, accessible name/description |
-| `LocaleJMenuItem` | `ResourcefulJMenuItem` | Displays a locale name and sets the application locale when selected |
-| `LookAndFeelJMenuItem` | `ResourcefulJMenuItem` | Displays a Look and Feel name and applies it when selected |
-
 ## Requirements
 
-- Java 16 or later
-- [i18n-core](https://github.com/clydegerber/i18n) (provided as a transitive dependency)
+- Java 25 or later
+- [i18n-core](https://github.com/clydegerber/i18n) 1.2.1 or later (pulled in transitively)
 
 ## Installation
 
@@ -33,7 +19,7 @@ when the application locale changes.
 <dependency>
     <groupId>dev.javai18n</groupId>
     <artifactId>i18n-swing</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -46,43 +32,187 @@ module my.module
 }
 ```
 
+## Components
+
+### Localizable top-level containers
+
+These classes serve as the locale-event source for all Resourceful components they own.
+They implement `Localizable` and dispatch locale events on the EDT when `setBundleLocale()` is called.
+
+| Class | Extends | Notes |
+|---|---|---|
+| `LocalizableJFrame` | `JFrame` | Standard application frame; bundle key `"windowProperties"` uses `FramePropertyBundle` |
+| `LocalizableJDialog` | `JDialog` | Modal or non-modal dialog; bundle key `"windowProperties"` uses `FramePropertyBundle` |
+| `LocalizableJWindow` | `JWindow` | Undecorated window; bundle key `"windowProperties"` uses `WindowPropertyBundle` |
+
+### Resourceful components
+
+All Resourceful components implement `Resourceful` and `LocaleEventListener`.
+Each receives an `updateLocaleSpecificValues()` call on the EDT whenever its source fires a locale change.
+
+The base set of localized properties for every Resourceful component is:
+**name, tooltip, font, accessible name, accessible description** (from `JComponentPropertyBundle`).
+Additional properties are noted in the table below.
+
+**Buttons and toggles**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJButton` | `JButton` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJCheckBox` | `JCheckBox` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJRadioButton` | `JRadioButton` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJToggleButton` | `JToggleButton` | text, label, mnemonic, 7 icon types |
+
+**Menus**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJMenu` | `JMenu` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJMenuBar` | `JMenuBar` | — |
+| `ResourcefulJMenuItem` | `JMenuItem` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJCheckBoxMenuItem` | `JCheckBoxMenuItem` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJRadioButtonMenuItem` | `JRadioButtonMenuItem` | text, label, mnemonic, 7 icon types |
+| `ResourcefulJPopupMenu` | `JPopupMenu` | — |
+| `ResourcefulJPopupMenuSeparator` | `JPopupMenu.Separator` | — |
+
+**Text components**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJTextField` | `JTextField` | — |
+| `ResourcefulJTextArea` | `JTextArea` | — |
+| `ResourcefulJEditorPane` | `JEditorPane` | — |
+| `ResourcefulJTextPane` | `JTextPane` | — |
+| `ResourcefulJPasswordField` | `JPasswordField` | — |
+| `ResourcefulJFormattedTextField` | `JFormattedTextField` | — |
+
+**Data and selection**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJComboBox` | `JComboBox` | item values (string array) |
+| `ResourcefulJList` | `JList` | — |
+| `ResourcefulJSpinner` | `JSpinner` | — |
+| `ResourcefulJSlider` | `JSlider` | — |
+| `ResourcefulJTree` | `JTree` | — |
+| `ResourcefulJTable` | `JTable` | — |
+| `ResourcefulJTableHeader` | `JTableHeader` | — |
+| `ResourcefulJProgressBar` | `JProgressBar` | progress string |
+| `ResourcefulJScrollBar` | `JScrollBar` | — |
+| `ResourcefulJColorChooser` | `JColorChooser` | — |
+| `ResourcefulJFileChooser` | `JFileChooser` | dialog title, approve button text, approve button tooltip |
+
+**Panes and containers**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJPanel` | `JPanel` | — |
+| `ResourcefulJScrollPane` | `JScrollPane` | — |
+| `ResourcefulJSplitPane` | `JSplitPane` | — |
+| `ResourcefulJTabbedPane` | `JTabbedPane` | tab titles, tab tooltips, tab icons (per-tab via `JTabbedPaneTabPropertyBundle`) |
+| `ResourcefulJInternalFrame` | `JInternalFrame` | title, frame icon |
+| `ResourcefulJLayeredPane` | `JLayeredPane` | — |
+| `ResourcefulJDesktopPane` | `JDesktopPane` | — |
+| `ResourcefulJDesktopIcon` | `JDesktopIcon` | — |
+| `ResourcefulJRootPane` | `JRootPane` | — |
+| `ResourcefulJViewport` | `JViewport` | — |
+| `ResourcefulJOptionPane` | `JOptionPane` | dialog title, button option labels |
+
+**Layout helpers and decorators**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulBox` | `Box` | — |
+| `ResourcefulBoxFiller` | `Box.Filler` | — |
+| `ResourcefulJLabel` | `JLabel` | text, mnemonic, icon, disabled icon |
+| `ResourcefulJSeparator` | `JSeparator` | — |
+| `ResourcefulJToolBar` | `JToolBar` | — |
+| `ResourcefulJToolBarSeparator` | `JToolBar.Separator` | — |
+| `ResourcefulJToolTip` | `JToolTip` | tip text |
+
+**Spinner editors**
+
+| Class | Extends | Additional Localized Properties |
+|---|---|---|
+| `ResourcefulJSpinnerDefaultEditor` | `JSpinner.DefaultEditor` | — |
+| `ResourcefulJSpinnerDateEditor` | `JSpinner.DateEditor` | — |
+| `ResourcefulJSpinnerNumberEditor` | `JSpinner.NumberEditor` | — |
+| `ResourcefulJSpinnerListEditor` | `JSpinner.ListEditor` | — |
+
+### Utility menu items
+
+| Class | Extends | Description |
+|---|---|---|
+| `LocaleJMenuItem` | `ResourcefulJMenuItem` | Displays a locale name; sets the application locale when selected |
+| `LookAndFeelJMenuItem` | `ResourcefulJMenuItem` | Displays a Look and Feel name; applies it when selected |
+
+## Property Bundles
+
+Property bundles are typed `AttributeCollection` implementations that carry the localized
+values read from a JSON or XML resource file. No code generation or compilation step is needed
+to add new bundle entries.
+
+| Bundle | Extends | Fields |
+|---|---|---|
+| `ComponentPropertyBundle` | — | name, font, accessible name, accessible description |
+| `JComponentPropertyBundle` | `ComponentPropertyBundle` | + tooltip |
+| `ButtonPropertyBundle` | `ComponentPropertyBundle` | + label |
+| `AbstractButtonPropertyBundle` | `JComponentPropertyBundle` | + text, label, mnemonic, icon, pressed icon, selected icon, disabled icon, disabled selected icon, rollover icon, rollover selected icon |
+| `JLabelPropertyBundle` | `JComponentPropertyBundle` | + text, mnemonic, icon, disabled icon |
+| `JComboBoxPropertyBundle` | `JComponentPropertyBundle` | + values (string array) |
+| `JProgressBarPropertyBundle` | `JComponentPropertyBundle` | + progress string |
+| `JInternalFramePropertyBundle` | `JComponentPropertyBundle` | + title, frame icon |
+| `JTabbedPaneTabPropertyBundle` | — | tab title, tab tooltip, tab icon (one entry per tab) |
+| `JOptionPanePropertyBundle` | `JComponentPropertyBundle` | + title, options (string array) |
+| `JFileChooserPropertyBundle` | `JComponentPropertyBundle` | + dialog title, approve button text, approve button tooltip |
+| `JToolTipPropertyBundle` | `JComponentPropertyBundle` | + tip text |
+| `WindowPropertyBundle` | `ComponentPropertyBundle` | + icon images (list) |
+| `FramePropertyBundle` | `WindowPropertyBundle` | + title |
+
 ## Quick Start
 
-### 1. Define a Localizable source
+### 1. Create a Localizable frame subclass
 
 ```java
-public class MyFrame extends LocalizableImpl
+public class MyFrame extends LocalizableJFrame
 {
     static
     {
-        GetResourceBundleRegistrar
-            .registerGetResourceBundleCallback(callback);
+        MyModuleRegistrar.ensureRegistered();
+    }
+
+    @Override
+    public Locale[] getAvailableLocales()
+    {
+        return new Locale[]{ Locale.ROOT, Locale.FRANCE };
     }
 }
 ```
 
-### 2. Create a resource bundle with component properties
+### 2. Define a resource bundle
 
 **MyFrameBundle.json:**
+
 ```json
 {
     "okButton":
     {
         "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
-        "text": "OK",
-        "mnemonic": 79
+        "Text": "OK",
+        "Mnemonic": 79
     }
 }
 ```
 
 **MyFrameBundle_fr.json:**
+
 ```json
 {
     "okButton":
     {
         "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
-        "text": "D'accord",
-        "mnemonic": 68
+        "Text": "D'accord",
+        "Mnemonic": 68
     }
 }
 ```
@@ -90,23 +220,14 @@ public class MyFrame extends LocalizableImpl
 ### 3. Create a Resourceful component
 
 ```java
+MyFrame myFrame = MyFrame.create();
 Resource okResource = new Resource(myFrame, "okButton");
 ResourcefulJButton okButton = ResourcefulJButton.create(okResource);
 ```
 
-The button automatically displays the correct text, mnemonic, and other
-properties for the current locale. When `myFrame.setBundleLocale()` is
-called, the button updates itself on the Event Dispatch Thread.
-
-## Property Bundles
-
-Components use typed property bundles to define their localized attributes:
-
-- **`JComponentPropertyBundle`** — name, tooltip, font, accessible name/description
-- **`AbstractButtonPropertyBundle`** — extends `JComponentPropertyBundle` with text, label, mnemonic, and icons
-
-These bundles implement `AttributeCollection` and can be defined in JSON
-or XML resource files without any code or compilation.
+The button displays the correct text, mnemonic, and other properties for the current locale.
+When `myFrame.setBundleLocale(locale)` is called, every attached Resourceful component
+updates itself on the Event Dispatch Thread.
 
 ## Building
 
@@ -122,16 +243,16 @@ mvn -Prelease clean package
 
 ## Testing
 
+To execute unit tests on the classpath (default):
+
+```bash
+mvn clean test
+```
+
 To execute unit tests under JPMS:
 
 ```bash
 mvn clean test -Ptest-modulepath
-```
-
-To execute unit tests on the classpath:
-
-```bash
-mvn clean test
 ```
 
 ## License

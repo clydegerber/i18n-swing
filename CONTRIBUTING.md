@@ -5,9 +5,9 @@ test, and submit changes.
 
 ## Prerequisites
 
-- **Java 17** or later
+- **Java 25** or later
 - **Maven** (included with Apache NetBeans, or install separately)
-- **i18n-core** installed to local repository (`mvn install` from the i18n project)
+- **i18n-core 1.2.1** installed to local Maven repository (`mvn install` from the i18n project)
 
 ## Building
 
@@ -41,7 +41,7 @@ All three must pass before submitting a pull request.
 
 The project follows these conventions:
 
-- **Allman brace style** — opening brace on its own line:
+- **Allman brace style** — opening brace on its own line for all declarations and control flow:
 
   ```java
   if (condition)
@@ -50,12 +50,33 @@ The project follows these conventions:
   }
   ```
 
+  JSON resource bundle files follow the same convention — object values have `{` on its own line;
+  scalar-only arrays are kept inline:
+
+  ```json
+  {
+      "myButton":
+      {
+          "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+          "Options": ["OK", "Cancel"]
+      }
+  }
+  ```
+
 - **Apache License 2.0 header** on every source file
-- **Javadoc on all public and protected members** — `doclint all` must produce
-  zero warnings
+- **Javadoc on all public and protected members** — `doclint all` must produce zero warnings
 - **Yoda-style null checks** — `null == x` rather than `x == null`
 - **No wildcard imports** — always use explicit imports
 - **4-space indentation, no tabs**
+
+## Adding a New Resourceful Component
+
+1. Extend the target Swing class and implement `Resourceful` and `LocaleEventListener`
+2. Add a `SwingResourcefulDelegate` field; wire `this::setLocale` and `this::updateLocaleSpecificValues`
+3. Implement a `static create(Resource)` factory (plus any alternate factories the Swing class provides)
+4. Override `updateLocaleSpecificValues()` to read from the appropriate `PropertyBundle` type
+5. Add unit tests in `src/test/java/dev/javai18n/swing/test/` with both `testInitialProperties` and `testLocaleChange` test methods
+6. Add bundle entries (English and French at minimum) to `TestComponentSourceBundle.json` and `TestComponentSourceBundle_fr.json`
 
 ## Submitting Changes
 

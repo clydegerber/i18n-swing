@@ -93,9 +93,14 @@ public class AppDialog extends LocalizableJDialog
     {
         Locale[] locales =
         {
-            Locale.US,
-            Locale.FRANCE,
-            Locale.GERMANY
+            Locale.ROOT,
+            Locale.ENGLISH,
+            Locale.CHINESE,
+            Locale.FRENCH,
+            Locale.GERMAN,
+            Locale.ITALIAN,
+            Locale.JAPANESE,
+            Locale.KOREAN
         };
         return locales;
     }

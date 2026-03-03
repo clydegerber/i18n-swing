@@ -1,0 +1,1059 @@
+{
+  "FrameProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "파일 탐색기",
+    "Font": "Arial-BOLD-28",
+    "Name": "AppFrame 이름",
+    "AccessibleName": "AppFrame 접근성 이름",
+    "AccessibleDescription": "AppFrame 접근성 설명",
+    "IconImages": "dev/javai18n/swing/test/MN_Flag.jpg"
+  },
+  "MenuBarProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "JMenuBar 이름"
+  },
+  "FileMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "파일",
+    "Mnemonic": 70
+  },
+  "NewFolderMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "새 폴더",
+    "Mnemonic": 78,
+    "ToolTipText": "새 폴더 만들기"
+  },
+  "DeleteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "삭제",
+    "Mnemonic": 68,
+    "ToolTipText": "선택한 항목 삭제"
+  },
+  "PropertiesMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "속성",
+    "Mnemonic": 80,
+    "ToolTipText": "파일 속성 표시"
+  },
+  "ExitMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "종료",
+    "Mnemonic": 88,
+    "ToolTipText": "애플리케이션 종료"
+  },
+  "EditMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "편집",
+    "Mnemonic": 69
+  },
+  "CopyMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "복사",
+    "Mnemonic": 67,
+    "ToolTipText": "선택한 항목 복사"
+  },
+  "CutMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "잘라내기",
+    "Mnemonic": 84,
+    "ToolTipText": "선택한 항목 잘라내기"
+  },
+  "PasteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "붙여넣기",
+    "Mnemonic": 80,
+    "ToolTipText": "항목 붙여넣기"
+  },
+  "SelectAllMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "모두 선택",
+    "Mnemonic": 65,
+    "ToolTipText": "모든 항목 선택"
+  },
+  "ViewMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "보기",
+    "Mnemonic": 86
+  },
+  "RefreshMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "새로 고침",
+    "Mnemonic": 82,
+    "ToolTipText": "현재 디렉토리 새로 고침"
+  },
+  "SortByMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "정렬 기준",
+    "Mnemonic": 83
+  },
+  "SortByNameRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "이름",
+    "Mnemonic": 78,
+    "ToolTipText": "파일 이름으로 정렬"
+  },
+  "SortBySizeRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "크기",
+    "Mnemonic": 83,
+    "ToolTipText": "파일 크기로 정렬"
+  },
+  "SortByDateRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "수정한 날짜",
+    "Mnemonic": 68,
+    "ToolTipText": "수정 날짜로 정렬"
+  },
+  "ShowHiddenCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "숨겨진 파일 표시",
+    "Mnemonic": 72,
+    "ToolTipText": "숨겨진 파일 표시 전환"
+  },
+  "ShowExtensionsCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "파일 확장명 표시",
+    "Mnemonic": 69,
+    "ToolTipText": "파일 확장명 표시 전환"
+  },
+  "FilterMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "필터",
+    "Mnemonic": 70,
+    "ToolTipText": "파일 목록 필터"
+  },
+  "AllFileTypesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "모든 유형",
+    "Mnemonic": 65,
+    "ToolTipText": "모든 파일 유형 표시"
+  },
+  "TextFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "텍스트 파일",
+    "Mnemonic": 88,
+    "ToolTipText": "텍스트 파일만 표시"
+  },
+  "ImageFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "이미지 파일",
+    "Mnemonic": 73,
+    "ToolTipText": "이미지 파일만 표시"
+  },
+  "PreferencesMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "기본 설정 메뉴 이름",
+    "ToolTipText": "기본 설정 메뉴 도구 설명",
+    "Text": "기본 설정",
+    "Mnemonic": 80,
+    "AccessibleName": "기본 설정 메뉴 접근성 이름",
+    "AccessibleDescription": "기본 설정 메뉴 접근성 설명"
+  },
+  "LocaleMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "로캘 메뉴 이름",
+    "ToolTipText": "로캘 메뉴 도구 설명",
+    "Text": "로캘",
+    "Mnemonic": 76,
+    "AccessibleName": "로캘 메뉴 접근성 이름",
+    "AccessibleDescription": "로캘 메뉴 접근성 설명"
+  },
+  "LocaleMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "로캘 메뉴 항목 이름",
+    "ToolTipText": "로캘 메뉴 항목 도구 설명",
+    "AccessibleName": "로캘 메뉴 항목 접근성 이름",
+    "AccessibleDescription": "로캘 메뉴 항목 접근성 설명"
+  },
+  "LookAndFeelMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "외관 메뉴 이름",
+    "ToolTipText": "외관 메뉴 도구 설명",
+    "Text": "외관",
+    "AccessibleName": "외관 메뉴 접근성 이름",
+    "AccessibleDescription": "외관 메뉴 접근성 설명"
+  },
+  "LookAndFeelMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "외관 메뉴 항목 이름",
+    "ToolTipText": "외관 메뉴 항목 도구 설명",
+    "AccessibleName": "외관 메뉴 항목 접근성 이름",
+    "AccessibleDescription": "외관 메뉴 항목 접근성 설명"
+  },
+  "LocaleSetMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "로캘 세트",
+    "Mnemonic": 83,
+    "ToolTipText": "사용 가능한 로캘 세트 선택"
+  },
+  "LoggerLocalesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "로거 로캘",
+    "Mnemonic": 76,
+    "ToolTipText": "로거 로캘 사용 (8개 로캘)"
+  },
+  "AllLocalesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "모든 JVM 로캘",
+    "Mnemonic": 65,
+    "ToolTipText": "모든 JVM 로캘 사용"
+  },
+  "LoggerLocaleMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "로거 로캘",
+    "Mnemonic": 71,
+    "ToolTipText": "로거 로캘 제어"
+  },
+  "JvmDefaultLocaleRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "JVM 기본값",
+    "Mnemonic": 74,
+    "ToolTipText": "로깅에 JVM 기본 로캘 사용"
+  },
+  "CurrentLocaleRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "현재 선택",
+    "Mnemonic": 67,
+    "ToolTipText": "로깅에 현재 로캘 선택 사용"
+  },
+  "HelpMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "도움말",
+    "Mnemonic": 72
+  },
+  "AboutMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "정보",
+    "Mnemonic": 65,
+    "ToolTipText": "이 애플리케이션 정보"
+  },
+  "NavToolBarProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "탐색 도구 모음",
+    "ToolTipText": "탐색 도구 모음"
+  },
+  "BackButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "뒤로",
+    "ToolTipText": "뒤로 이동"
+  },
+  "ForwardButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "앞으로",
+    "ToolTipText": "앞으로 이동"
+  },
+  "UpButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "위로",
+    "ToolTipText": "한 단계 위로"
+  },
+  "HomeButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "홈",
+    "ToolTipText": "홈 디렉토리로 이동"
+  },
+  "RefreshButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "새로 고침",
+    "ToolTipText": "현재 디렉토리 새로 고침"
+  },
+  "NewFolderButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "새 폴더",
+    "ToolTipText": "새 폴더 만들기"
+  },
+  "ToolBarSeparatorProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "도구 모음 구분선"
+  },
+  "ListViewToggleProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "목록",
+    "ToolTipText": "목록 보기"
+  },
+  "DetailViewToggleProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "자세히",
+    "ToolTipText": "자세히 보기"
+  },
+  "MainSplitPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "기본 분할 창",
+    "ToolTipText": "기본 콘텐츠 분할 창"
+  },
+  "TreeScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "트리 스크롤 창",
+    "ToolTipText": "디렉토리 트리 스크롤 창"
+  },
+  "ContentTabbedPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "콘텐츠 탭 창",
+    "ToolTipText": "콘텐츠 탭"
+  },
+  "FilesTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "파일",
+    "ToolTipText": "파일 목록"
+  },
+  "PreviewTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "미리 보기",
+    "ToolTipText": "파일 미리 보기"
+  },
+  "PropertiesTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "속성",
+    "ToolTipText": "파일 속성"
+  },
+  "TableScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "표 스크롤 창",
+    "ToolTipText": "파일 표 스크롤 창"
+  },
+  "FileListViewProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "파일 목록 보기",
+    "ToolTipText": "디렉토리 내용의 아이콘 보기"
+  },
+  "ListScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "목록 스크롤 창",
+    "ToolTipText": "파일 목록 스크롤 창"
+  },
+  "PreviewTextAreaProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "미리 보기 텍스트 영역",
+    "ToolTipText": "일반 텍스트 파일 미리 보기"
+  },
+  "PreviewEditorPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "미리 보기 편집기 창",
+    "ToolTipText": "서식 있는 텍스트 파일 미리 보기"
+  },
+  "PreviewScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "미리 보기 스크롤 창",
+    "ToolTipText": "미리 보기 스크롤 창"
+  },
+  "PathPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "경로 패널",
+    "ToolTipText": "경로 표시줄 패널"
+  },
+  "PathLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "경로:",
+    "ToolTipText": "현재 경로 레이블"
+  },
+  "PathTextFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "경로 텍스트 필드",
+    "ToolTipText": "이동할 경로 입력"
+  },
+  "FilterPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "필터 패널",
+    "ToolTipText": "파일 필터 패널"
+  },
+  "AllFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "모든 파일",
+    "ToolTipText": "모든 파일 표시"
+  },
+  "DirsOnlyRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "디렉토리만",
+    "ToolTipText": "디렉토리만 표시"
+  },
+  "ReadOnlyCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "읽기 전용",
+    "ToolTipText": "파일이 읽기 전용임"
+  },
+  "StatusPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "상태 패널",
+    "ToolTipText": "상태 표시줄 패널"
+  },
+  "FlagLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "FlagLabel",
+    "Text": "내 깃발",
+    "Icon": "dev/javai18n/swing/test/MN_Flag.jpg"
+  },
+  "StatusLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "준비",
+    "ToolTipText": "애플리케이션 상태"
+  },
+  "FileCountLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "0개 항목",
+    "ToolTipText": "현재 디렉토리의 항목 수"
+  },
+  "ScanProgressBarProps":
+  {
+    "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
+    "Name": "검색 진행률 표시줄",
+    "ToolTipText": "디렉토리 검색 진행률",
+    "String": "검색 중..."
+  },
+  "FileTypeFilterComboBoxProps":
+  {
+    "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
+    "Name": "파일 유형 필터",
+    "ToolTipText": "파일 유형으로 필터",
+    "Values": ["모든 파일", "텍스트 파일", "이미지 파일"]
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "JPanel 이름",
+    "ToolTipText": "JPanel 도구 설명"
+  },
+  "PropertiesPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "속성 패널",
+    "ToolTipText": "파일 속성 패널"
+  },
+  "FileNameLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "이름: {0}",
+    "ToolTipText": "파일 이름"
+  },
+  "FileSizeLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "크기: {0}",
+    "ToolTipText": "파일 크기"
+  },
+  "FileTypeLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "형식: {0}",
+    "ToolTipText": "파일 형식"
+  },
+  "FileModifiedLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "수정 날짜: {0}",
+    "ToolTipText": "마지막 수정 날짜"
+  },
+  "FilePathLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "위치: {0}",
+    "ToolTipText": "파일 위치"
+  },
+  "InfoDesktopPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "정보 데스크톱 창",
+    "AccessibleName": "빠른 정보 데스크톱 창",
+    "AccessibleDescription": "빠른 정보 패널을 포함하는 데스크톱 창"
+  },
+  "InfoInternalFrameProps":
+  {
+    "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
+    "Name": "빠른 정보",
+    "Title": "빠른 정보",
+    "ToolTipText": "파일 빠른 정보"
+  },
+  "InfoContentLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "정보를 보려면 파일을 선택하세요",
+    "ToolTipText": "파일 빠른 정보"
+  },
+  "StatusBarSeparatorProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": " | "
+  },
+  "ComputerNodeText": "컴퓨터",
+  "LoadingText": "로딩 중...",
+  "ItemCountFormat": "{0}개 항목",
+  "FileTooLargeFormat": "파일이 너무 커서 미리 볼 수 없습니다 ({0})",
+  "CannotReadFileFormat": "파일을 읽을 수 없습니다: {0}",
+  "FolderNamePromptText": "폴더 이름:",
+  "ConfirmDeleteTitle": "삭제 확인",
+  "ConfirmDeleteFormat": "{0}을(를) 삭제하시겠습니까?",
+  "DirectoryTypeText": "디렉토리",
+  "FileTypeSuffixFormat": "{0} 파일",
+  "GenericFileTypeText": "파일",
+  "BytesSuffix": " B",
+  "KilobytesSuffix": " KB",
+  "MegabytesSuffix": " MB",
+  "NameColumnText": "이름",
+  "SizeColumnText": "크기",
+  "TypeColumnText": "형식",
+  "DateColumnText": "수정한 날짜",
+  "TestButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 버튼",
+    "Mnemonic": 84,
+    "ToolTipText": "테스트 버튼 도구 설명"
+  },
+  "TestToggleButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 토글",
+    "Mnemonic": 71,
+    "ToolTipText": "테스트 토글 도구 설명"
+  },
+  "TestCheckBox":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 체크박스",
+    "Mnemonic": 67,
+    "ToolTipText": "테스트 체크박스 도구 설명"
+  },
+  "TestRadioButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 라디오 버튼",
+    "Mnemonic": 82,
+    "ToolTipText": "테스트 라디오 버튼 도구 설명"
+  },
+  "TestCheckBoxMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 체크박스 메뉴 항목",
+    "Mnemonic": 72,
+    "ToolTipText": "테스트 체크박스 메뉴 항목 도구 설명"
+  },
+  "TestRadioButtonMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 라디오 버튼 메뉴 항목",
+    "Mnemonic": 82,
+    "ToolTipText": "테스트 라디오 버튼 메뉴 항목 도구 설명"
+  },
+  "TestLabel":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Name": "TestLabel",
+    "Text": "테스트 레이블",
+    "ToolTipText": "테스트 레이블 도구 설명"
+  },
+  "TestMenu":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 메뉴",
+    "Mnemonic": 77,
+    "ToolTipText": "테스트 메뉴 도구 설명"
+  },
+  "TestMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "테스트 메뉴 항목",
+    "Mnemonic": 73,
+    "ToolTipText": "테스트 메뉴 항목 도구 설명"
+  },
+  "TestMenuBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestMenuBar 이름",
+    "ToolTipText": "테스트 메뉴 표시줄 도구 설명"
+  },
+  "TestPanel":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPanel 이름",
+    "ToolTipText": "테스트 패널 도구 설명"
+  },
+  "TestComboBox":
+  {
+    "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
+    "Name": "TestComboBox 이름",
+    "ToolTipText": "테스트 콤보 박스 도구 설명",
+    "Values": ["Option A", "Option B"]
+  },
+  "TestToolBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBar 이름",
+    "ToolTipText": "테스트 도구 모음 도구 설명"
+  },
+  "TestProgressBar":
+  {
+    "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
+    "Name": "TestProgressBar 이름",
+    "ToolTipText": "테스트 진행률 표시줄 도구 설명",
+    "String": "로딩 중..."
+  },
+  "TestInternalFrame":
+  {
+    "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
+    "Name": "TestInternalFrame 이름",
+    "Title": "테스트 내부 프레임",
+    "ToolTipText": "테스트 내부 프레임 도구 설명"
+  },
+  "TestTabbedPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTabbedPane 이름",
+    "ToolTipText": "테스트 탭 창 도구 설명"
+  },
+  "TestTab1":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "탭 하나",
+    "ToolTipText": "첫 번째 탭 도구 설명",
+    "Mnemonic": 49
+  },
+  "TestTab2":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "탭 둘",
+    "ToolTipText": "두 번째 탭 도구 설명",
+    "Mnemonic": 50
+  },
+  "TestTextField":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextField 이름",
+    "ToolTipText": "테스트 텍스트 필드 도구 설명"
+  },
+  "TestTextArea":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextArea 이름",
+    "ToolTipText": "테스트 텍스트 영역 도구 설명"
+  },
+  "TestEditorPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestEditorPane 이름",
+    "ToolTipText": "테스트 편집기 창 도구 설명"
+  },
+  "TestScrollPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollPane 이름",
+    "ToolTipText": "테스트 스크롤 창 도구 설명"
+  },
+  "TestSplitPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSplitPane 이름",
+    "ToolTipText": "테스트 분할 창 도구 설명"
+  },
+  "TestLayeredPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayeredPane 이름",
+    "ToolTipText": "테스트 계층 창 도구 설명"
+  },
+  "TestSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSeparator 이름",
+    "ToolTipText": "테스트 구분선 도구 설명"
+  },
+  "TestScrollBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollBar 이름",
+    "ToolTipText": "테스트 스크롤 막대 도구 설명"
+  },
+
+  "DirectoryTreeProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "디렉토리 트리",
+    "AccessibleName": "디렉토리 트리",
+    "AccessibleDescription": "파일 시스템의 계층적 보기",
+    "ToolTipText": "디렉토리 탐색"
+  },
+  "FileTableProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "파일 표",
+    "AccessibleName": "파일 목록 표",
+    "AccessibleDescription": "현재 디렉토리의 파일을 표시하는 표",
+    "ToolTipText": "파일 목록"
+  },
+  "NewFolderDialogProps":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "새 폴더",
+    "Options": ["확인", "취소"]
+  },
+  "ConfirmDeleteDialogProps":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "삭제 확인",
+    "Options": ["예", "아니요"]
+  },
+  "FileTablePopupMenuProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "파일 표 컨텍스트 메뉴",
+    "AccessibleName": "파일 표 컨텍스트 메뉴",
+    "AccessibleDescription": "파일 표 작업을 위한 컨텍스트 메뉴"
+  },
+  "PopupRefreshMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "새로 고침",
+    "ToolTipText": "파일 목록 새로 고침"
+  },
+  "PopupPropertiesMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "속성",
+    "ToolTipText": "파일 속성 표시"
+  },
+  "PopupDeleteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "삭제",
+    "ToolTipText": "선택한 파일 삭제"
+  },
+  "WidgetsDemoTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "위젯",
+    "ToolTipText": "추가 Resourceful 위젯 유형 데모"
+  },
+  "WidgetsPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "위젯 데모 패널",
+    "AccessibleName": "위젯 데모 패널",
+    "AccessibleDescription": "모든 Resourceful 위젯 유형을 보여주는 패널"
+  },
+  "DemoPasswordLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "비밀번호:"
+  },
+  "DemoPasswordFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 비밀번호 필드",
+    "AccessibleName": "비밀번호 입력",
+    "AccessibleDescription": "비밀번호 입력 (데모 전용)",
+    "ToolTipText": "ResourcefulJPasswordField — 로캘 변경 시 접근성 텍스트 업데이트"
+  },
+  "DemoFormattedLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "날짜/시간:"
+  },
+  "DemoFormattedTextFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 형식화된 텍스트 필드",
+    "AccessibleName": "형식화된 날짜/시간 필드",
+    "AccessibleDescription": "로캘 형식으로 현재 날짜와 시간 표시",
+    "ToolTipText": "ResourcefulJFormattedTextField — 로캘 변경 시 형식과 접근성 텍스트 업데이트"
+  },
+  "DemoSpinnerLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "날짜 선택:"
+  },
+  "DemoSpinnerProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 스피너",
+    "AccessibleName": "날짜 스피너",
+    "AccessibleDescription": "로캘별 형식으로 날짜 선택",
+    "ToolTipText": "ResourcefulJSpinner — 로캘 변경 시 접근성 텍스트와 편집기 형식 업데이트"
+  },
+  "DemoSliderLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "값:"
+  },
+  "DemoSliderProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 슬라이더",
+    "AccessibleName": "값 슬라이더",
+    "AccessibleDescription": "슬라이드하여 값 선택; 눈금 레이블은 로캘 숫자 형식 사용",
+    "ToolTipText": "ResourcefulJSlider — 로캘 변경 시 눈금 레이블과 접근성 텍스트 업데이트"
+  },
+  "DemoListLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "요일:"
+  },
+  "DemoListProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 목록",
+    "AccessibleName": "요일 이름 목록",
+    "AccessibleDescription": "현재 로캘의 요일",
+    "ToolTipText": "ResourcefulJList — 로캘 변경 시 접근성 텍스트 업데이트; 로캘 기호에서 항목 새로 고침"
+  },
+  "DemoListScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 목록 스크롤 창"
+  },
+  "DemoTextPaneLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "메모:"
+  },
+  "DemoTextPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 텍스트 창",
+    "AccessibleName": "메모 텍스트 창",
+    "AccessibleDescription": "로캘 정보를 표시하는 스타일 텍스트",
+    "ToolTipText": "ResourcefulJTextPane — 로캘 변경 시 접근성 텍스트 업데이트; 오른쪽 클릭으로 ResourcefulJPopupMenu"
+  },
+  "DemoTextPaneScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "데모 텍스트 창 스크롤 창"
+  },
+  "DemoTextPaneHeading": "현재 로캘 정보",
+  "DemoTextPaneBodyFormat": "로캘: {0}\n날짜/시간: {1}",
+  "DemoSliderTooltipFormat": "값: {0}",
+
+  "TestOptionPane":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "테스트 대화 상자",
+    "Options": ["확인", "취소"],
+    "ToolTipText": "테스트 대화 상자 도구 설명",
+    "AccessibleName": "테스트 대화 상자 접근성 이름",
+    "AccessibleDescription": "테스트 대화 상자 접근성 설명"
+  },
+  "TestTree":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTree 이름",
+    "ToolTipText": "테스트 트리 도구 설명",
+    "AccessibleName": "테스트 트리 접근성 이름",
+    "AccessibleDescription": "테스트 트리 접근성 설명"
+  },
+  "TestTable":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTable 이름",
+    "ToolTipText": "테스트 표 도구 설명",
+    "AccessibleName": "테스트 표 접근성 이름",
+    "AccessibleDescription": "테스트 표 접근성 설명"
+  },
+
+  "TestDesktopPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopPane 이름",
+    "ToolTipText": "테스트 데스크톱 창 도구 설명",
+    "AccessibleName": "테스트 데스크톱 창 접근성 이름",
+    "AccessibleDescription": "테스트 데스크톱 창 접근성 설명"
+  },
+  "TestColorChooser":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestColorChooser 이름",
+    "ToolTipText": "테스트 색 선택기 도구 설명",
+    "AccessibleName": "테스트 색 선택기 접근성 이름",
+    "AccessibleDescription": "테스트 색 선택기 접근성 설명"
+  },
+  "TestViewport":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestViewport 이름",
+    "ToolTipText": "테스트 뷰포트 도구 설명",
+    "AccessibleName": "테스트 뷰포트 접근성 이름",
+    "AccessibleDescription": "테스트 뷰포트 접근성 설명"
+  },
+  "TestBox":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBox 이름",
+    "ToolTipText": "테스트 박스 도구 설명",
+    "AccessibleName": "테스트 박스 접근성 이름",
+    "AccessibleDescription": "테스트 박스 접근성 설명"
+  },
+  "TestBoxFiller":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBoxFiller 이름",
+    "ToolTipText": "테스트 박스 채우기 도구 설명",
+    "AccessibleName": "테스트 박스 채우기 접근성 이름",
+    "AccessibleDescription": "테스트 박스 채우기 접근성 설명"
+  },
+  "TestRootPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestRootPane 이름",
+    "ToolTipText": "테스트 루트 창 도구 설명",
+    "AccessibleName": "테스트 루트 창 접근성 이름",
+    "AccessibleDescription": "테스트 루트 창 접근성 설명"
+  },
+  "TestToolBarSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBarSeparator 이름",
+    "ToolTipText": "테스트 도구 모음 구분선 도구 설명",
+    "AccessibleName": "테스트 도구 모음 구분선 접근성 이름",
+    "AccessibleDescription": "테스트 도구 모음 구분선 접근성 설명"
+  },
+  "TestPopupMenuSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPopupMenuSeparator 이름",
+    "ToolTipText": "테스트 팝업 메뉴 구분선 도구 설명",
+    "AccessibleName": "테스트 팝업 메뉴 구분선 접근성 이름",
+    "AccessibleDescription": "테스트 팝업 메뉴 구분선 접근성 설명"
+  },
+  "TestTableHeader":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTableHeader 이름",
+    "ToolTipText": "테스트 표 머리글 도구 설명",
+    "AccessibleName": "테스트 표 머리글 접근성 이름",
+    "AccessibleDescription": "테스트 표 머리글 접근성 설명"
+  },
+  "TestLayer":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayer 이름",
+    "ToolTipText": "테스트 레이어 도구 설명",
+    "AccessibleName": "테스트 레이어 접근성 이름",
+    "AccessibleDescription": "테스트 레이어 접근성 설명"
+  },
+  "TestDesktopIcon":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopIcon 이름",
+    "ToolTipText": "테스트 데스크톱 아이콘 도구 설명",
+    "AccessibleName": "테스트 데스크톱 아이콘 접근성 이름",
+    "AccessibleDescription": "테스트 데스크톱 아이콘 접근성 설명"
+  },
+  "TestFileChooser":
+  {
+    "type": "dev.javai18n.swing.JFileChooserPropertyBundle",
+    "Name": "TestFileChooser 이름",
+    "ToolTipText": "테스트 파일 선택기 도구 설명",
+    "AccessibleName": "테스트 파일 선택기 접근성 이름",
+    "AccessibleDescription": "테스트 파일 선택기 접근성 설명",
+    "DialogTitle": "테스트 대화 상자",
+    "ApproveButtonText": "열기",
+    "ApproveButtonToolTip": "선택한 파일 열기"
+  },
+  "TestToolTip":
+  {
+    "type": "dev.javai18n.swing.JToolTipPropertyBundle",
+    "Name": "TestToolTip 이름",
+    "ToolTipText": "테스트 도구 설명 도구 설명",
+    "AccessibleName": "테스트 도구 설명 접근성 이름",
+    "AccessibleDescription": "테스트 도구 설명 접근성 설명",
+    "TipText": "테스트 팁 텍스트"
+  },
+  "TestSpinnerDefaultEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDefaultEditor 이름",
+    "ToolTipText": "테스트 스피너 기본 편집기 도구 설명",
+    "AccessibleName": "테스트 스피너 기본 편집기 접근성 이름",
+    "AccessibleDescription": "테스트 스피너 기본 편집기 접근성 설명"
+  },
+  "TestSpinnerDateEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDateEditor 이름",
+    "ToolTipText": "테스트 스피너 날짜 편집기 도구 설명",
+    "AccessibleName": "테스트 스피너 날짜 편집기 접근성 이름",
+    "AccessibleDescription": "테스트 스피너 날짜 편집기 접근성 설명"
+  },
+  "TestSpinnerNumberEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerNumberEditor 이름",
+    "ToolTipText": "테스트 스피너 숫자 편집기 도구 설명",
+    "AccessibleName": "테스트 스피너 숫자 편집기 접근성 이름",
+    "AccessibleDescription": "테스트 스피너 숫자 편집기 접근성 설명"
+  },
+  "TestSpinnerListEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerListEditor 이름",
+    "ToolTipText": "테스트 스피너 목록 편집기 도구 설명",
+    "AccessibleName": "테스트 스피너 목록 편집기 접근성 이름",
+    "AccessibleDescription": "테스트 스피너 목록 편집기 접근성 설명"
+  }
+}

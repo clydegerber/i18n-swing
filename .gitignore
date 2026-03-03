@@ -1,0 +1,32 @@
+# Build output
+target/
+
+# IDE files - NetBeans
+nb-configuration.xml
+nbactions.xml
+nbproject/
+
+# IDE files - IntelliJ
+.idea/
+*.iml
+
+# IDE files - Eclipse
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vim swap files
+*.swp
+
+# Claude Code
+.claude/
+
+# Generated javadoc artifacts
+dev.javai18n.swing/
+
+# Maven
+dependency-reduced-pom.xml

@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "À propos de l'Explorateur de fichiers",
+    "Name": "AboutDialog nom",
+    "AccessibleName": "AboutDialog Accessible nom",
+    "AccessibleDescription": "AboutDialog Accessible description"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Explorateur de fichiers",
+    "ToolTipText": "Nom de l'application"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Version 1.0",
+    "ToolTipText": "Version de l'application"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Lieu :",
+    "ToolTipText": "Paramètre régional actuel"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Fermer",
+    "Mnemonic": 70,
+    "ToolTipText": "Fermer ce dialogue"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "Valeur du paramètre régional actuel"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F : {0}",
+    "ToolTipText": "Apparence et convivialité actuelle"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "Panneau du dialogue"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "Informazioni su Esplora file",
+    "Name": "AboutDialog nome",
+    "AccessibleName": "AboutDialog Nome accessibile",
+    "AccessibleDescription": "AboutDialog Descrizione accessibile"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Esplora file",
+    "ToolTipText": "Nome dell'applicazione"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Versione 1.0",
+    "ToolTipText": "Versione dell'applicazione"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Impostazioni locali:",
+    "ToolTipText": "Impostazioni locali correnti"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Chiudi",
+    "Mnemonic": 67,
+    "ToolTipText": "Chiudi questa finestra di dialogo"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "Valore delle impostazioni locali correnti"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "Aspetto e comportamento corrente"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "Pannello di dialogo"
+  }
+}

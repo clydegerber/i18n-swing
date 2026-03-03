@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "关于文件浏览器",
+    "Name": "AboutDialog 名称",
+    "AccessibleName": "AboutDialog 可访问名称",
+    "AccessibleDescription": "AboutDialog 可访问描述"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "文件浏览器",
+    "ToolTipText": "应用程序名称"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "版本 1.0",
+    "ToolTipText": "应用程序版本"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "区域设置：",
+    "ToolTipText": "当前区域设置"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "关闭",
+    "Mnemonic": 0,
+    "ToolTipText": "关闭此对话框"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "当前区域设置值"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "当前外观风格"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "对话框面板"
+  }
+}

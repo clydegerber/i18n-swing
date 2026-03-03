@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "Über Datei-Explorer",
+    "Name": "AboutDialog Name",
+    "AccessibleName": "AboutDialog Zugänglicher Name",
+    "AccessibleDescription": "AboutDialog Zugängliche Beschreibung"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Datei-Explorer",
+    "ToolTipText": "Anwendungsname"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Version 1.0",
+    "ToolTipText": "Anwendungsversion"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Gebietsschema:",
+    "ToolTipText": "Aktuelles Gebietsschema"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Schließen",
+    "Mnemonic": 83,
+    "ToolTipText": "Dieses Dialogfeld schließen"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "Aktueller Gebietsschemawert"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "Aktuelles Erscheinungsbild"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "Dialogfeld"
+  }
+}

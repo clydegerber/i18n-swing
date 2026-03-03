@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "ファイルエクスプローラーについて",
+    "Name": "AboutDialog 名前",
+    "AccessibleName": "AboutDialog アクセス可能な名前",
+    "AccessibleDescription": "AboutDialog アクセス可能な説明"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ファイルエクスプローラー",
+    "ToolTipText": "アプリケーション名"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "バージョン 1.0",
+    "ToolTipText": "アプリケーションのバージョン"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ロケール：",
+    "ToolTipText": "現在のロケール"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "閉じる",
+    "Mnemonic": 0,
+    "ToolTipText": "このダイアログを閉じる"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "現在のロケール値"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "現在の外観"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ダイアログパネル"
+  }
+}

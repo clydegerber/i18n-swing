@@ -1,0 +1,9 @@
+{
+  "windowProperties":
+  {
+    "type": "dev.javai18n.swing.WindowPropertyBundle",
+    "Name": "AppWindow name",
+    "AccessibleName": "AppWindow accessible name",
+    "AccessibleDescription": "AppWindow accessible description"
+  }
+}

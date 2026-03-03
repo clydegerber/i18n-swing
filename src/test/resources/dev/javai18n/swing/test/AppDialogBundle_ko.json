@@ -1,0 +1,52 @@
+{
+  "DialogProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "파일 탐색기 정보",
+    "Name": "AboutDialog 이름",
+    "AccessibleName": "AboutDialog 접근 가능한 이름",
+    "AccessibleDescription": "AboutDialog 접근 가능한 설명"
+  },
+  "AboutTitleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "파일 탐색기",
+    "ToolTipText": "애플리케이션 이름"
+  },
+  "AboutVersionLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "버전 1.0",
+    "ToolTipText": "애플리케이션 버전"
+  },
+  "AboutLocaleLabel":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "로케일：",
+    "ToolTipText": "현재 로케일"
+  },
+  "CloseButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "닫기",
+    "Mnemonic": 0,
+    "ToolTipText": "이 대화 상자 닫기"
+  },
+  "LocaleValueLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "{0}",
+    "ToolTipText": "현재 로케일 값"
+  },
+  "LookAndFeelLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "L&F: {0}",
+    "ToolTipText": "현재 룩앤필"
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "대화 상자 패널"
+  }
+}

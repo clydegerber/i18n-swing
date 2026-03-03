@@ -1,0 +1,1059 @@
+{
+  "FrameProperties":
+  {
+    "type": "dev.javai18n.swing.FramePropertyBundle",
+    "Title": "ファイルエクスプローラー",
+    "Font": "Arial-BOLD-28",
+    "Name": "AppFrame 名前",
+    "AccessibleName": "AppFrame アクセシブル名",
+    "AccessibleDescription": "AppFrame アクセシブル説明",
+    "IconImages": "dev/javai18n/swing/test/MN_Flag.jpg"
+  },
+  "MenuBarProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "JMenuBar 名前"
+  },
+  "FileMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ファイル",
+    "Mnemonic": 70
+  },
+  "NewFolderMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "新しいフォルダー",
+    "Mnemonic": 78,
+    "ToolTipText": "新しいフォルダーを作成"
+  },
+  "DeleteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "削除",
+    "Mnemonic": 68,
+    "ToolTipText": "選択した項目を削除"
+  },
+  "PropertiesMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "プロパティ",
+    "Mnemonic": 80,
+    "ToolTipText": "ファイルのプロパティを表示"
+  },
+  "ExitMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "終了",
+    "Mnemonic": 88,
+    "ToolTipText": "アプリケーションを終了"
+  },
+  "EditMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "編集",
+    "Mnemonic": 69
+  },
+  "CopyMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "コピー",
+    "Mnemonic": 67,
+    "ToolTipText": "選択した項目をコピー"
+  },
+  "CutMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "切り取り",
+    "Mnemonic": 84,
+    "ToolTipText": "選択した項目を切り取り"
+  },
+  "PasteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "貼り付け",
+    "Mnemonic": 80,
+    "ToolTipText": "項目を貼り付け"
+  },
+  "SelectAllMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "すべて選択",
+    "Mnemonic": 65,
+    "ToolTipText": "すべての項目を選択"
+  },
+  "ViewMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "表示",
+    "Mnemonic": 86
+  },
+  "RefreshMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "更新",
+    "Mnemonic": 82,
+    "ToolTipText": "現在のディレクトリを更新"
+  },
+  "SortByMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "並べ替え",
+    "Mnemonic": 83
+  },
+  "SortByNameRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "名前",
+    "Mnemonic": 78,
+    "ToolTipText": "ファイル名で並べ替え"
+  },
+  "SortBySizeRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "サイズ",
+    "Mnemonic": 83,
+    "ToolTipText": "ファイルサイズで並べ替え"
+  },
+  "SortByDateRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "更新日時",
+    "Mnemonic": 68,
+    "ToolTipText": "更新日時で並べ替え"
+  },
+  "ShowHiddenCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "隠しファイルを表示",
+    "Mnemonic": 72,
+    "ToolTipText": "隠しファイルの表示を切り替え"
+  },
+  "ShowExtensionsCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "拡張子を表示",
+    "Mnemonic": 69,
+    "ToolTipText": "ファイル拡張子の表示を切り替え"
+  },
+  "FilterMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "フィルター",
+    "Mnemonic": 70,
+    "ToolTipText": "ファイル一覧をフィルター"
+  },
+  "AllFileTypesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "すべての種類",
+    "Mnemonic": 65,
+    "ToolTipText": "すべてのファイルの種類を表示"
+  },
+  "TextFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テキストファイル",
+    "Mnemonic": 88,
+    "ToolTipText": "テキストファイルのみ表示"
+  },
+  "ImageFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "画像ファイル",
+    "Mnemonic": 73,
+    "ToolTipText": "画像ファイルのみ表示"
+  },
+  "PreferencesMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "設定メニュー名前",
+    "ToolTipText": "設定メニューのヒント",
+    "Text": "設定",
+    "Mnemonic": 80,
+    "AccessibleName": "設定メニューアクセシブル名",
+    "AccessibleDescription": "設定メニューアクセシブル説明"
+  },
+  "LocaleMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "ロケールメニュー名前",
+    "ToolTipText": "ロケールメニューのヒント",
+    "Text": "ロケール",
+    "Mnemonic": 76,
+    "AccessibleName": "ロケールメニューアクセシブル名",
+    "AccessibleDescription": "ロケールメニューアクセシブル説明"
+  },
+  "LocaleMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "ロケールメニュー項目名前",
+    "ToolTipText": "ロケールメニュー項目のヒント",
+    "AccessibleName": "ロケールメニュー項目アクセシブル名",
+    "AccessibleDescription": "ロケールメニュー項目アクセシブル説明"
+  },
+  "LookAndFeelMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "外観メニュー名前",
+    "ToolTipText": "外観メニューのヒント",
+    "Text": "外観",
+    "AccessibleName": "外観メニューアクセシブル名",
+    "AccessibleDescription": "外観メニューアクセシブル説明"
+  },
+  "LookAndFeelMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "外観メニュー項目名前",
+    "ToolTipText": "外観メニュー項目のヒント",
+    "AccessibleName": "外観メニュー項目アクセシブル名",
+    "AccessibleDescription": "外観メニュー項目アクセシブル説明"
+  },
+  "LocaleSetMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ロケールセット",
+    "Mnemonic": 83,
+    "ToolTipText": "使用可能なロケールのセットを選択"
+  },
+  "LoggerLocalesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ロガーロケール",
+    "Mnemonic": 76,
+    "ToolTipText": "ロガーロケールを使用（8 ロケール）"
+  },
+  "AllLocalesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "すべての JVM ロケール",
+    "Mnemonic": 65,
+    "ToolTipText": "すべての JVM ロケールを使用"
+  },
+  "LoggerLocaleMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ロガーロケール",
+    "Mnemonic": 71,
+    "ToolTipText": "ロガーロケールを制御"
+  },
+  "JvmDefaultLocaleRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "JVM デフォルト",
+    "Mnemonic": 74,
+    "ToolTipText": "ロギングに JVM デフォルトロケールを使用"
+  },
+  "CurrentLocaleRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "現在の選択",
+    "Mnemonic": 67,
+    "ToolTipText": "ロギングに現在のロケール選択を使用"
+  },
+  "HelpMenuProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ヘルプ",
+    "Mnemonic": 72
+  },
+  "AboutMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "バージョン情報",
+    "Mnemonic": 65,
+    "ToolTipText": "このアプリケーションについて"
+  },
+  "NavToolBarProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ナビゲーションツールバー",
+    "ToolTipText": "ナビゲーションツールバー"
+  },
+  "BackButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "戻る",
+    "ToolTipText": "前に戻る"
+  },
+  "ForwardButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "進む",
+    "ToolTipText": "次に進む"
+  },
+  "UpButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "上へ",
+    "ToolTipText": "一つ上のレベルへ"
+  },
+  "HomeButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "ホーム",
+    "ToolTipText": "ホームディレクトリへ移動"
+  },
+  "RefreshButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "更新",
+    "ToolTipText": "現在のディレクトリを更新"
+  },
+  "NewFolderButtonProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "新しいフォルダー",
+    "ToolTipText": "新しいフォルダーを作成"
+  },
+  "ToolBarSeparatorProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ツールバー区切り"
+  },
+  "ListViewToggleProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "リスト",
+    "ToolTipText": "リスト表示"
+  },
+  "DetailViewToggleProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "詳細",
+    "ToolTipText": "詳細表示"
+  },
+  "MainSplitPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "メイン分割ペイン",
+    "ToolTipText": "メインコンテンツ分割ペイン"
+  },
+  "TreeScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ツリースクロールペイン",
+    "ToolTipText": "ディレクトリツリースクロールペイン"
+  },
+  "ContentTabbedPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "コンテンツタブペイン",
+    "ToolTipText": "コンテンツタブ"
+  },
+  "FilesTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "ファイル",
+    "ToolTipText": "ファイル一覧"
+  },
+  "PreviewTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "プレビュー",
+    "ToolTipText": "ファイルプレビュー"
+  },
+  "PropertiesTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "プロパティ",
+    "ToolTipText": "ファイルプロパティ"
+  },
+  "TableScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "テーブルスクロールペイン",
+    "ToolTipText": "ファイルテーブルスクロールペイン"
+  },
+  "FileListViewProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ファイルリストビュー",
+    "ToolTipText": "ディレクトリ内容のアイコン表示"
+  },
+  "ListScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "リストスクロールペイン",
+    "ToolTipText": "ファイルリストスクロールペイン"
+  },
+  "PreviewTextAreaProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "プレビューテキストエリア",
+    "ToolTipText": "プレーンテキストファイルのプレビュー"
+  },
+  "PreviewEditorPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "プレビューエディタペイン",
+    "ToolTipText": "リッチテキストファイルのプレビュー"
+  },
+  "PreviewScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "プレビュースクロールペイン",
+    "ToolTipText": "プレビュースクロールペイン"
+  },
+  "PathPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "パスパネル",
+    "ToolTipText": "パスバーパネル"
+  },
+  "PathLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "パス：",
+    "ToolTipText": "現在のパスラベル"
+  },
+  "PathTextFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "パステキストフィールド",
+    "ToolTipText": "ナビゲートするパスを入力"
+  },
+  "FilterPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "フィルターパネル",
+    "ToolTipText": "ファイルフィルターパネル"
+  },
+  "AllFilesRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "すべてのファイル",
+    "ToolTipText": "すべてのファイルを表示"
+  },
+  "DirsOnlyRadioProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "フォルダーのみ",
+    "ToolTipText": "フォルダーのみ表示"
+  },
+  "ReadOnlyCheckBoxProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "読み取り専用",
+    "ToolTipText": "ファイルは読み取り専用"
+  },
+  "StatusPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ステータスパネル",
+    "ToolTipText": "ステータスバーパネル"
+  },
+  "FlagLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Name": "FlagLabel",
+    "Text": "私の旗",
+    "Icon": "dev/javai18n/swing/test/MN_Flag.jpg"
+  },
+  "StatusLabelProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "準備完了",
+    "ToolTipText": "アプリケーションの状態"
+  },
+  "FileCountLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "0 個のアイテム",
+    "ToolTipText": "現在のディレクトリ内の項目数"
+  },
+  "ScanProgressBarProps":
+  {
+    "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
+    "Name": "スキャン進捗バー",
+    "ToolTipText": "ディレクトリスキャンの進捗",
+    "String": "スキャン中..."
+  },
+  "FileTypeFilterComboBoxProps":
+  {
+    "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
+    "Name": "ファイルタイプフィルター",
+    "ToolTipText": "ファイルタイプでフィルター",
+    "Values": ["すべてのファイル", "テキストファイル", "画像ファイル"]
+  },
+  "PanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "JPanel 名前",
+    "ToolTipText": "JPanel ヒント"
+  },
+  "PropertiesPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "プロパティパネル",
+    "ToolTipText": "ファイルプロパティパネル"
+  },
+  "FileNameLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "名前：{0}",
+    "ToolTipText": "ファイル名"
+  },
+  "FileSizeLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "サイズ：{0}",
+    "ToolTipText": "ファイルサイズ"
+  },
+  "FileTypeLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "種類：{0}",
+    "ToolTipText": "ファイルの種類"
+  },
+  "FileModifiedLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "更新日時：{0}",
+    "ToolTipText": "最終更新日時"
+  },
+  "FilePathLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "場所：{0}",
+    "ToolTipText": "ファイルの場所"
+  },
+  "InfoDesktopPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "情報デスクトップペイン",
+    "AccessibleName": "クイック情報デスクトップペイン",
+    "AccessibleDescription": "クイック情報パネルを含むデスクトップペイン"
+  },
+  "InfoInternalFrameProps":
+  {
+    "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
+    "Name": "クイック情報",
+    "Title": "クイック情報",
+    "ToolTipText": "ファイルのクイック情報"
+  },
+  "InfoContentLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "情報を表示するファイルを選択してください",
+    "ToolTipText": "ファイルのクイック情報"
+  },
+  "StatusBarSeparatorProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": " | "
+  },
+  "ComputerNodeText": "コンピューター",
+  "LoadingText": "読み込み中...",
+  "ItemCountFormat": "{0} 個のアイテム",
+  "FileTooLargeFormat": "プレビューには大きすぎるファイルです（{0}）",
+  "CannotReadFileFormat": "ファイルを読み取れません：{0}",
+  "FolderNamePromptText": "フォルダー名：",
+  "ConfirmDeleteTitle": "削除の確認",
+  "ConfirmDeleteFormat": "{0} を削除しますか？",
+  "DirectoryTypeText": "フォルダー",
+  "FileTypeSuffixFormat": "{0}ファイル",
+  "GenericFileTypeText": "ファイル",
+  "BytesSuffix": " B",
+  "KilobytesSuffix": " KB",
+  "MegabytesSuffix": " MB",
+  "NameColumnText": "名前",
+  "SizeColumnText": "サイズ",
+  "TypeColumnText": "種類",
+  "DateColumnText": "更新日時",
+  "TestButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストボタン",
+    "Mnemonic": 84,
+    "ToolTipText": "テストボタンのヒント"
+  },
+  "TestToggleButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストトグル",
+    "Mnemonic": 71,
+    "ToolTipText": "テストトグルのヒント"
+  },
+  "TestCheckBox":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストチェックボックス",
+    "Mnemonic": 67,
+    "ToolTipText": "テストチェックボックスのヒント"
+  },
+  "TestRadioButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストラジオボタン",
+    "Mnemonic": 82,
+    "ToolTipText": "テストラジオボタンのヒント"
+  },
+  "TestCheckBoxMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストチェックボックスメニュー項目",
+    "Mnemonic": 72,
+    "ToolTipText": "テストチェックボックスメニュー項目のヒント"
+  },
+  "TestRadioButtonMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストラジオボタンメニュー項目",
+    "Mnemonic": 82,
+    "ToolTipText": "テストラジオボタンメニュー項目のヒント"
+  },
+  "TestLabel":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Name": "TestLabel",
+    "Text": "テストラベル",
+    "ToolTipText": "テストラベルのヒント"
+  },
+  "TestMenu":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストメニュー",
+    "Mnemonic": 77,
+    "ToolTipText": "テストメニューのヒント"
+  },
+  "TestMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "テストメニュー項目",
+    "Mnemonic": 73,
+    "ToolTipText": "テストメニュー項目のヒント"
+  },
+  "TestMenuBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestMenuBar 名前",
+    "ToolTipText": "テストメニューバーのヒント"
+  },
+  "TestPanel":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPanel 名前",
+    "ToolTipText": "テストパネルのヒント"
+  },
+  "TestComboBox":
+  {
+    "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
+    "Name": "TestComboBox 名前",
+    "ToolTipText": "テストコンボボックスのヒント",
+    "Values": ["Option A", "Option B"]
+  },
+  "TestToolBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBar 名前",
+    "ToolTipText": "テストツールバーのヒント"
+  },
+  "TestProgressBar":
+  {
+    "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
+    "Name": "TestProgressBar 名前",
+    "ToolTipText": "テスト進捗バーのヒント",
+    "String": "読み込み中..."
+  },
+  "TestInternalFrame":
+  {
+    "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
+    "Name": "TestInternalFrame 名前",
+    "Title": "テスト内部フレーム",
+    "ToolTipText": "テスト内部フレームのヒント"
+  },
+  "TestTabbedPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTabbedPane 名前",
+    "ToolTipText": "テストタブペインのヒント"
+  },
+  "TestTab1":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "タブ一",
+    "ToolTipText": "最初のタブのヒント",
+    "Mnemonic": 49
+  },
+  "TestTab2":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "タブ二",
+    "ToolTipText": "二番目のタブのヒント",
+    "Mnemonic": 50
+  },
+  "TestTextField":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextField 名前",
+    "ToolTipText": "テストテキストフィールドのヒント"
+  },
+  "TestTextArea":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextArea 名前",
+    "ToolTipText": "テストテキストエリアのヒント"
+  },
+  "TestEditorPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestEditorPane 名前",
+    "ToolTipText": "テストエディタペインのヒント"
+  },
+  "TestScrollPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollPane 名前",
+    "ToolTipText": "テストスクロールペインのヒント"
+  },
+  "TestSplitPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSplitPane 名前",
+    "ToolTipText": "テスト分割ペインのヒント"
+  },
+  "TestLayeredPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayeredPane 名前",
+    "ToolTipText": "テスト階層ペインのヒント"
+  },
+  "TestSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSeparator 名前",
+    "ToolTipText": "テスト区切りのヒント"
+  },
+  "TestScrollBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollBar 名前",
+    "ToolTipText": "テストスクロールバーのヒント"
+  },
+
+  "DirectoryTreeProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ディレクトリツリー",
+    "AccessibleName": "ディレクトリツリー",
+    "AccessibleDescription": "ファイルシステムの階層表示",
+    "ToolTipText": "ディレクトリを参照"
+  },
+  "FileTableProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ファイルテーブル",
+    "AccessibleName": "ファイル一覧テーブル",
+    "AccessibleDescription": "現在のディレクトリのファイルを表示するテーブル",
+    "ToolTipText": "ファイル一覧"
+  },
+  "NewFolderDialogProps":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "新しいフォルダー",
+    "Options": ["OK", "キャンセル"]
+  },
+  "ConfirmDeleteDialogProps":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "削除の確認",
+    "Options": ["はい", "いいえ"]
+  },
+  "FileTablePopupMenuProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ファイルテーブルコンテキストメニュー",
+    "AccessibleName": "ファイルテーブルコンテキストメニュー",
+    "AccessibleDescription": "ファイルテーブル操作のコンテキストメニュー"
+  },
+  "PopupRefreshMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "更新",
+    "ToolTipText": "ファイル一覧を更新"
+  },
+  "PopupPropertiesMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "プロパティ",
+    "ToolTipText": "ファイルのプロパティを表示"
+  },
+  "PopupDeleteMenuItemProps":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "削除",
+    "ToolTipText": "選択したファイルを削除"
+  },
+  "WidgetsDemoTabProps":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "ウィジェット",
+    "ToolTipText": "追加の Resourceful ウィジェットタイプのデモ"
+  },
+  "WidgetsPanelProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "ウィジェットデモパネル",
+    "AccessibleName": "ウィジェットデモパネル",
+    "AccessibleDescription": "すべての Resourceful ウィジェットタイプを示すパネル"
+  },
+  "DemoPasswordLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "パスワード："
+  },
+  "DemoPasswordFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモパスワードフィールド",
+    "AccessibleName": "パスワード入力",
+    "AccessibleDescription": "パスワードを入力（デモのみ）",
+    "ToolTipText": "ResourcefulJPasswordField — ロケール変更時にアクセシブルテキストが更新されます"
+  },
+  "DemoFormattedLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "日付/時刻："
+  },
+  "DemoFormattedTextFieldProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモ書式設定テキストフィールド",
+    "AccessibleName": "書式設定された日付/時刻フィールド",
+    "AccessibleDescription": "ロケール形式で現在の日付と時刻を表示",
+    "ToolTipText": "ResourcefulJFormattedTextField — ロケール変更時に形式とアクセシブルテキストが更新されます"
+  },
+  "DemoSpinnerLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "日付選択："
+  },
+  "DemoSpinnerProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモスピナー",
+    "AccessibleName": "日付スピナー",
+    "AccessibleDescription": "ロケール固有の形式で日付を選択",
+    "ToolTipText": "ResourcefulJSpinner — ロケール変更時にアクセシブルテキストとエディター形式が更新されます"
+  },
+  "DemoSliderLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "値："
+  },
+  "DemoSliderProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモスライダー",
+    "AccessibleName": "値スライダー",
+    "AccessibleDescription": "スライドして値を選択；目盛りラベルはロケールの数値形式を使用",
+    "ToolTipText": "ResourcefulJSlider — ロケール変更時に目盛りラベルとアクセシブルテキストが更新されます"
+  },
+  "DemoListLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "曜日："
+  },
+  "DemoListProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモリスト",
+    "AccessibleName": "曜日名リスト",
+    "AccessibleDescription": "現在のロケールの曜日",
+    "ToolTipText": "ResourcefulJList — ロケール変更時にアクセシブルテキストが更新されます；ロケールシンボルから項目が更新されます"
+  },
+  "DemoListScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモリストスクロールペイン"
+  },
+  "DemoTextPaneLabelProps":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Text": "メモ："
+  },
+  "DemoTextPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモテキストペイン",
+    "AccessibleName": "メモテキストペイン",
+    "AccessibleDescription": "ロケール情報を表示するスタイル付きテキスト",
+    "ToolTipText": "ResourcefulJTextPane — ロケール変更時にアクセシブルテキストが更新されます；右クリックで ResourcefulJPopupMenu"
+  },
+  "DemoTextPaneScrollPaneProps":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "デモテキストペインスクロールペイン"
+  },
+  "DemoTextPaneHeading": "現在のロケール情報",
+  "DemoTextPaneBodyFormat": "ロケール：{0}\n日付/時刻：{1}",
+  "DemoSliderTooltipFormat": "値：{0}",
+
+  "TestOptionPane":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "テストダイアログ",
+    "Options": ["OK", "キャンセル"],
+    "ToolTipText": "テストダイアログのヒント",
+    "AccessibleName": "テストダイアログアクセシブル名",
+    "AccessibleDescription": "テストダイアログアクセシブル説明"
+  },
+  "TestTree":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTree 名前",
+    "ToolTipText": "テストツリーのヒント",
+    "AccessibleName": "テストツリーアクセシブル名",
+    "AccessibleDescription": "テストツリーアクセシブル説明"
+  },
+  "TestTable":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTable 名前",
+    "ToolTipText": "テストテーブルのヒント",
+    "AccessibleName": "テストテーブルアクセシブル名",
+    "AccessibleDescription": "テストテーブルアクセシブル説明"
+  },
+
+  "TestDesktopPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopPane 名前",
+    "ToolTipText": "テストデスクトップペインのヒント",
+    "AccessibleName": "テストデスクトップペインアクセシブル名",
+    "AccessibleDescription": "テストデスクトップペインアクセシブル説明"
+  },
+  "TestColorChooser":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestColorChooser 名前",
+    "ToolTipText": "テストカラーチューザーのヒント",
+    "AccessibleName": "テストカラーチューザーアクセシブル名",
+    "AccessibleDescription": "テストカラーチューザーアクセシブル説明"
+  },
+  "TestViewport":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestViewport 名前",
+    "ToolTipText": "テストビューポートのヒント",
+    "AccessibleName": "テストビューポートアクセシブル名",
+    "AccessibleDescription": "テストビューポートアクセシブル説明"
+  },
+  "TestBox":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBox 名前",
+    "ToolTipText": "テストボックスのヒント",
+    "AccessibleName": "テストボックスアクセシブル名",
+    "AccessibleDescription": "テストボックスアクセシブル説明"
+  },
+  "TestBoxFiller":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBoxFiller 名前",
+    "ToolTipText": "テストボックスフィラーのヒント",
+    "AccessibleName": "テストボックスフィラーアクセシブル名",
+    "AccessibleDescription": "テストボックスフィラーアクセシブル説明"
+  },
+  "TestRootPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestRootPane 名前",
+    "ToolTipText": "テストルートペインのヒント",
+    "AccessibleName": "テストルートペインアクセシブル名",
+    "AccessibleDescription": "テストルートペインアクセシブル説明"
+  },
+  "TestToolBarSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBarSeparator 名前",
+    "ToolTipText": "テストツールバー区切りのヒント",
+    "AccessibleName": "テストツールバー区切りアクセシブル名",
+    "AccessibleDescription": "テストツールバー区切りアクセシブル説明"
+  },
+  "TestPopupMenuSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPopupMenuSeparator 名前",
+    "ToolTipText": "テストポップアップメニュー区切りのヒント",
+    "AccessibleName": "テストポップアップメニュー区切りアクセシブル名",
+    "AccessibleDescription": "テストポップアップメニュー区切りアクセシブル説明"
+  },
+  "TestTableHeader":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTableHeader 名前",
+    "ToolTipText": "テストテーブルヘッダーのヒント",
+    "AccessibleName": "テストテーブルヘッダーアクセシブル名",
+    "AccessibleDescription": "テストテーブルヘッダーアクセシブル説明"
+  },
+  "TestLayer":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayer 名前",
+    "ToolTipText": "テストレイヤーのヒント",
+    "AccessibleName": "テストレイヤーアクセシブル名",
+    "AccessibleDescription": "テストレイヤーアクセシブル説明"
+  },
+  "TestDesktopIcon":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopIcon 名前",
+    "ToolTipText": "テストデスクトップアイコンのヒント",
+    "AccessibleName": "テストデスクトップアイコンアクセシブル名",
+    "AccessibleDescription": "テストデスクトップアイコンアクセシブル説明"
+  },
+  "TestFileChooser":
+  {
+    "type": "dev.javai18n.swing.JFileChooserPropertyBundle",
+    "Name": "TestFileChooser 名前",
+    "ToolTipText": "テストファイルチューザーのヒント",
+    "AccessibleName": "テストファイルチューザーアクセシブル名",
+    "AccessibleDescription": "テストファイルチューザーアクセシブル説明",
+    "DialogTitle": "テストダイアログ",
+    "ApproveButtonText": "開く",
+    "ApproveButtonToolTip": "選択したファイルを開く"
+  },
+  "TestToolTip":
+  {
+    "type": "dev.javai18n.swing.JToolTipPropertyBundle",
+    "Name": "TestToolTip 名前",
+    "ToolTipText": "テストツールチップのヒント",
+    "AccessibleName": "テストツールチップアクセシブル名",
+    "AccessibleDescription": "テストツールチップアクセシブル説明",
+    "TipText": "テストチップテキスト"
+  },
+  "TestSpinnerDefaultEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDefaultEditor 名前",
+    "ToolTipText": "テストスピナーデフォルトエディターのヒント",
+    "AccessibleName": "テストスピナーデフォルトエディターアクセシブル名",
+    "AccessibleDescription": "テストスピナーデフォルトエディターアクセシブル説明"
+  },
+  "TestSpinnerDateEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDateEditor 名前",
+    "ToolTipText": "テストスピナー日付エディターのヒント",
+    "AccessibleName": "テストスピナー日付エディターアクセシブル名",
+    "AccessibleDescription": "テストスピナー日付エディターアクセシブル説明"
+  },
+  "TestSpinnerNumberEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerNumberEditor 名前",
+    "ToolTipText": "テストスピナー数値エディターのヒント",
+    "AccessibleName": "テストスピナー数値エディターアクセシブル名",
+    "AccessibleDescription": "テストスピナー数値エディターアクセシブル説明"
+  },
+  "TestSpinnerListEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerListEditor 名前",
+    "ToolTipText": "テストスピナーリストエディターのヒント",
+    "AccessibleName": "テストスピナーリストエディターアクセシブル名",
+    "AccessibleDescription": "テストスピナーリストエディターアクセシブル説明"
+  }
+}

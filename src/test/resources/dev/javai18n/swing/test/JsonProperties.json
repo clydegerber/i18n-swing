@@ -1,0 +1,62 @@
+{
+  "key1": "value1",
+  "key2": "value2",
+  "key3": ["value3A", "Value3B", "Value3C"],
+  "myButtonBundle":
+  {
+    "type": "org.example.i18nswing.AbstractButtonPropertyBundle",
+    "Name": "",
+    "AccessibleName": "",
+    "AccessibleDescription": "",
+    "Font":
+    {
+      "type": "java.awt.FONT",
+      "FontName": "",
+      "FontStyle": "",
+      "FontSize": ""
+    },
+    "ToolTipText": "",
+    "Icon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "SelectedIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "PressedIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "RolloverIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "RolloverSelectedIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "DisabledIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    },
+    "DisabledSelectedIcon":
+    {
+      "type": "javax.swing.ImageIcon",
+      "IconLocation": "",
+      "IconLocationType": "URL"
+    }
+  }
+}

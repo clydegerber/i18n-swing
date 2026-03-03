@@ -38,7 +38,6 @@ import java.text.MessageFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Dictionary;
@@ -1235,6 +1234,7 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
     }
 
     /** Update the demoSlider's tick-mark label table with locale-aware number formatting. */
+    @SuppressWarnings("UseOfObsoleteCollectionType") // JSlider.setLabelTable() requires Dictionary; Hashtable is the only JDK-provided implementation
     private void updateSliderLabels(Locale locale)
     {
         NumberFormat nf = NumberFormat.getInstance(locale);

@@ -7,7 +7,7 @@ test, and submit changes.
 
 - **Java 25** or later
 - **Maven** (included with Apache NetBeans, or install separately)
-- **i18n-core 1.2.1** installed to local Maven repository (`mvn install` from the i18n project)
+- **i18n-core 1.3.1** installed to local Maven repository (`mvn install` from the i18n project)
 
 ## Building
 

@@ -5,8 +5,8 @@ test, and submit changes.
 
 ## Prerequisites
 
-- **Java 25** or later
-- **Maven** (included with Apache NetBeans, or install separately)
+- **Java 17** or later
+- **Maven 3.9** or later
 - **i18n-core 1.3.1** installed to local Maven repository (`mvn install` from the i18n project)
 
 ## Building

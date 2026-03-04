@@ -229,6 +229,54 @@ The button displays the correct text, mnemonic, and other properties for the cur
 When `myFrame.setBundleLocale(locale)` is called, every attached Resourceful component
 updates itself on the Event Dispatch Thread.
 
+## Sample Application
+
+A complete file explorer example is provided in the test sources to demonstrate the library end to end.
+
+**Main class:** `dev.javai18n.swing.test.TestSwingApp`
+**Frame class:** `dev.javai18n.swing.test.AppFrame`
+
+Launch it from an IDE or via Maven:
+
+```bash
+mvn test-compile exec:java -Dexec.classpathScope=test \
+    -Dexec.mainClass=dev.javai18n.swing.test.TestSwingApp
+```
+
+The application starts with the system Look and Feel and opens at the user's home directory.
+
+### What it demonstrates
+
+- **Locale switching** — Preferences > Locale menu lists the locales supported by the application
+  logger by default, or all JVM locales when "All JVM Locales" is selected. Choosing a locale
+  updates every label, tooltip, column header, button text, and dialog message simultaneously on
+  the EDT.
+- **Look and Feel switching** — Preferences > Look and Feel menu lists all installed Look and Feels;
+  selecting one applies it immediately without restarting.
+- **File system navigation** — a directory tree (`ResourcefulJTree`) on the left and a file table
+  (`ResourcefulJTable`) on the right, connected by Back, Forward, Up, and Home toolbar buttons
+  (`ResourcefulJButton`) and a path text field (`ResourcefulJTextField`).
+- **Sortable file table** — sort by name, size, or date via View > Sort By radio menu items
+  (`ResourcefulJRadioButtonMenuItem`); show or hide hidden files and file extensions via
+  View check box menu items (`ResourcefulJCheckBoxMenuItem`).
+- **List and detail views** — toggle buttons (`ResourcefulJToggleButton`) switch between a table
+  view and a list view (`ResourcefulJList`).
+- **Preview tab** — displays a selected text file as plain text (`ResourcefulJTextArea`) or as
+  rendered HTML (`ResourcefulJEditorPane`), presented in a tabbed pane (`ResourcefulJTabbedPane`).
+- **Properties panel** — an internal frame (`ResourcefulJInternalFrame`) shows the selected file's
+  name, size, type, and modification date, all formatted for the current locale.
+- **Context menu** — right-clicking the file table opens a popup menu (`ResourcefulJPopupMenu`)
+  with localized actions.
+- **Localized dialogs** — the New Folder and Delete Confirmation actions use
+  `ResourcefulJOptionPane` instances whose title and button labels come from the resource bundle.
+- **Widgets tab** — exercises the remaining component types: `ResourcefulJPasswordField`,
+  `ResourcefulJFormattedTextField` (date/time), `ResourcefulJSpinner` (date),
+  `ResourcefulJSlider` (with locale-formatted tick labels), `ResourcefulJList` (day-of-week names
+  from `DateFormatSymbols`), and `ResourcefulJTextPane` (styled text).
+
+All localized strings live in `AppFrameBundle.json` and its locale variants
+(`AppFrameBundle_en.json`, `AppFrameBundle_fr.json`, etc.).
+
 ## Building
 
 ```bash

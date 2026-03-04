@@ -38,6 +38,16 @@ public class TestAppFrame
         SwingModuleRegistrar.ensureRegistered();
     }
 
+    /**
+     * Verify that AppFrame.create() constructs all Resourceful components without throwing.
+     * This catches bundle-entry type mismatches that only surface when a component is created.
+     */
+    @Test
+    public void testCreate()
+    {
+        assertDoesNotThrow(() -> AppFrame.create());
+    }
+
     @Test
     public void testAppFrameJsonBundle()
     {

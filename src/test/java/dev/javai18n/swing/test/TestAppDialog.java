@@ -17,15 +17,15 @@
 package dev.javai18n.swing.test;
 
 import java.util.Locale;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit tests for LocalizableJDialog.
+ * Unit tests for AppDialog.
  */
-public class TestLocalizableJDialog
+public class TestAppDialog
 {
-
     /**
      * Verify that initial properties are set from the default locale bundle.
      */
@@ -35,6 +35,21 @@ public class TestLocalizableJDialog
         AppDialog dialog = AppDialog.create();
         assertEquals("About File Explorer", dialog.getTitle());
         assertEquals("AboutDialog name", dialog.getName());
+    }
+
+    /**
+     * Verify that initialize() constructs all Resourceful components without throwing.
+     * This catches bundle-entry type mismatches (e.g. AbstractButtonPropertyBundle used
+     * where JLabelPropertyBundle is expected) that only surface when a component is created.
+     */
+    @Test
+    public void testInitialize()
+    {
+        assertDoesNotThrow(() ->
+        {
+            AppDialog dialog = AppDialog.create();
+            dialog.initialize();
+        });
     }
 
     /**

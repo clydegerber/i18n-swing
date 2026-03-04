@@ -34,13 +34,13 @@
   },
   "LocaleValueLabelProps":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "{0}",
     "ToolTipText": "Current locale value"
   },
   "LookAndFeelLabelProps":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "L&F: {0}",
     "ToolTipText": "Current look and feel"
   },

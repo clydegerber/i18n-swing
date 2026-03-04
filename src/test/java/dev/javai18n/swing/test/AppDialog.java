@@ -25,7 +25,7 @@ import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.UIManager;
 import dev.javai18n.core.Resource;
-import dev.javai18n.swing.AbstractButtonPropertyBundle;
+import dev.javai18n.swing.JLabelPropertyBundle;
 import dev.javai18n.swing.LocalizableJDialog;
 import dev.javai18n.swing.ResourcefulJButton;
 import dev.javai18n.swing.ResourcefulJLabel;
@@ -129,14 +129,14 @@ public class AppDialog extends LocalizableJDialog
         contentPanel.add(javax.swing.Box.createVerticalStrut(5));
 
         ResourcefulJLabel localeValueLabel = ResourcefulJLabel.create(new Resource(this, "LocaleValueLabelProps"));
-        AbstractButtonPropertyBundle localeValueProps = (AbstractButtonPropertyBundle) getResourceBundle().getObject("LocaleValueLabelProps");
+        JLabelPropertyBundle localeValueProps = (JLabelPropertyBundle) getResourceBundle().getObject("LocaleValueLabelProps");
         localeValueLabel.setText(new MessageFormat(localeValueProps.getText(), getBundleLocale())
                 .format(new Object[]{getBundleLocale().getDisplayName(getBundleLocale())}));
         contentPanel.add(localeValueLabel);
         contentPanel.add(javax.swing.Box.createVerticalStrut(5));
 
         ResourcefulJLabel lafLabel = ResourcefulJLabel.create(new Resource(this, "LookAndFeelLabelProps"));
-        AbstractButtonPropertyBundle lafProps = (AbstractButtonPropertyBundle) getResourceBundle().getObject("LookAndFeelLabelProps");
+        JLabelPropertyBundle lafProps = (JLabelPropertyBundle) getResourceBundle().getObject("LookAndFeelLabelProps");
         lafLabel.setText(new MessageFormat(lafProps.getText(), getBundleLocale())
                 .format(new Object[]{UIManager.getLookAndFeel().getName()}));
         contentPanel.add(lafLabel);

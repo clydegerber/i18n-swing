@@ -52,12 +52,12 @@ public class TestJLabelPropertyBundle
     public void testSetAttributes()
     {
         JLabelPropertyBundle bundle = new JLabelPropertyBundle();
-        bundle.setAttribute(JLabelPropertyBundle.ICON, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(JLabelPropertyBundle.ICON, "/dev/javai18n/swing/test/folder.png");
         assertEquals(1, bundle.size());
         assertEquals(true, bundle.containsKey(JLabelPropertyBundle.ICON));
         Icon icon = bundle.getIcon();
         assertNotNull(icon);
-        bundle.setAttribute(JLabelPropertyBundle.DISABLED_ICON, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(JLabelPropertyBundle.DISABLED_ICON, "/dev/javai18n/swing/test/folder.png");
         assertEquals(2, bundle.size());
         assertEquals(true, bundle.containsKey(JLabelPropertyBundle.DISABLED_ICON));
         icon = bundle.getDisabledIcon();

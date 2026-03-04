@@ -62,12 +62,12 @@ public class TestJTabbedPaneTabPropertyBundle
         assertEquals(true, bundle.containsKey(JTabbedPaneTabPropertyBundle.MNEMONIC));
         int mnemonic = bundle.getMnemonic();
         assertEquals(84, mnemonic);
-        bundle.setAttribute(JTabbedPaneTabPropertyBundle.ICON, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(JTabbedPaneTabPropertyBundle.ICON, "/dev/javai18n/swing/test/folder.png");
         assertEquals(3, bundle.size());
         assertEquals(true, bundle.containsKey(JTabbedPaneTabPropertyBundle.ICON));
         Icon icon = bundle.getIcon();
         assertNotNull(icon);
-        bundle.setAttribute(JTabbedPaneTabPropertyBundle.DISABLED_ICON, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(JTabbedPaneTabPropertyBundle.DISABLED_ICON, "/dev/javai18n/swing/test/folder.png");
         assertEquals(4, bundle.size());
         assertEquals(true, bundle.containsKey(JTabbedPaneTabPropertyBundle.DISABLED_ICON));
         Icon disabledIcon = bundle.getDisabledIcon();

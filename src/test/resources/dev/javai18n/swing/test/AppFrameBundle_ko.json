@@ -7,7 +7,7 @@
     "Name": "AppFrame 이름",
     "AccessibleName": "AppFrame 접근성 이름",
     "AccessibleDescription": "AppFrame 접근성 설명",
-    "IconImages": "dev/javai18n/swing/test/MN_Flag.jpg"
+    "IconImages": "dev/javai18n/swing/test/folder.png"
   },
   "MenuBarProps":
   {
@@ -448,7 +448,7 @@
     "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
     "Name": "FlagLabel",
     "Text": "내 깃발",
-    "Icon": "dev/javai18n/swing/test/MN_Flag.jpg"
+    "Icon": "dev/javai18n/swing/test/folder.png"
   },
   "StatusLabelProps":
   {

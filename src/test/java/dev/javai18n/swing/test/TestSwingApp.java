@@ -45,7 +45,7 @@ public class TestSwingApp
         AppFrame frame = AppFrame.create();
         try
         {
-            Image image = ImageIO.read(TestSwingApp.class.getResourceAsStream("/dev/javai18n/swing/test/MN_Flag.jpg"));
+            Image image = ImageIO.read(TestSwingApp.class.getResourceAsStream("/dev/javai18n/swing/test/folder.png"));
             frame.setIconImage(image);
             Taskbar.getTaskbar().setIconImage(image);
         }

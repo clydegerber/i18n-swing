@@ -55,7 +55,7 @@ public class TestJInternalFramePropertyBundle
         assertEquals(true, bundle.containsKey(JInternalFramePropertyBundle.TITLE));
         String title = bundle.getTitle();
         assertEquals("My Internal Frame", title);
-        bundle.setAttribute(JInternalFramePropertyBundle.FRAME_ICON, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(JInternalFramePropertyBundle.FRAME_ICON, "/dev/javai18n/swing/test/folder.png");
         assertEquals(2, bundle.size());
         assertEquals(true, bundle.containsKey(JInternalFramePropertyBundle.FRAME_ICON));
         Icon icon = bundle.getFrameIcon();

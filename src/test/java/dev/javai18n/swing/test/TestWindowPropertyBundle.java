@@ -49,7 +49,7 @@ public class TestWindowPropertyBundle
     public void testSetIconImageFromString()
     {
         WindowPropertyBundle bundle = new WindowPropertyBundle();
-        bundle.setAttribute(WindowPropertyBundle.ICON_IMAGES, "/dev/javai18n/swing/test/MN_Flag.jpg");
+        bundle.setAttribute(WindowPropertyBundle.ICON_IMAGES, "/dev/javai18n/swing/test/folder.png");
         assertEquals(bundle.size(), 1);
         assertEquals(true, bundle.containsKey(WindowPropertyBundle.ICON_IMAGES));
         List<Image> images = bundle.getIconImages();
@@ -63,7 +63,7 @@ public class TestWindowPropertyBundle
     public void testSetIconImageFromStringArray()
     {
         WindowPropertyBundle bundle = new WindowPropertyBundle();
-        String[] array = {"dev/javai18n/swing/test/MN_Flag.jpg"};
+        String[] array = {"dev/javai18n/swing/test/folder.png"};
         bundle.setAttribute(WindowPropertyBundle.ICON_IMAGES, array);
         assertEquals(bundle.size(), 1);
         assertEquals(true, bundle.containsKey(WindowPropertyBundle.ICON_IMAGES));

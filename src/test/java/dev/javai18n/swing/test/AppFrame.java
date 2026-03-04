@@ -73,6 +73,7 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import dev.javai18n.core.Resource;
 import dev.javai18n.swing.AbstractButtonPropertyBundle;
+import dev.javai18n.swing.JLabelPropertyBundle;
 import dev.javai18n.swing.LocaleJMenuItem;
 import dev.javai18n.swing.LocalizableJFrame;
 import dev.javai18n.swing.LookAndFeelJMenuItem;
@@ -234,7 +235,16 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
 
     private String getBundleText(String key)
     {
-        return ((AbstractButtonPropertyBundle) getResourceBundle().getObject(key)).getText();
+        Object bundle = getResourceBundle().getObject(key);
+        if (bundle instanceof AbstractButtonPropertyBundle b)
+        {
+            return b.getText();
+        }
+        if (bundle instanceof JLabelPropertyBundle b)
+        {
+            return b.getText();
+        }
+        throw new IllegalArgumentException("Bundle key '" + key + "' does not have a Text property");
     }
 
     private void checkFormatCacheLocale()

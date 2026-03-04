@@ -9,19 +9,19 @@
   },
   "AboutTitleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "파일 탐색기",
     "ToolTipText": "애플리케이션 이름"
   },
   "AboutVersionLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "버전 1.0",
     "ToolTipText": "애플리케이션 버전"
   },
   "AboutLocaleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "로케일：",
     "ToolTipText": "현재 로케일"
   },

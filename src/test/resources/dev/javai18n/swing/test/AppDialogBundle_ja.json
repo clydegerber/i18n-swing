@@ -9,19 +9,19 @@
   },
   "AboutTitleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "ファイルエクスプローラー",
     "ToolTipText": "アプリケーション名"
   },
   "AboutVersionLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "バージョン 1.0",
     "ToolTipText": "アプリケーションのバージョン"
   },
   "AboutLocaleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "ロケール：",
     "ToolTipText": "現在のロケール"
   },

@@ -9,19 +9,19 @@
   },
   "AboutTitleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "文件浏览器",
     "ToolTipText": "应用程序名称"
   },
   "AboutVersionLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "版本 1.0",
     "ToolTipText": "应用程序版本"
   },
   "AboutLocaleLabel":
   {
-    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
     "Text": "区域设置：",
     "ToolTipText": "当前区域设置"
   },

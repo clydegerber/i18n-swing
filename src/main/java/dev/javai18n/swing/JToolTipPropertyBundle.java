@@ -84,9 +84,9 @@ public class JToolTipPropertyBundle extends JComponentPropertyBundle
      * @return the set of valid attribute names for a JToolTipPropertyBundle.
      */
     @Override
-    public HashSet<String> validNames()
+    public Set<String> validNames()
     {
-        HashSet<String> nameSet = super.validNames();
+        Set<String> nameSet = super.validNames();
         nameSet.add(TIP_TEXT);
         return nameSet;
     }

@@ -131,9 +131,9 @@ public class JFileChooserPropertyBundle extends JComponentPropertyBundle
      * @return the set of valid attribute names for a JFileChooserPropertyBundle.
      */
     @Override
-    public HashSet<String> validNames()
+    public Set<String> validNames()
     {
-        HashSet<String> nameSet = super.validNames();
+        Set<String> nameSet = super.validNames();
         nameSet.add(DIALOG_TITLE);
         nameSet.add(APPROVE_BUTTON_TEXT);
         nameSet.add(APPROVE_BUTTON_TOOLTIP);

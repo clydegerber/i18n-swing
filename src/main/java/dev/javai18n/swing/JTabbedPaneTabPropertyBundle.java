@@ -166,9 +166,9 @@ public class JTabbedPaneTabPropertyBundle extends JComponentPropertyBundle
      * @return the set of valid attribute names for a JTabbedPaneTabPropertyBundle.
      */
     @Override
-    public HashSet<String> validNames()
+    public Set<String> validNames()
     {
-        HashSet<String> nameSet = super.validNames();
+        Set<String> nameSet = super.validNames();
         nameSet.add(TITLE);
         nameSet.add(ICON);
         nameSet.add(DISABLED_ICON);

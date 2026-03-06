@@ -120,9 +120,9 @@ public class WindowPropertyBundle extends ComponentPropertyBundle
      * @return the set of valid attribute names for a WindowPropertyBundle.
      */
     @Override
-    public HashSet<String> validNames()
+    public Set<String> validNames()
     {
-        HashSet<String> nameSet = super.validNames();
+        Set<String> nameSet = super.validNames();
         nameSet.add(ICON_IMAGES);
         return nameSet;
     }

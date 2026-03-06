@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.JFileChooserPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -37,7 +37,7 @@ public class TestJFileChooserPropertyBundle
     public void testValidNames()
     {
         JFileChooserPropertyBundle bundle = new JFileChooserPropertyBundle();
-        HashSet<String> names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(8, names.size());
         assertTrue(names.contains(JFileChooserPropertyBundle.DIALOG_TITLE));
         assertTrue(names.contains(JFileChooserPropertyBundle.APPROVE_BUTTON_TEXT));

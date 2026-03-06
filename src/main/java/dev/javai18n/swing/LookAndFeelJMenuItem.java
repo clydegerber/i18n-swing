@@ -56,8 +56,8 @@ public class LookAndFeelJMenuItem extends ResourcefulJMenuItem
 
     /**
      * Construct a LookAndFeelMenuItem for a specified LookAndFeelInfo and Resource.
-     * @param laf The LookAndFeelInfo this menu item represents.
-     * @param resource the Resource holding Locale specific values for the LocaleJMenuItem.
+     * @param laf      The LookAndFeelInfo this menu item represents.
+     * @param resource The Resource holding Locale-specific values for this menu item.
      */
     protected LookAndFeelJMenuItem(UIManager.LookAndFeelInfo laf, Resource resource)
     {
@@ -96,12 +96,10 @@ public class LookAndFeelJMenuItem extends ResourcefulJMenuItem
      */
     protected void updateText()
     {
-        /**
-         * The null check is required because this method gets called during construction of the super class.
-         */
+        // Null check required: called during superclass construction before itemLookAndFeel is set.
         if (null != itemLookAndFeel && getText().isEmpty())
         {
-            String text =  itemLookAndFeel.getName();
+            String text = itemLookAndFeel.getName();
             setText(text);
         }
     }

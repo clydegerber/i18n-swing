@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import javax.swing.Icon;
 import dev.javai18n.swing.JLabelPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestJLabelPropertyBundle
     public void testValidNames()
     {
         JLabelPropertyBundle bundle = new JLabelPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(9, names.size());
         assertTrue(names.contains(JLabelPropertyBundle.TEXT));
         assertTrue(names.contains(JLabelPropertyBundle.MNEMONIC));

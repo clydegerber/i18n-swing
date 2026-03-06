@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.JProgressBarPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -35,7 +35,7 @@ public class TestJProgressBarPropertyBundle
     public void testValidNames()
     {
         JProgressBarPropertyBundle bundle = new JProgressBarPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(6, names.size());
         assertTrue(names.contains(JProgressBarPropertyBundle.STRING));
     }

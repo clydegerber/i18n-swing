@@ -19,6 +19,7 @@ package dev.javai18n.swing;
 import java.awt.Font;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.core.AttributeCollection;
 
 /**
@@ -229,7 +230,7 @@ public class ComponentPropertyBundle implements AttributeCollection
      * Returns the set of valid attribute names for a ComponentPropertyBundle.
      * @return the set of valid attribute names for a ComponentPropertyBundle.
      */
-    public HashSet<String> validNames()
+    public Set<String> validNames()
     {
         HashSet<String> nameSet = new HashSet<>();
         nameSet.add(NAME);

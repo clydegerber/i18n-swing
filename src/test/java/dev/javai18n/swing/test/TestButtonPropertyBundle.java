@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.ButtonPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -35,7 +35,7 @@ public class TestButtonPropertyBundle
     public void testValidNames()
     {
         ButtonPropertyBundle bundle = new ButtonPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(5, names.size());
         assertTrue(names.contains(ButtonPropertyBundle.LABEL));
     }

@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.JComponentPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -35,7 +35,7 @@ public class TestJComponentPropertyBundle
     public void testValidNames()
     {
         JComponentPropertyBundle bundle = new JComponentPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(5, names.size());
         assertTrue(names.contains(JComponentPropertyBundle.TOOL_TIP_TEXT));
     }

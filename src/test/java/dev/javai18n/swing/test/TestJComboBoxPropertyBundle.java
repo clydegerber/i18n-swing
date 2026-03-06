@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.JComboBoxPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestJComboBoxPropertyBundle
     public void testValidNames()
     {
         JComboBoxPropertyBundle bundle = new JComboBoxPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(6, names.size());
         assertTrue(names.contains(JComboBoxPropertyBundle.VALUES));
     }

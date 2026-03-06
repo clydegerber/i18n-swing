@@ -32,14 +32,13 @@ public class ModuleResourceBundleCallback implements GetResourceBundleCallback
      */
     public static final ModuleResourceBundleCallback GET_BUNDLE_CALLBACK = new ModuleResourceBundleCallback();
 
-    /** Creates a new ModuleResourceBundleCallback. */
-    public ModuleResourceBundleCallback()
+    private ModuleResourceBundleCallback()
     {
     }
 
     @Override
     public ResourceBundle getResourceBundle(String baseName, Locale locale)
-            throws NullPointerException, MissingResourceException
+            throws MissingResourceException
     {
         return ResourceBundle.getBundle(baseName, locale);
     }

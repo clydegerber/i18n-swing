@@ -17,7 +17,7 @@
 package dev.javai18n.swing.test;
 
 import java.awt.Font;
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.ComponentPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -36,7 +36,7 @@ public class TestComponentPropertyBundle
     public void testValidNames()
     {
         ComponentPropertyBundle bundle = new ComponentPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(4, names.size());
         assertTrue(names.contains(ComponentPropertyBundle.NAME));
         assertTrue(names.contains(ComponentPropertyBundle.FONT));

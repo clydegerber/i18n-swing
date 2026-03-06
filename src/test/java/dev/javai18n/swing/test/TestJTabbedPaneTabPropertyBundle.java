@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import javax.swing.Icon;
 import dev.javai18n.swing.JTabbedPaneTabPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestJTabbedPaneTabPropertyBundle
     public void testValidNames()
     {
         JTabbedPaneTabPropertyBundle bundle = new JTabbedPaneTabPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(9, names.size());
         assertTrue(names.contains(JTabbedPaneTabPropertyBundle.TITLE));
         assertTrue(names.contains(JTabbedPaneTabPropertyBundle.ICON));

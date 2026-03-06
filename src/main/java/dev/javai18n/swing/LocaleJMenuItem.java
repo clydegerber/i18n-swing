@@ -60,8 +60,8 @@ public class LocaleJMenuItem extends ResourcefulJMenuItem implements Comparable<
 
     /**
      * Construct a LocaleMenuItem for a specified Locale and Resource.
-     * @param locale The Locale this menu item represents.
-     * @param resource the Resource holding Locale specific values for the LocaleJMenuItem. 
+     * @param locale   The Locale this menu item represents.
+     * @param resource The Resource holding Locale-specific values for this menu item.
      */
     protected LocaleJMenuItem(Locale locale, Resource resource)
     {

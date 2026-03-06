@@ -17,7 +17,7 @@
 package dev.javai18n.swing.test;
 
 import java.awt.Image;
-import java.util.HashSet;
+import java.util.Set;
 import java.util.List;
 import dev.javai18n.swing.WindowPropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestWindowPropertyBundle
     public void testValidNames()
     {
         WindowPropertyBundle bundle = new WindowPropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(5, names.size());
         assertTrue(names.contains(WindowPropertyBundle.ICON_IMAGES));
     }

@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import javax.swing.Icon;
 import dev.javai18n.swing.JInternalFramePropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestJInternalFramePropertyBundle
     public void testValidNames()
     {
         JInternalFramePropertyBundle bundle = new JInternalFramePropertyBundle();
-        HashSet names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         assertEquals(7, names.size());
         assertTrue(names.contains(JInternalFramePropertyBundle.TITLE));
         assertTrue(names.contains(JInternalFramePropertyBundle.FRAME_ICON));

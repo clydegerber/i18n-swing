@@ -16,7 +16,7 @@
 
 package dev.javai18n.swing.test;
 
-import java.util.HashSet;
+import java.util.Set;
 import dev.javai18n.swing.JOptionPanePropertyBundle;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,7 +37,7 @@ public class TestJOptionPanePropertyBundle
     public void testValidNames()
     {
         JOptionPanePropertyBundle bundle = new JOptionPanePropertyBundle();
-        HashSet<String> names = bundle.validNames();
+        Set<String> names = bundle.validNames();
         // JComponentPropertyBundle contributes 5 names (Font, Name, ToolTipText,
         // AccessibleName, AccessibleDescription); this class adds TITLE and OPTIONS = 7.
         assertEquals(7, names.size());

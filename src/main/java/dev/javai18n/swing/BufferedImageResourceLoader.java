@@ -22,7 +22,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import static dev.javai18n.swing.SwingLogger.SWING_LOGGER;
@@ -66,31 +65,27 @@ public final class BufferedImageResourceLoader
             {
                 module = MODULE_CACHE.computeIfAbsent(resourcePkg, pkg ->
                 {
-                    // Match the the package of the resource to a package in the
+                    // Match the package of the resource to a package in the
                     // call stack to find the appropriate Module to load the resource.
                     // If there's not a match, use the Module for this Class.
                     Module defaultModule = BufferedImageResourceLoader.class.getModule();
                     StackWalker walker = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE);
-                    List<StackWalker.StackFrame> frames = walker.walk(s -> s.toList());
-                    for (StackWalker.StackFrame frame : frames)
-                    {
-                        Class<?> clazz = frame.getDeclaringClass();
-                        String clazzPkgName = clazz.getPackage().getName();
-                        if (clazzPkgName.equals(pkg))
-                        {
-                            return clazz.getModule();
-                        }
-                    }
-                    return defaultModule;
+                    return walker.walk(s ->
+                        s.filter(f -> f.getDeclaringClass().getPackage().getName().equals(pkg))
+                         .map(f -> f.getDeclaringClass().getModule())
+                         .findFirst()
+                         .orElse(defaultModule));
                 });
             }
             try (InputStream is = module.getResourceAsStream(str))
             {
                 if (null != is)
                 {
-                    BufferedImage image;
-                    image = ImageIO.read(is);
-                    return image;
+                    BufferedImage image = ImageIO.read(is);
+                    if (null != image)
+                    {
+                        return image;
+                    }
                 }
             }
         }
@@ -102,18 +97,22 @@ public final class BufferedImageResourceLoader
         {
             URI uri = new URI(str);
             BufferedImage image = ImageIO.read(uri.toURL());
-            return image;
+            if (null != image)
+            {
+                return image;
+            }
         }
         catch (IOException | IllegalArgumentException | URISyntaxException ex)
         {
             SWING_LOGGER.log(System.Logger.Level.DEBUG, "failed.to.load.image.as.url", str, ex);
         }
-        File file = new File(str);
         try
         {
-            BufferedImage image;
-            image = ImageIO.read(file);
-            return image;
+            BufferedImage image = ImageIO.read(new File(str));
+            if (null != image)
+            {
+                return image;
+            }
         }
         catch (IOException ex)
         {

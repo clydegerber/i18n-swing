@@ -9,7 +9,7 @@ when the application locale changes.
 ## Requirements
 
 - Java 17 or later
-- [i18n-core](https://github.com/clydegerber/i18n) 1.3.1 or later (pulled in transitively)
+- [i18n-core](https://github.com/clydegerber/i18n) 1.3.3 or later (pulled in transitively)
 
 ## Installation
 

@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+/**
+ * Welcome to the dev/javai18n/swing API documentation.
+ *
+ * For general information, installation instructions, and examples, please see the
+ * <a href="{@docRoot}/README.html">Project README</a>.
+ */
 module dev.javai18n.swing
 {
     requires java.desktop;

@@ -4,6 +4,41 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1] - 2026-03-06
+
+### Added
+
+- `TestComponentSourceProvider` SPI interface and module-path registration for
+  `TestComponentSource`, fixing module-path test failure
+
+### Changed
+
+- Updated `i18n-core` dependency from 1.0 to 1.3.3
+- `validNames()` return type narrowed from `HashSet<String>` to `Set<String>`
+  in `ComponentPropertyBundle` and all 13 subclasses
+- `ModuleResourceBundleCallback` constructor made `private`; use the
+  `GET_BUNDLE_CALLBACK` singleton
+- `BufferedImageResourceLoader.getBufferedImageResource()`: `ImageIO.read()`
+  returning `null` (no suitable image reader) now falls through to the next
+  loading strategy rather than silently returning `null` to the caller
+- `BufferedImageResourceLoader`: StackWalker walk uses a lazy stream that
+  stops at the first matching frame instead of materialising the full stack
+
+### Removed
+
+- Vestigial `META-INF/services/` entries for `XxxProvider` interfaces from
+  both the main library and the test module; these files were not consulted in
+  either classpath mode (which uses `AssociativeResourceBundleControl`) or
+  module-path mode (which uses `module-info.class` `provides` directives)
+
+### Fixed
+
+- `ModuleResourceBundleCallback.getResourceBundle()` no longer declares
+  `throws NullPointerException` (unchecked exceptions do not belong in a
+  `throws` clause)
+- `LookAndFeelJMenuItem.updateText()`: replaced `/** */` block comment inside
+  method body with a line comment
+
 ## [1.0] - 2026-03-06
 
 ### Added

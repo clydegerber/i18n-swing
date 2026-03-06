@@ -408,7 +408,15 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
             // because the editor is fully recreated here on every locale change with a
             // fresh locale-specific format pattern.  A Resourceful wrapper would add
             // lifecycle complexity for a component that is immediately discarded.
-            demoSpinner.setEditor(new JSpinner.DateEditor(demoSpinner, pattern));
+            JSpinner.DateEditor editor = new JSpinner.DateEditor(demoSpinner, pattern);
+            // Override the formatter factory with one that uses the explicit locale-aware
+            // DateFormat, because JSpinner.DateEditor internally creates a SimpleDateFormat
+            // from the pattern using the spinner's locale at construction time, which may
+            // not yet reflect the new locale.
+            ((JSpinner.DefaultEditor) editor).getTextField().setFormatterFactory(
+                    new javax.swing.text.DefaultFormatterFactory(
+                            new javax.swing.text.DateFormatter(df)));
+            demoSpinner.setEditor(editor);
         }
 
         // Reinstall demoFormattedTextField formatter with new locale's date format
@@ -1542,7 +1550,8 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
             if (!showHidden && f.isHidden()) continue;
             result.add(f);
         }
-        result.sort(Comparator.comparing(f -> f.getName().toLowerCase()));
+        Collator treeCollator = Collator.getInstance(getBundleLocale());
+        result.sort((a, b) -> treeCollator.compare(a.getName(), b.getName()));
         return result;
     }
 
@@ -1566,7 +1575,8 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
                 secondary = Comparator.comparingLong(File::lastModified);
                 break;
             default:
-                secondary = Comparator.comparing(f -> f.getName().toLowerCase());
+                Collator nameCollator = Collator.getInstance(getBundleLocale());
+                secondary = (a, b) -> nameCollator.compare(a.getName(), b.getName());
                 break;
         }
 

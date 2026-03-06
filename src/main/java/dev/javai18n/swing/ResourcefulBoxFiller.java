@@ -63,6 +63,13 @@ public class ResourcefulBoxFiller extends Box.Filler implements Resourceful, Loc
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a Box.Filler bound to the given resource and size constraints.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param min      The minimum size of the filler.
+     * @param pref     The preferred size of the filler.
+     * @param max      The maximum size of the filler.
+     */
     protected ResourcefulBoxFiller(Resource resource, Dimension min, Dimension pref, Dimension max)
     {
         super(min, pref, max);
@@ -70,11 +77,18 @@ public class ResourcefulBoxFiller extends Box.Filler implements Resourceful, Loc
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

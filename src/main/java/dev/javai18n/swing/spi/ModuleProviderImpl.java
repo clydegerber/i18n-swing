@@ -25,4 +25,8 @@ import dev.javai18n.core.AssociativeResourceBundleProvider;
 public class ModuleProviderImpl extends AssociativeResourceBundleProvider
         implements LocalizableJDialogProvider, LocalizableJFrameProvider, SwingLoggerProvider
 {
+    /** Creates a new ModuleProviderImpl. */
+    public ModuleProviderImpl()
+    {
+    }
 }

@@ -61,6 +61,11 @@ public class ResourcefulJDesktopIcon extends JInternalFrame.JDesktopIcon
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JDesktopIcon bound to the given resource and internal frame.
+     * @param resource      The resource identifying the locale source and bundle key.
+     * @param internalFrame The {@link JInternalFrame} this icon represents.
+     */
     protected ResourcefulJDesktopIcon(Resource resource, JInternalFrame internalFrame)
     {
         super(internalFrame);
@@ -68,11 +73,18 @@ public class ResourcefulJDesktopIcon extends JInternalFrame.JDesktopIcon
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

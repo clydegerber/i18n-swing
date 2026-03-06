@@ -81,6 +81,9 @@ public class ResourcefulJRadioButtonMenuItem extends JRadioButtonMenuItem implem
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

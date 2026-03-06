@@ -77,6 +77,9 @@ public class ResourcefulJTextArea extends JTextArea implements Resourceful, Loca
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

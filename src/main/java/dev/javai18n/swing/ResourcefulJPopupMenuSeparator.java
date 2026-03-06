@@ -58,17 +58,28 @@ public class ResourcefulJPopupMenuSeparator extends JPopupMenu.Separator
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JPopupMenu.Separator bound to the given resource.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJPopupMenuSeparator(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

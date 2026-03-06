@@ -78,6 +78,7 @@ public class ResourcefulJLabel extends JLabel implements Resourceful, LocaleEven
         delegate.initialize();
     }
 
+    /** {@inheritDoc} */
     protected void updateLocaleSpecificValues()
     {
         try

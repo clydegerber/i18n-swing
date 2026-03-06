@@ -28,6 +28,11 @@ import javax.swing.ImageIcon;
  */
 public class JTabbedPaneTabPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JTabbedPaneTabPropertyBundle. */
+    public JTabbedPaneTabPropertyBundle()
+    {
+    }
+
     /**
      * A key for the tab title.
      */

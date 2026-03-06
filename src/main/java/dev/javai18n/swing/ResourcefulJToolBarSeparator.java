@@ -72,12 +72,21 @@ public class ResourcefulJToolBarSeparator extends JToolBar.Separator
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JToolBar.Separator bound to the given resource with the default size.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJToolBarSeparator(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JToolBar.Separator bound to the given resource with the specified size.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param size     The size of the separator.
+     */
     protected ResourcefulJToolBarSeparator(Resource resource, Dimension size)
     {
         super(size);
@@ -85,11 +94,18 @@ public class ResourcefulJToolBarSeparator extends JToolBar.Separator
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

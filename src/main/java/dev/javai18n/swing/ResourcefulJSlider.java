@@ -74,12 +74,24 @@ public class ResourcefulJSlider extends JSlider implements Resourceful, LocaleEv
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JSlider bound to the given resource with default horizontal orientation.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJSlider(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JSlider bound to the given resource with the specified orientation and range.
+     * @param resource    The resource identifying the locale source and bundle key.
+     * @param orientation {@link javax.swing.JSlider#HORIZONTAL} or {@link javax.swing.JSlider#VERTICAL}.
+     * @param min         The slider minimum value.
+     * @param max         The slider maximum value.
+     * @param value       The slider initial value.
+     */
     protected ResourcefulJSlider(Resource resource, int orientation, int min, int max, int value)
     {
         super(orientation, min, max, value);
@@ -87,11 +99,18 @@ public class ResourcefulJSlider extends JSlider implements Resourceful, LocaleEv
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

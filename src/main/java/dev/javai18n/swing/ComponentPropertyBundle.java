@@ -30,6 +30,11 @@ import dev.javai18n.core.AttributeCollection;
  */
 public class ComponentPropertyBundle implements AttributeCollection
 {
+    /** Creates a new ComponentPropertyBundle. */
+    public ComponentPropertyBundle()
+    {
+    }
+
     /**
      * A key for the name of the Component.
      */

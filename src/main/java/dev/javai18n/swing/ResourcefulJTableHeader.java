@@ -76,12 +76,21 @@ public class ResourcefulJTableHeader extends JTableHeader implements Resourceful
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JTableHeader bound to the given resource with a default column model.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJTableHeader(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JTableHeader bound to the given resource and column model.
+     * @param resource    The resource identifying the locale source and bundle key.
+     * @param columnModel The {@link TableColumnModel} that supplies column definitions.
+     */
     protected ResourcefulJTableHeader(Resource resource, TableColumnModel columnModel)
     {
         super(columnModel);
@@ -89,11 +98,18 @@ public class ResourcefulJTableHeader extends JTableHeader implements Resourceful
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

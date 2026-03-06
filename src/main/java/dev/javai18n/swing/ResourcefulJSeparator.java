@@ -105,6 +105,9 @@ public class ResourcefulJSeparator extends JSeparator implements Resourceful, Lo
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

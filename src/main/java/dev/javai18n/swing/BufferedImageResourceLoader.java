@@ -24,7 +24,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import static dev.javai18n.swing.SwingLogger.SWING_LOGGER;
 import javax.imageio.ImageIO;
@@ -71,8 +70,7 @@ public final class BufferedImageResourceLoader
                     // call stack to find the appropriate Module to load the resource.
                     // If there's not a match, use the Module for this Class.
                     Module defaultModule = BufferedImageResourceLoader.class.getModule();
-                    StackWalker walker = StackWalker.getInstance(
-                        Set.of(StackWalker.Option.DROP_METHOD_INFO, StackWalker.Option.RETAIN_CLASS_REFERENCE));
+                    StackWalker walker = StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE);
                     List<StackWalker.StackFrame> frames = walker.walk(s -> s.toList());
                     for (StackWalker.StackFrame frame : frames)
                     {

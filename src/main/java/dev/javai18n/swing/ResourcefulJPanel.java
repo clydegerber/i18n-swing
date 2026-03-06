@@ -170,6 +170,9 @@ public class ResourcefulJPanel extends JPanel implements Resourceful, LocaleEven
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

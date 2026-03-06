@@ -24,6 +24,11 @@ import java.util.Set;
  */
 public class JComponentPropertyBundle extends ComponentPropertyBundle
 {
+    /** Creates a new JComponentPropertyBundle. */
+    public JComponentPropertyBundle()
+    {
+    }
+
    /**
      * A key for the tool tip text for the Component.
      */

@@ -132,6 +132,9 @@ public class ResourcefulJTabbedPane extends JTabbedPane implements Resourceful, 
         }
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

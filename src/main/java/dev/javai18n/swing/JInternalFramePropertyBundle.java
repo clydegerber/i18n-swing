@@ -27,6 +27,11 @@ import javax.swing.ImageIcon;
  */
 public class JInternalFramePropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JInternalFramePropertyBundle. */
+    public JInternalFramePropertyBundle()
+    {
+    }
+
     /**
      * A key for the title for the JInternalFrame.
      */

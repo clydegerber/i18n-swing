@@ -97,12 +97,21 @@ public class ResourcefulJFileChooser extends JFileChooser implements Resourceful
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JFileChooser bound to the given resource, pointing to the user's default directory.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJFileChooser(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JFileChooser bound to the given resource and initial directory path.
+     * @param resource             The resource identifying the locale source and bundle key.
+     * @param currentDirectoryPath The path of the directory to display initially.
+     */
     protected ResourcefulJFileChooser(Resource resource, String currentDirectoryPath)
     {
         super(currentDirectoryPath);
@@ -110,6 +119,11 @@ public class ResourcefulJFileChooser extends JFileChooser implements Resourceful
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JFileChooser bound to the given resource and initial directory.
+     * @param resource         The resource identifying the locale source and bundle key.
+     * @param currentDirectory The directory to display initially.
+     */
     protected ResourcefulJFileChooser(Resource resource, File currentDirectory)
     {
         super(currentDirectory);
@@ -117,11 +131,18 @@ public class ResourcefulJFileChooser extends JFileChooser implements Resourceful
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

@@ -77,6 +77,9 @@ public class ResourcefulJToolBar extends JToolBar implements Resourceful, Locale
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

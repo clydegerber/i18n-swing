@@ -24,6 +24,11 @@ import java.util.Set;
  */
 public class ButtonPropertyBundle extends ComponentPropertyBundle
 {
+    /** Creates a new ButtonPropertyBundle. */
+    public ButtonPropertyBundle()
+    {
+    }
+
    /**
      * A key for the label of the Button.
      */

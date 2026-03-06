@@ -79,6 +79,9 @@ public class ResourcefulJMenu extends JMenu implements Resourceful, LocaleEventL
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

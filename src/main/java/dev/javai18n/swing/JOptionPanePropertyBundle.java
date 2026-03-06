@@ -25,6 +25,11 @@ import java.util.Set;
  */
 public class JOptionPanePropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JOptionPanePropertyBundle. */
+    public JOptionPanePropertyBundle()
+    {
+    }
+
     /**
      * A key for the dialog title string.
      */

@@ -75,6 +75,11 @@ public class ResourcefulJSpinnerDateEditor extends JSpinner.DateEditor
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JSpinner.DateEditor bound to the given resource with the default date format.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param spinner  The {@link JSpinner} this editor is associated with.
+     */
     protected ResourcefulJSpinnerDateEditor(Resource resource, JSpinner spinner)
     {
         super(spinner);
@@ -82,6 +87,12 @@ public class ResourcefulJSpinnerDateEditor extends JSpinner.DateEditor
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JSpinner.DateEditor bound to the given resource with the specified date format pattern.
+     * @param resource          The resource identifying the locale source and bundle key.
+     * @param spinner           The {@link JSpinner} this editor is associated with.
+     * @param dateFormatPattern A {@link java.text.SimpleDateFormat} pattern string.
+     */
     protected ResourcefulJSpinnerDateEditor(Resource resource, JSpinner spinner,
             String dateFormatPattern)
     {
@@ -90,11 +101,18 @@ public class ResourcefulJSpinnerDateEditor extends JSpinner.DateEditor
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

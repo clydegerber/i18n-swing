@@ -27,6 +27,11 @@ import javax.swing.ImageIcon;
  */
 public class AbstractButtonPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new AbstractButtonPropertyBundle. */
+    public AbstractButtonPropertyBundle()
+    {
+    }
+
     /**
      * A key for the Icon for the Button.
      */

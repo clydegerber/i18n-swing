@@ -76,12 +76,21 @@ public class ResourcefulJTable extends JTable implements Resourceful, LocaleEven
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JTable bound to the given resource with no table model.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJTable(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JTable bound to the given resource and table model.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param model    The TableModel to display.
+     */
     protected ResourcefulJTable(Resource resource, TableModel model)
     {
         super(model);
@@ -89,11 +98,18 @@ public class ResourcefulJTable extends JTable implements Resourceful, LocaleEven
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

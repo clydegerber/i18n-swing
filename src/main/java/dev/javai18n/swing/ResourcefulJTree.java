@@ -74,12 +74,21 @@ public class ResourcefulJTree extends JTree implements Resourceful, LocaleEventL
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JTree bound to the given resource with no tree model.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJTree(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JTree bound to the given resource and tree model.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param model    The {@link TreeModel} to display.
+     */
     protected ResourcefulJTree(Resource resource, TreeModel model)
     {
         super(model);
@@ -87,11 +96,18 @@ public class ResourcefulJTree extends JTree implements Resourceful, LocaleEventL
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

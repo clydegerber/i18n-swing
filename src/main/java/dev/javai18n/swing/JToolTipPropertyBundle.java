@@ -30,6 +30,11 @@ import java.util.Set;
  */
 public class JToolTipPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JToolTipPropertyBundle. */
+    public JToolTipPropertyBundle()
+    {
+    }
+
     /**
      * A key for the text displayed inside the tooltip balloon (see
      * {@link javax.swing.JToolTip#setTipText}).

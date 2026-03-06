@@ -60,10 +60,8 @@ public class ResourcefulJCheckBoxMenuItem extends JCheckBoxMenuItem implements R
     private final transient SwingResourcefulDelegate delegate;
 
     /**
-     * Construct a ResourcefulJCheckBoxMenuItem with the specified Resource containing localized values for the
-     * JCheckBoxMenuItem.
-     * @param resource A Resource containing an AbstractButtonPropertyBundle that holds the localized values for the
-     *                 JCheckBoxMenuItem.
+     * Constructs a JCheckBoxMenuItem bound to the given resource.
+     * @param resource The resource identifying the locale source and bundle key.
      */
     protected ResourcefulJCheckBoxMenuItem(Resource resource)
     {
@@ -72,14 +70,17 @@ public class ResourcefulJCheckBoxMenuItem extends JCheckBoxMenuItem implements R
     }
 
     /**
-     * Initialize this component by setting its locale, updating locale-specific values, and registering to listen
-     * for locale events from the resource's source.
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
      */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

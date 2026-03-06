@@ -72,12 +72,21 @@ public class ResourcefulJFormattedTextField extends JFormattedTextField implemen
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JFormattedTextField bound to the given resource with no formatter.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJFormattedTextField(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JFormattedTextField bound to the given resource with the specified formatter.
+     * @param resource  The resource identifying the locale source and bundle key.
+     * @param formatter The formatter to use.
+     */
     protected ResourcefulJFormattedTextField(Resource resource, AbstractFormatter formatter)
     {
         super(formatter);
@@ -85,11 +94,18 @@ public class ResourcefulJFormattedTextField extends JFormattedTextField implemen
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

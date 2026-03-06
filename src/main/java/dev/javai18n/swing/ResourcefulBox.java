@@ -59,6 +59,12 @@ public class ResourcefulBox extends Box implements Resourceful, LocaleEventListe
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a Box bound to the given resource and layout axis.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param axis     The layout axis — one of {@link BoxLayout#X_AXIS}, {@link BoxLayout#Y_AXIS},
+     *                 {@link BoxLayout#LINE_AXIS}, or {@link BoxLayout#PAGE_AXIS}.
+     */
     protected ResourcefulBox(Resource resource, int axis)
     {
         super(axis);
@@ -66,11 +72,18 @@ public class ResourcefulBox extends Box implements Resourceful, LocaleEventListe
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

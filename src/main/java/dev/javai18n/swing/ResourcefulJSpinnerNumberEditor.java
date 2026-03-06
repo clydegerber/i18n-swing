@@ -77,6 +77,11 @@ public class ResourcefulJSpinnerNumberEditor extends JSpinner.NumberEditor
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JSpinner.NumberEditor bound to the given resource with the default number format.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param spinner  The {@link JSpinner} this editor is associated with.
+     */
     protected ResourcefulJSpinnerNumberEditor(Resource resource, JSpinner spinner)
     {
         super(spinner);
@@ -84,6 +89,12 @@ public class ResourcefulJSpinnerNumberEditor extends JSpinner.NumberEditor
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JSpinner.NumberEditor bound to the given resource with the specified decimal format pattern.
+     * @param resource             The resource identifying the locale source and bundle key.
+     * @param spinner              The {@link JSpinner} this editor is associated with.
+     * @param decimalFormatPattern A {@link java.text.DecimalFormat} pattern string.
+     */
     protected ResourcefulJSpinnerNumberEditor(Resource resource, JSpinner spinner,
             String decimalFormatPattern)
     {
@@ -92,11 +103,18 @@ public class ResourcefulJSpinnerNumberEditor extends JSpinner.NumberEditor
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

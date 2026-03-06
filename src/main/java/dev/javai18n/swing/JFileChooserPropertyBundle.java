@@ -27,6 +27,11 @@ import java.util.Set;
  */
 public class JFileChooserPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JFileChooserPropertyBundle. */
+    public JFileChooserPropertyBundle()
+    {
+    }
+
     /**
      * A key for the dialog title string displayed in the file-chooser window's title bar.
      */

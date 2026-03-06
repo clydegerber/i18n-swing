@@ -222,7 +222,7 @@ public class LocalizableJDialog extends JDialog implements Localizable
     /**
      * Returns the ResourceBundle for the Locale that is currently set (by setBundleLocale) for this object.
      * @return The ResourceBundle for the Locale that is currently set (by setBundleLocale) for this object.
-     * @throws NoCallbackRegisteredForModuleException
+     * @throws NoCallbackRegisteredForModuleException if a getBundle callback has not been registered for the module.
      */
     @Override
     public ResourceBundle getResourceBundle() throws NoCallbackRegisteredForModuleException

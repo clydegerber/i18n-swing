@@ -141,6 +141,9 @@ public class ResourcefulJScrollBar extends JScrollBar implements Resourceful, Lo
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

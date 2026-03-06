@@ -24,6 +24,11 @@ import java.util.Set;
  */
 public class JProgressBarPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JProgressBarPropertyBundle. */
+    public JProgressBarPropertyBundle()
+    {
+    }
+
     /**
      * A key for the progress display text for the JProgressBar.
      */

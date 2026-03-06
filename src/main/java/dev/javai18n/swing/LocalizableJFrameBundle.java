@@ -25,6 +25,11 @@ import java.util.ListResourceBundle;
  */
 public class LocalizableJFrameBundle extends ListResourceBundle
 {
+    /** Creates a new LocalizableJFrameBundle. */
+    public LocalizableJFrameBundle()
+    {
+    }
+
     /**
      * Returns the localizable property objects for a {@link LocalizableJFrame}, keyed by
      * {@link LocalizableJFrame#FRAME_PROPERTIES_KEY}.  The default implementation returns an empty

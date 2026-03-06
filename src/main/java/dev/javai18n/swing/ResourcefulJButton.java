@@ -61,9 +61,8 @@ public class ResourcefulJButton extends JButton implements Resourceful, LocaleEv
     private final transient SwingResourcefulDelegate delegate;
 
     /**
-     * Construct a ResourcefulJButton with the specified Resource.
-     * @param resource A Resource containing an AbstractButtonPropertyBundle that holds the localized values for the
-     *                 JButton.
+     * Constructs a JButton bound to the given resource.
+     * @param resource The resource identifying the locale source and bundle key.
      */
     protected ResourcefulJButton(Resource resource)
     {
@@ -72,14 +71,17 @@ public class ResourcefulJButton extends JButton implements Resourceful, LocaleEv
     }
 
     /**
-     * Initialize this component by setting its locale, updating locale-specific values, and registering to listen
-     * for locale events from the resource's source.
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
      */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

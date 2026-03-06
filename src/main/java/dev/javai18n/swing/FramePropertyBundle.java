@@ -24,6 +24,10 @@ import java.util.Set;
  */
 public class FramePropertyBundle extends WindowPropertyBundle
 {
+    /** Creates a new FramePropertyBundle. */
+    public FramePropertyBundle()
+    {
+    }
 
    /**
      * A key for the title for the Frame.

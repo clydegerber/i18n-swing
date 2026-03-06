@@ -222,6 +222,9 @@ public class ResourcefulJSplitPane extends JSplitPane implements Resourceful, Lo
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

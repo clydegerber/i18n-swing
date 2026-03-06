@@ -24,6 +24,11 @@ import java.util.Set;
  */
 public class JComboBoxPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JComboBoxPropertyBundle. */
+    public JComboBoxPropertyBundle()
+    {
+    }
+
     /**
      * A key for the String array of possible values for the JComboBox.
      */

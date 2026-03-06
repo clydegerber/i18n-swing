@@ -29,7 +29,7 @@ import static dev.javai18n.swing.SwingLogger.SWING_LOGGER;
 /**
  * A JComboBox that supports localizing the name, tool tip, font, accessible name and accessible description of
  * the JComboBox as well as the elements for the JComboBox.
- * @param <E>
+ * @param <E> the type of the combo box items
  */
 public class ResourcefulJComboBox<E> extends JComboBox<E> implements Resourceful, LocaleEventListener
 {
@@ -79,6 +79,9 @@ public class ResourcefulJComboBox<E> extends JComboBox<E> implements Resourceful
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     @SuppressWarnings("unchecked")
     protected void updateLocaleSpecificValues()
     {

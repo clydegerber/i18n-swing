@@ -80,6 +80,9 @@ public class ResourcefulJToggleButton extends JToggleButton implements Resourcef
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

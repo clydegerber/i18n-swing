@@ -77,6 +77,9 @@ public class ResourcefulJEditorPane extends JEditorPane implements Resourceful, 
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

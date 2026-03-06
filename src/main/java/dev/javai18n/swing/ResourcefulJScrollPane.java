@@ -168,6 +168,9 @@ public class ResourcefulJScrollPane extends JScrollPane implements Resourceful, 
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

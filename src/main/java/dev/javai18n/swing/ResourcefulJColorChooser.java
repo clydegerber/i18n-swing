@@ -86,12 +86,21 @@ public class ResourcefulJColorChooser extends JColorChooser implements Resourcef
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JColorChooser bound to the given resource with white as the initial color.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJColorChooser(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JColorChooser bound to the given resource with the specified initial color.
+     * @param resource     The resource identifying the locale source and bundle key.
+     * @param initialColor The color initially shown in the chooser.
+     */
     protected ResourcefulJColorChooser(Resource resource, Color initialColor)
     {
         super(initialColor);
@@ -99,6 +108,11 @@ public class ResourcefulJColorChooser extends JColorChooser implements Resourcef
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JColorChooser bound to the given resource with the specified color-selection model.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param model    The {@link ColorSelectionModel} to use.
+     */
     protected ResourcefulJColorChooser(Resource resource, ColorSelectionModel model)
     {
         super(model);
@@ -106,11 +120,18 @@ public class ResourcefulJColorChooser extends JColorChooser implements Resourcef
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

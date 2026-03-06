@@ -75,12 +75,21 @@ public class ResourcefulJList<E> extends JList<E> implements Resourceful, Locale
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JList bound to the given resource with no list model.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJList(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JList bound to the given resource and list model.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param model    The ListModel to display.
+     */
     protected ResourcefulJList(Resource resource, ListModel<E> model)
     {
         super(model);
@@ -88,11 +97,18 @@ public class ResourcefulJList<E> extends JList<E> implements Resourceful, Locale
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

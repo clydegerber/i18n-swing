@@ -27,6 +27,11 @@ import javax.swing.ImageIcon;
  */
 public class JLabelPropertyBundle extends JComponentPropertyBundle
 {
+    /** Creates a new JLabelPropertyBundle. */
+    public JLabelPropertyBundle()
+    {
+    }
+
     /**
      * A key for the Icon for the Button.
      */

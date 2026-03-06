@@ -74,12 +74,21 @@ public class ResourcefulJSpinner extends JSpinner implements Resourceful, Locale
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JSpinner bound to the given resource with a default spinner model.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJSpinner(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Constructs a JSpinner bound to the given resource and spinner model.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param model    The SpinnerModel to use.
+     */
     protected ResourcefulJSpinner(Resource resource, SpinnerModel model)
     {
         super(model);
@@ -87,11 +96,18 @@ public class ResourcefulJSpinner extends JSpinner implements Resourceful, Locale
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

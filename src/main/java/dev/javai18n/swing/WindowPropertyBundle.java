@@ -29,6 +29,11 @@ import java.util.Set;
  */
 public class WindowPropertyBundle extends ComponentPropertyBundle
 {
+    /** Creates a new WindowPropertyBundle. */
+    public WindowPropertyBundle()
+    {
+    }
+
    /**
      * A key for the Icon Images for the Window.
      */

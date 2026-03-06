@@ -60,6 +60,11 @@ public class ResourcefulJSpinnerListEditor extends JSpinner.ListEditor
 
     private final transient SwingResourcefulDelegate delegate;
 
+    /**
+     * Constructs a JSpinner.ListEditor bound to the given resource and spinner.
+     * @param resource The resource identifying the locale source and bundle key.
+     * @param spinner  The {@link JSpinner} this editor is associated with.
+     */
     protected ResourcefulJSpinnerListEditor(Resource resource, JSpinner spinner)
     {
         super(spinner);
@@ -67,11 +72,18 @@ public class ResourcefulJSpinnerListEditor extends JSpinner.ListEditor
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

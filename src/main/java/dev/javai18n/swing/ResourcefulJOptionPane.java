@@ -78,17 +78,28 @@ public class ResourcefulJOptionPane extends JOptionPane implements Resourceful, 
     /** Cached option button labels — refreshed on each locale event. */
     private String[] cachedOptions;
 
+    /**
+     * Constructs a JOptionPane bound to the given resource.
+     * @param resource The resource identifying the locale source and bundle key.
+     */
     protected ResourcefulJOptionPane(Resource resource)
     {
         this.delegate = new SwingResourcefulDelegate(resource, this::setLocale,
                 this::updateLocaleSpecificValues);
     }
 
+    /**
+     * Registers this component as a locale-event listener on its resource source and
+     * applies the initial locale-specific values from the resource bundle.
+     */
     protected final void initialize()
     {
         delegate.initialize();
     }
 
+    /**
+     * Applies locale-specific values from the associated resource bundle to this component.
+     */
     protected void updateLocaleSpecificValues()
     {
         try

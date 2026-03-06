@@ -27,4 +27,6 @@ module dev.javai18n.swing.test
     provides dev.javai18n.swing.test.spi.AppDialogProvider with dev.javai18n.swing.test.spi.ModuleProviderImpl;
     provides dev.javai18n.swing.test.spi.AppFrameProvider with dev.javai18n.swing.test.spi.ModuleProviderImpl;
     provides dev.javai18n.swing.test.spi.AppWindowProvider with dev.javai18n.swing.test.spi.ModuleProviderImpl;
+    uses dev.javai18n.swing.test.spi.TestComponentSourceProvider;
+    provides dev.javai18n.swing.test.spi.TestComponentSourceProvider with dev.javai18n.swing.test.spi.ModuleProviderImpl;
 }

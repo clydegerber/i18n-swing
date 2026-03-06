@@ -16,12 +16,11 @@
 
 package dev.javai18n.swing.test.spi;
 
-import dev.javai18n.core.AssociativeResourceBundleProvider;
+import java.util.spi.ResourceBundleProvider;
 
 /**
- * An AssociativeResourceBundleProvider that implements the ResourceBundleProvider interfaces defined in this module.
+ * The service provider interface for the TestComponentSource class.
  */
-public class ModuleProviderImpl extends AssociativeResourceBundleProvider
-        implements AppDialogProvider, AppFrameProvider, AppWindowProvider, TestComponentSourceProvider
+public interface TestComponentSourceProvider extends ResourceBundleProvider
 {
 }

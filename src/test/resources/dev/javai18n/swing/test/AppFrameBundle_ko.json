@@ -546,6 +546,7 @@
   "ComputerNodeText": "컴퓨터",
   "LoadingText": "로딩 중...",
   "ItemCountFormat": "{0}개 항목",
+  "ComputingSizesFormat": "폴더 크기 계산 중 ({0} / {1})...",
   "FileTooLargeFormat": "파일이 너무 커서 미리 볼 수 없습니다 ({0})",
   "CannotReadFileFormat": "파일을 읽을 수 없습니다: {0}",
   "FolderNamePromptText": "폴더 이름:",

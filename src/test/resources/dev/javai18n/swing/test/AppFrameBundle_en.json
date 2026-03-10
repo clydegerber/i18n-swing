@@ -546,6 +546,7 @@
   "ComputerNodeText": "Computer",
   "LoadingText": "Loading...",
   "ItemCountFormat": "{0} items",
+  "ComputingSizesFormat": "Computing directory sizes ({0} of {1})...",
   "FileTooLargeFormat": "File too large to preview ({0})",
   "CannotReadFileFormat": "Cannot read file: {0}",
   "FolderNamePromptText": "Folder name:",

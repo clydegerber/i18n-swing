@@ -546,6 +546,7 @@
   "ComputerNodeText": "Ordinateur",
   "LoadingText": "Chargement...",
   "ItemCountFormat": "{0} éléments",
+  "ComputingSizesFormat": "Calcul des tailles de dossiers ({0} / {1})...",
   "FileTooLargeFormat": "Fichier trop volumineux pour l''aperçu ({0})",
   "CannotReadFileFormat": "Impossible de lire le fichier : {0}",
   "FolderNamePromptText": "Nom du dossier :",

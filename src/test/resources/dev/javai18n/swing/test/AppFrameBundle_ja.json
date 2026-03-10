@@ -546,6 +546,7 @@
   "ComputerNodeText": "コンピューター",
   "LoadingText": "読み込み中...",
   "ItemCountFormat": "{0} 個のアイテム",
+  "ComputingSizesFormat": "フォルダサイズを計算中 ({0} / {1})...",
   "FileTooLargeFormat": "プレビューには大きすぎるファイルです（{0}）",
   "CannotReadFileFormat": "ファイルを読み取れません：{0}",
   "FolderNamePromptText": "フォルダー名：",

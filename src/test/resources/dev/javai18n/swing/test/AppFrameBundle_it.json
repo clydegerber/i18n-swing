@@ -546,6 +546,7 @@
   "ComputerNodeText": "Computer",
   "LoadingText": "Caricamento...",
   "ItemCountFormat": "{0} elementi",
+  "ComputingSizesFormat": "Calcolo dimensioni cartelle ({0} / {1})...",
   "FileTooLargeFormat": "File troppo grande per l''anteprima ({0})",
   "CannotReadFileFormat": "Impossibile leggere il file: {0}",
   "FolderNamePromptText": "Nome cartella:",

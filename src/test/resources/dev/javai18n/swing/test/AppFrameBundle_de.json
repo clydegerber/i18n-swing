@@ -546,6 +546,7 @@
   "ComputerNodeText": "Computer",
   "LoadingText": "Lädt...",
   "ItemCountFormat": "{0} Elemente",
+  "ComputingSizesFormat": "Verzeichnisgrößen werden berechnet ({0} / {1})...",
   "FileTooLargeFormat": "Datei zu groß für Vorschau ({0})",
   "CannotReadFileFormat": "Datei kann nicht gelesen werden: {0}",
   "FolderNamePromptText": "Ordnername:",

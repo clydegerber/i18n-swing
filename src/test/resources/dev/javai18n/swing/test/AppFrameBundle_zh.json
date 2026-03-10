@@ -546,6 +546,7 @@
   "ComputerNodeText": "计算机",
   "LoadingText": "加载中...",
   "ItemCountFormat": "{0} 个项目",
+  "ComputingSizesFormat": "正在计算文件夹大小 ({0} / {1})...",
   "FileTooLargeFormat": "文件太大，无法预览（{0}）",
   "CannotReadFileFormat": "无法读取文件：{0}",
   "FolderNamePromptText": "文件夹名称：",

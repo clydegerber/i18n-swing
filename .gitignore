@@ -30,3 +30,6 @@ dev.javai18n.swing/
 
 # Maven
 dependency-reduced-pom.xml
+
+# Shell scripts
+runApp.sh

@@ -31,13 +31,20 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.text.Collator;
 import java.text.DateFormat;
 import java.text.MessageFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BooleanSupplier;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.Dictionary;
@@ -167,8 +174,10 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
     /** True while navigateTo/Back/Forward is programmatically updating the tree selection,
      *  preventing the TreeSelectionListener from triggering a redundant navigateTo call. */
     private boolean updatingTreeSelection = false;
-    /** Cache of computed recursive directory sizes. Long.MIN_VALUE = computation in progress. */
+    /** Cache of computed recursive directory sizes. */
     private final java.util.HashMap<File, Long> dirSizeCache = new java.util.HashMap<>();
+    private SwingWorker<Void, long[]> dirSizeWorker;
+    private JLabel sizeStatusLabel;
     /** MessageFormat caches keyed by bundle key; cleared when locale changes. */
     private Locale formatCacheLocale;
     private final java.util.HashMap<String, MessageFormat> bundleTextFormatCache = new java.util.HashMap<>();
@@ -1302,6 +1311,9 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
         fileCountLabel = ResourcefulJLabel.create(new Resource(this, "FileCountLabelProps"));
         statusPanel.add(fileCountLabel);
 
+        sizeStatusLabel = new JLabel();
+        statusPanel.add(sizeStatusLabel);
+
         add(statusPanel, BorderLayout.SOUTH);
     }
 
@@ -1447,12 +1459,21 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
         if (fileTableWorker != null && !fileTableWorker.isDone())
             fileTableWorker.cancel(true);
 
+        // Cancel any in-flight dir-size computation.
+        if (dirSizeWorker != null && !dirSizeWorker.isDone())
+        {
+            dirSizeWorker.cancel(true);
+            sizeStatusLabel.setText("");
+        }
+
         // Snapshot all filter/sort state on the EDT before handing off to the worker.
         final File dir = currentDirectory;
         final boolean capturedHidden = showHiddenFiles;
         final boolean capturedDirsOnly = dirsOnly;
         final String capturedFileType = fileType;
-        final Comparator<File> comparator = getFileComparator();
+        final String capturedSortBy = sortBy;
+        final Locale capturedLocale = getBundleLocale();
+        final Map<File, Long> capturedSizes = new HashMap<>(dirSizeCache);
 
         fileTableWorker = new SwingWorker<List<File>, Void>()
         {
@@ -1479,6 +1500,39 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
                     }
                     fileList.add(file);
                 }
+                Collator col = Collator.getInstance(capturedLocale);
+                Comparator<File> byName = (a, b) -> col.compare(a.getName(), b.getName());
+                Comparator<File> secondary;
+                switch (capturedSortBy)
+                {
+                    case "size":
+                        secondary = Comparator.comparingLong((File f) -> capturedSizes.getOrDefault(f, f.length())).thenComparing(byName);
+                        break;
+                    case "date":
+                        secondary = Comparator.comparingLong(File::lastModified).thenComparing(byName);
+                        break;
+                    default:
+                        secondary = byName;
+                        break;
+                }
+                Comparator<File> comparator = (a, b) ->
+                {
+                    boolean aDir = a.isDirectory(), bDir = b.isDirectory();
+                    if (aDir && !bDir) return -1;
+                    if (!aDir && bDir) return 1;
+                    if (aDir)
+                    {
+                        if ("size".equals(capturedSortBy))
+                        {
+                            long sizeA = capturedSizes.getOrDefault(a, Long.MAX_VALUE);
+                            long sizeB = capturedSizes.getOrDefault(b, Long.MAX_VALUE);
+                            int cmp = Long.compare(sizeA, sizeB);
+                            return cmp != 0 ? cmp : byName.compare(a, b);
+                        }
+                        return secondary.compare(a, b);
+                    }
+                    return secondary.compare(a, b);
+                };
                 fileList.sort(comparator);
                 return fileList;
             }
@@ -1494,6 +1548,7 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
                     fileListModel.clear();
                     for (File f : fileList) fileListModel.addElement(f);
                     fileCountLabel.setText(formatBundleString("ItemCountFormat", fileList.size()));
+                    startDirSizeComputation(fileList);
                 }
                 catch (CancellationException ignored) { }
                 catch (InterruptedException ex) { Thread.currentThread().interrupt(); }
@@ -1505,6 +1560,60 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
             }
         };
         fileTableWorker.execute();
+    }
+
+    private void startDirSizeComputation(List<File> files)
+    {
+        List<File> dirs = new ArrayList<>();
+        for (File f : files)
+            if (f.isDirectory() && !dirSizeCache.containsKey(f))
+                dirs.add(f);
+
+        if (dirs.isEmpty())
+        {
+            sizeStatusLabel.setText("");
+            return;
+        }
+
+        int total = dirs.size();
+
+        dirSizeWorker = new SwingWorker<Void, long[]>()
+        {
+            @Override
+            protected Void doInBackground()
+            {
+                for (int i = 0; i < dirs.size(); i++)
+                {
+                    if (isCancelled()) return null;
+                    final int currentIdx = i + 1;
+                    SwingUtilities.invokeLater(() -> sizeStatusLabel.setText(formatBundleString("ComputingSizesFormat", currentIdx, total)));
+                    long size = computeDirSize(dirs.get(i), this::isCancelled);
+                    if (!isCancelled()) publish(new long[]{i, size});
+                }
+                return null;
+            }
+
+            @Override
+            protected void process(List<long[]> chunks)
+            {
+                for (long[] chunk : chunks)
+                {
+                    File dir = dirs.get((int) chunk[0]);
+                    dirSizeCache.put(dir, chunk[1]);
+                    int row = fileTableModel.indexOf(dir);
+                    if (row >= 0) fileTableModel.fireTableCellUpdated(row, 1);
+                }
+            }
+
+            @Override
+            protected void done()
+            {
+                if (isCancelled()) return;
+                sizeStatusLabel.setText("");
+                if ("size".equals(sortBy)) refreshFileTable();
+            }
+        };
+        dirSizeWorker.execute();
     }
 
     /**
@@ -1553,34 +1662,6 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
         Collator treeCollator = Collator.getInstance(getBundleLocale());
         result.sort((a, b) -> treeCollator.compare(a.getName(), b.getName()));
         return result;
-    }
-
-    private Comparator<File> getFileComparator()
-    {
-        // Directories first, then sort by selected criterion
-        Comparator<File> dirsFirst = (a, b) ->
-        {
-            if (a.isDirectory() && !b.isDirectory()) return -1;
-            if (!a.isDirectory() && b.isDirectory()) return 1;
-            return 0;
-        };
-
-        Comparator<File> secondary;
-        switch (sortBy)
-        {
-            case "size":
-                secondary = Comparator.comparingLong(File::length);
-                break;
-            case "date":
-                secondary = Comparator.comparingLong(File::lastModified);
-                break;
-            default:
-                Collator nameCollator = Collator.getInstance(getBundleLocale());
-                secondary = (a, b) -> nameCollator.compare(a.getName(), b.getName());
-                break;
-        }
-
-        return dirsFirst.thenComparing(secondary);
     }
 
     void previewFile(File file)
@@ -1696,12 +1777,43 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
 
     private long computeDirSize(File dir)
     {
-        File[] entries = dir.listFiles();
-        if (entries == null) return 0L;
-        long total = 0L;
-        for (File f : entries)
-            total += f.isDirectory() ? computeDirSize(f) : f.length();
-        return total;
+        return computeDirSize(dir, () -> false);
+    }
+
+    private long computeDirSize(File dir, BooleanSupplier isCancelled)
+    {
+        if (isCancelled.getAsBoolean()) return 0L;
+        long[] total = {0L};
+        try
+        {
+            Files.walkFileTree(dir.toPath(), new SimpleFileVisitor<Path>()
+            {
+                @Override
+                public FileVisitResult preVisitDirectory(Path d, BasicFileAttributes attrs)
+                {
+                    return isCancelled.getAsBoolean() ? FileVisitResult.TERMINATE : FileVisitResult.CONTINUE;
+                }
+
+                @Override
+                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs)
+                {
+                    if (isCancelled.getAsBoolean()) return FileVisitResult.TERMINATE;
+                    // Skip iCloud placeholder stubs (.FileName.icloud) to avoid blocking on network I/O
+                    String name = file.getFileName().toString();
+                    if (!(name.startsWith(".") && name.endsWith(".icloud")))
+                        total[0] += attrs.size();
+                    return FileVisitResult.CONTINUE;
+                }
+
+                @Override
+                public FileVisitResult visitFileFailed(Path file, IOException exc)
+                {
+                    return FileVisitResult.CONTINUE;
+                }
+            });
+        }
+        catch (IOException ignored) {}
+        return total[0];
     }
 
     private String getFileType(File file)
@@ -1768,6 +1880,8 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
             return files.get(row);
         }
 
+        int indexOf(File f) { return files.indexOf(f); }
+
         @Override
         public int getRowCount()
         {
@@ -1806,32 +1920,7 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
                 case 1:
                     if (!file.isDirectory()) return formatSize(file.length());
                     Long cached = dirSizeCache.get(file);
-                    if (cached != null && cached != Long.MIN_VALUE) return formatSize(cached);
-                    if (!dirSizeCache.containsKey(file))
-                    {
-                        dirSizeCache.put(file, Long.MIN_VALUE);
-                        new javax.swing.SwingWorker<Long, Void>()
-                        {
-                            @Override protected Long doInBackground() { return computeDirSize(file); }
-                            @Override protected void done()
-                            {
-                                try { dirSizeCache.put(file, get()); }
-                                catch (CancellationException ignored) { dirSizeCache.remove(file); }
-                                catch (InterruptedException e) { Thread.currentThread().interrupt(); }
-                                catch (ExecutionException e)
-                                {
-                                    // Store 0 to prevent infinite retry on permanent errors (e.g. permission denied).
-                                    dirSizeCache.put(file, 0L);
-                                    System.getLogger(AppFrame.class.getName()).log(
-                                            System.Logger.Level.WARNING,
-                                            "Failed to compute size of " + file.getAbsolutePath(), e.getCause());
-                                }
-                                int row = files.indexOf(file);
-                                if (row >= 0) fireTableCellUpdated(row, 1);
-                            }
-                        }.execute();
-                    }
-                    return "...";
+                    return cached != null ? formatSize(cached) : "...";
                 case 2:
                     return getFileType(file);
                 case 3:

@@ -16,7 +16,6 @@
 
 package dev.javai18n.swing.spi;
 
-import dev.javai18n.swing.spi.LocalizableJFrameProvider;
 import dev.javai18n.core.AssociativeResourceBundleProvider;
 
 /**

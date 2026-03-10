@@ -215,7 +215,7 @@ public class AbstractButtonPropertyBundle extends JComponentPropertyBundle
     public int getMnemonic()
     {
         Object value = get(MNEMONIC);
-        return value != null ? (int) value : 0;
+        return null != value ? (int) value : 0;
     }
 
     /**
@@ -297,6 +297,7 @@ public class AbstractButtonPropertyBundle extends JComponentPropertyBundle
             return;
         }
         BufferedImage image = BufferedImageResourceLoader.getBufferedImageResource((String) attributeValue);
+        if (null == image) return;
         ImageIcon icon = new ImageIcon(image);
         switch (attributeName)
         {

@@ -112,7 +112,7 @@ public class WindowPropertyBundle extends ComponentPropertyBundle
     protected void addImageToList(String str, ArrayList<Image> images)
     {
         BufferedImage image = BufferedImageResourceLoader.getBufferedImageResource(str);
-        images.add(image);
+        if (null != image) images.add(image);
     }
 
     /**

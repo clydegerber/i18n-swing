@@ -33,22 +33,22 @@ public class JLabelPropertyBundle extends JComponentPropertyBundle
     }
 
     /**
-     * A key for the Icon for the Button.
+     * A key for the Icon for the JLabel.
      */
     public static final String ICON = "Icon";
 
     /**
-     * A key for the disabled Icon for the Button.
+     * A key for the disabled Icon for the JLabel.
      */
     public static final String DISABLED_ICON = "DisabledIcon";
 
     /**
-     * A key for the Button mnemonic.
+     * A key for the JLabel mnemonic.
      */
     public static final String MNEMONIC = "Mnemonic";
 
     /**
-     * A generic key for the Button text.
+     * A key for the JLabel text.
      */
     public static final String TEXT = "Text";
 
@@ -95,7 +95,7 @@ public class JLabelPropertyBundle extends JComponentPropertyBundle
     public int getMnemonic()
     {
         Object value = get(MNEMONIC);
-        return value != null ? (int) value : 0;
+        return null != value ? (int) value : 0;
     }
 
     /**
@@ -151,6 +151,7 @@ public class JLabelPropertyBundle extends JComponentPropertyBundle
             return;
         }
         BufferedImage image = BufferedImageResourceLoader.getBufferedImageResource((String) attributeValue);
+        if (null == image) return;
         ImageIcon icon = new ImageIcon(image);
         if (attributeName.equals(ICON))
         {
@@ -161,8 +162,8 @@ public class JLabelPropertyBundle extends JComponentPropertyBundle
     }
 
     /**
-     * Returns the set of valid attribute names for a ComponentPropertyBundle.
-     * @return the set of valid attribute names for a ComponentPropertyBundle.
+     * Returns the set of valid attribute names for a JLabelPropertyBundle.
+     * @return the set of valid attribute names for a JLabelPropertyBundle.
      */
     @Override
     public Set<String> validNames()

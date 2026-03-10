@@ -1,0 +1,337 @@
+{
+  "TestButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Botón Test",
+    "Mnemonic": 66,
+    "ToolTipText": "Información de herramienta botón test"
+  },
+  "TestToggleButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Alternador Test",
+    "Mnemonic": 65,
+    "ToolTipText": "Información de herramienta alternador test"
+  },
+  "TestCheckBox":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Casilla Test",
+    "Mnemonic": 67,
+    "ToolTipText": "Información de herramienta casilla test"
+  },
+  "TestRadioButton":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Botón Radio Test",
+    "Mnemonic": 82,
+    "ToolTipText": "Información de herramienta botón radio test"
+  },
+  "TestCheckBoxMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Casilla Menú Test",
+    "Mnemonic": 72,
+    "ToolTipText": "Información de herramienta casilla menú test"
+  },
+  "TestRadioButtonMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Radio Menú Test",
+    "Mnemonic": 82,
+    "ToolTipText": "Información de herramienta radio menú test"
+  },
+  "TestLabel":
+  {
+    "type": "dev.javai18n.swing.JLabelPropertyBundle",
+    "Name": "TestLabel",
+    "Text": "Etiqueta Test",
+    "ToolTipText": "Información de herramienta etiqueta test"
+  },
+  "TestMenu":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Menú Test",
+    "Mnemonic": 77,
+    "ToolTipText": "Información de herramienta menú test"
+  },
+  "TestMenuItem":
+  {
+    "type": "dev.javai18n.swing.AbstractButtonPropertyBundle",
+    "Text": "Elemento Menú Test",
+    "Mnemonic": 69,
+    "ToolTipText": "Información de herramienta elemento menú test"
+  },
+  "TestMenuBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestMenuBar nombre",
+    "ToolTipText": "Información de herramienta barra de menús test"
+  },
+  "TestPanel":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPanel nombre",
+    "ToolTipText": "Información de herramienta panel test"
+  },
+  "TestComboBox":
+  {
+    "type": "dev.javai18n.swing.JComboBoxPropertyBundle",
+    "Name": "TestComboBox nombre",
+    "ToolTipText": "Información de herramienta lista desplegable test",
+    "Values": ["Opción A", "Opción B"]
+  },
+  "TestToolBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBar nombre",
+    "ToolTipText": "Información de herramienta barra de herramientas test"
+  },
+  "TestProgressBar":
+  {
+    "type": "dev.javai18n.swing.JProgressBarPropertyBundle",
+    "Name": "TestProgressBar nombre",
+    "ToolTipText": "Información de herramienta barra de progreso test",
+    "String": "Cargando..."
+  },
+  "TestInternalFrame":
+  {
+    "type": "dev.javai18n.swing.JInternalFramePropertyBundle",
+    "Name": "TestInternalFrame nombre",
+    "Title": "Marco Interno Test",
+    "ToolTipText": "Información de herramienta marco interno test"
+  },
+  "TestTabbedPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTabbedPane nombre",
+    "ToolTipText": "Información de herramienta panel de pestañas test"
+  },
+  "TestTab1":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "Pestaña Uno",
+    "ToolTipText": "Información de herramienta primera pestaña",
+    "Mnemonic": 49
+  },
+  "TestTab2":
+  {
+    "type": "dev.javai18n.swing.JTabbedPaneTabPropertyBundle",
+    "Title": "Pestaña Dos",
+    "ToolTipText": "Información de herramienta segunda pestaña",
+    "Mnemonic": 50
+  },
+  "TestTextField":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextField nombre",
+    "ToolTipText": "Información de herramienta campo de texto test"
+  },
+  "TestTextArea":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTextArea nombre",
+    "ToolTipText": "Información de herramienta área de texto test"
+  },
+  "TestEditorPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestEditorPane nombre",
+    "ToolTipText": "Información de herramienta panel de editor test"
+  },
+  "TestScrollPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollPane nombre",
+    "ToolTipText": "Información de herramienta panel de desplazamiento test"
+  },
+  "TestSplitPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSplitPane nombre",
+    "ToolTipText": "Información de herramienta panel dividido test"
+  },
+  "TestLayeredPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayeredPane nombre",
+    "ToolTipText": "Información de herramienta panel en capas test"
+  },
+  "TestSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSeparator nombre",
+    "ToolTipText": "Información de herramienta separador test"
+  },
+  "TestScrollBar":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestScrollBar nombre",
+    "ToolTipText": "Información de herramienta barra de desplazamiento test"
+  },
+  "TestOptionPane":
+  {
+    "type": "dev.javai18n.swing.JOptionPanePropertyBundle",
+    "Title": "Diálogo Test",
+    "Options": ["Aceptar", "Cancelar"],
+    "ToolTipText": "Información de herramienta diálogo test",
+    "AccessibleName": "Nombre accesible diálogo test",
+    "AccessibleDescription": "Descripción accesible diálogo test"
+  },
+  "TestTree":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTree nombre",
+    "ToolTipText": "Información de herramienta árbol test",
+    "AccessibleName": "Nombre accesible árbol test",
+    "AccessibleDescription": "Descripción accesible árbol test"
+  },
+  "TestTable":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTable nombre",
+    "ToolTipText": "Información de herramienta tabla test",
+    "AccessibleName": "Nombre accesible tabla test",
+    "AccessibleDescription": "Descripción accesible tabla test"
+  },
+  "TestDesktopPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopPane nombre",
+    "ToolTipText": "Información de herramienta panel de escritorio test",
+    "AccessibleName": "Nombre accesible panel de escritorio test",
+    "AccessibleDescription": "Descripción accesible panel de escritorio test"
+  },
+  "TestColorChooser":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestColorChooser nombre",
+    "ToolTipText": "Información de herramienta selector de color test",
+    "AccessibleName": "Nombre accesible selector de color test",
+    "AccessibleDescription": "Descripción accesible selector de color test"
+  },
+  "TestViewport":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestViewport nombre",
+    "ToolTipText": "Información de herramienta ventana de vista test",
+    "AccessibleName": "Nombre accesible ventana de vista test",
+    "AccessibleDescription": "Descripción accesible ventana de vista test"
+  },
+  "TestBox":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBox nombre",
+    "ToolTipText": "Información de herramienta caja test",
+    "AccessibleName": "Nombre accesible caja test",
+    "AccessibleDescription": "Descripción accesible caja test"
+  },
+  "TestBoxFiller":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestBoxFiller nombre",
+    "ToolTipText": "Información de herramienta relleno de caja test",
+    "AccessibleName": "Nombre accesible relleno de caja test",
+    "AccessibleDescription": "Descripción accesible relleno de caja test"
+  },
+  "TestRootPane":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestRootPane nombre",
+    "ToolTipText": "Información de herramienta panel raíz test",
+    "AccessibleName": "Nombre accesible panel raíz test",
+    "AccessibleDescription": "Descripción accesible panel raíz test"
+  },
+  "TestToolBarSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestToolBarSeparator nombre",
+    "ToolTipText": "Información de herramienta separador barra herramientas test",
+    "AccessibleName": "Nombre accesible separador barra herramientas test",
+    "AccessibleDescription": "Descripción accesible separador barra herramientas test"
+  },
+  "TestPopupMenuSeparator":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestPopupMenuSeparator nombre",
+    "ToolTipText": "Información de herramienta separador menú contextual test",
+    "AccessibleName": "Nombre accesible separador menú contextual test",
+    "AccessibleDescription": "Descripción accesible separador menú contextual test"
+  },
+  "TestTableHeader":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestTableHeader nombre",
+    "ToolTipText": "Información de herramienta encabezado tabla test",
+    "AccessibleName": "Nombre accesible encabezado tabla test",
+    "AccessibleDescription": "Descripción accesible encabezado tabla test"
+  },
+  "TestLayer":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestLayer nombre",
+    "ToolTipText": "Información de herramienta capa test",
+    "AccessibleName": "Nombre accesible capa test",
+    "AccessibleDescription": "Descripción accesible capa test"
+  },
+  "TestDesktopIcon":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestDesktopIcon nombre",
+    "ToolTipText": "Información de herramienta icono escritorio test",
+    "AccessibleName": "Nombre accesible icono escritorio test",
+    "AccessibleDescription": "Descripción accesible icono escritorio test"
+  },
+  "TestFileChooser":
+  {
+    "type": "dev.javai18n.swing.JFileChooserPropertyBundle",
+    "Name": "TestFileChooser nombre",
+    "ToolTipText": "Información de herramienta selector archivo test",
+    "AccessibleName": "Nombre accesible selector archivo test",
+    "AccessibleDescription": "Descripción accesible selector archivo test",
+    "DialogTitle": "Cuadro de diálogo test",
+    "ApproveButtonText": "Abrir",
+    "ApproveButtonToolTip": "Abrir el archivo seleccionado"
+  },
+  "TestToolTip":
+  {
+    "type": "dev.javai18n.swing.JToolTipPropertyBundle",
+    "Name": "TestToolTip nombre",
+    "ToolTipText": "Información de herramienta infobulle test",
+    "AccessibleName": "Nombre accesible infobulle test",
+    "AccessibleDescription": "Descripción accesible infobulle test",
+    "TipText": "Texto de infobulle test"
+  },
+  "TestSpinnerDefaultEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDefaultEditor nombre",
+    "ToolTipText": "Información de herramienta editor selector predeterminado test",
+    "AccessibleName": "Nombre accesible editor selector predeterminado test",
+    "AccessibleDescription": "Descripción accesible editor selector predeterminado test"
+  },
+  "TestSpinnerDateEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerDateEditor nombre",
+    "ToolTipText": "Información de herramienta editor selector fecha test",
+    "AccessibleName": "Nombre accesible editor selector fecha test",
+    "AccessibleDescription": "Descripción accesible editor selector fecha test"
+  },
+  "TestSpinnerNumberEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerNumberEditor nombre",
+    "ToolTipText": "Información de herramienta editor selector número test",
+    "AccessibleName": "Nombre accesible editor selector número test",
+    "AccessibleDescription": "Descripción accesible editor selector número test"
+  },
+  "TestSpinnerListEditor":
+  {
+    "type": "dev.javai18n.swing.JComponentPropertyBundle",
+    "Name": "TestSpinnerListEditor nombre",
+    "ToolTipText": "Información de herramienta editor selector lista test",
+    "AccessibleName": "Nombre accesible editor selector lista test",
+    "AccessibleDescription": "Descripción accesible editor selector lista test"
+  }
+}

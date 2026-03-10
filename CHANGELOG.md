@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2] - 2026-03-10
+
+### Added
+
+- Spanish (`es`) locale resource bundles for the demo application
+  (`AppFrameBundle_es.json`, `AppDialogBundle_es.json`, `AppWindowBundle_es.json`,
+  `TestComponentSourceBundle_es.json`) and the library logger (`SwingLoggerBundle_es.properties`)
+
+### Changed
+
+- Updated `i18n-core` dependency from 1.3.3 to 1.4.0
+- Demo app: `computeDirSize()` refactored from recursive `File.listFiles()` to
+  `Files.walkFileTree()` with a `SimpleFileVisitor`; iCloud placeholder stubs
+  (`.FileName.icloud`) are skipped to avoid blocking on network I/O; I/O errors
+  are skipped rather than aborting the walk
+- Demo app: directory size computation moved to a shared `dirSizeWorker`
+  (`SwingWorker`) with cancellation on navigation, replacing one-off per-cell workers
+- Demo app: file sort comparator moved into the file-table background worker so
+  that sort state is captured once off the EDT rather than read from instance fields
+  during `getValueAt()`
+
+
 ## [1.1] - 2026-03-06
 
 ### Added

@@ -46,7 +46,8 @@ public final class BufferedImageResourceLoader
      * Construct a BufferedImage from the location specified by str, first trying it as a local resource,
      * if that fails as a URL, and if that fails trying it as a file name.
      * @param str The location (URL or file) of the image.
-     * @return The BufferedImage found at the location specified by str.
+     * @return The BufferedImage found at the location specified by str, or {@code null} if the
+     *         image cannot be loaded from any of the three strategies.
      */
     public static BufferedImage getBufferedImageResource(String str)
     {
@@ -119,6 +120,6 @@ public final class BufferedImageResourceLoader
             SWING_LOGGER.log(System.Logger.Level.DEBUG, "failed.to.load.image.as.file", str, ex);
         }
         SWING_LOGGER.log(System.Logger.Level.WARNING, "failed.to.load.image", str);
-        throw new IllegalArgumentException("Unable to load image at " + str);
+        return null;
     }
 }

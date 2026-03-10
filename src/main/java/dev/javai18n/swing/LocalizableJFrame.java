@@ -42,7 +42,7 @@ public class LocalizableJFrame extends JFrame implements Localizable
     }
 
     /**
-     * Returns A LocalizableJFrame with the system default GraphicsConiguration. Creates and initializes a new
+     * Returns a LocalizableJFrame with the system default GraphicsConfiguration. Creates and initializes a new
      *         LocalizableJFrame.
      * @return A LocalizableJFrame with locale-sensitive attributes updated from an associated ResourceBundle.
      */

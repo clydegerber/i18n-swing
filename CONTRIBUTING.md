@@ -7,7 +7,7 @@ test, and submit changes.
 
 - **Java 17** or later
 - **Maven 3.9** or later
-- **i18n-core 1.3.1** installed to local Maven repository (`mvn install` from the i18n project)
+- **i18n-core 1.4.0** installed to local Maven repository (`mvn install` from the i18n project)
 
 ## Building
 

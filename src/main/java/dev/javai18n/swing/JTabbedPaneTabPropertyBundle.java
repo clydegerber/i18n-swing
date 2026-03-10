@@ -114,7 +114,7 @@ public class JTabbedPaneTabPropertyBundle extends JComponentPropertyBundle
     public int getMnemonic()
     {
         Object value = get(MNEMONIC);
-        return value != null ? (int) value : 0;
+        return null != value ? (int) value : 0;
     }
 
     /**

@@ -72,15 +72,16 @@ public class TestWindowPropertyBundle
     }
 
     /**
-     * Verify the behavior of setting the ICON_IMAGES property from a String that cannot be resolved.
+     * Verify that setting the ICON_IMAGES property from a String that cannot be resolved
+     * is silently ignored (the image is not added to the list).
      */
     @Test
     public void testSetIconImageFromInvalidString()
     {
         WindowPropertyBundle bundle = new WindowPropertyBundle();
-        Exception e = assertThrows(IllegalArgumentException.class,
-                ()->{bundle.setAttribute(WindowPropertyBundle.ICON_IMAGES, "foo");});
-        assertEquals("Unable to load image at foo", e.getMessage());
+        bundle.setAttribute(WindowPropertyBundle.ICON_IMAGES, "foo");
+        List<Image> images = bundle.getIconImages();
+        assertEquals(0, images.size());
     }
 
     /**

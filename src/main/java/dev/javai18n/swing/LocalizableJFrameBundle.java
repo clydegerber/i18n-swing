@@ -43,16 +43,16 @@ public class LocalizableJFrameBundle extends ListResourceBundle
     protected Object[][] getContents()
     {
         FramePropertyBundle props = new FramePropertyBundle();
-        /**
+        /*
          * Extending classes may want to provide values for LocalizableJFrame attributes, e.g.:
          * props.setTitle("My title");                // From FramePropertyBundle
          * props.setIconImages(myIcons);              // From WindowPropertyBundle
          * props.setFont(myFont);                     // From ComponentPropertyBundle
          * props.setName("My name");                  // From ComponentPropertyBundle
-         * props.setAccessibleName("Ac name");        // From Component PropertyBundle
+         * props.setAccessibleName("Ac name");        // From ComponentPropertyBundle
          * props.setAccessibleDescription("Ac desc"); // From ComponentPropertyBundle
-         * 
-         * Extending class may also want to provide *ProperyBundle objects for the components contained
+         *
+         * Extending classes may also want to provide *PropertyBundle objects for the components contained
          * in the LocalizableJFrame, e.g.:
          * AbstractButtonPropertyBundle buttonProps = new AbstractButtonPropertyBundle();
          * buttonProps.setText("My text");

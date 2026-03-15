@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.1] - 2026-03-15
+
+### Changed
+
+- `LocaleJMenuItem` now extends `ResourcefulJRadioButtonMenuItem` instead of
+  `ResourcefulJMenuItem`, giving locale-selection menu items a native radio-button
+  check mark that reflects the active locale
+- Demo app: `AppFrame.create()` selects the best-match locale for the system default
+  on startup rather than always starting at `Locale.ROOT`
+- Demo app: locale menu uses a `ButtonGroup` so the selected locale is shown with a
+  radio-button indicator; when more than 20 locales are listed the current locale is
+  pinned at the top of the menu with a separator below it
+
 ## [1.2] - 2026-03-10
 
 ### Added

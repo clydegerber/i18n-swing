@@ -29,7 +29,7 @@ import dev.javai18n.core.Resource;
  * name.  Instances are created via {@link #create(Locale, Resource)} and are typically added to a
  * locale-selection menu that is fully rebuilt on each locale change.</p>
  */
-public class LocaleJMenuItem extends ResourcefulJMenuItem implements Comparable<LocaleJMenuItem>
+public class LocaleJMenuItem extends ResourcefulJRadioButtonMenuItem implements Comparable<LocaleJMenuItem>
 {
     private static final long serialVersionUID = 1L;
 

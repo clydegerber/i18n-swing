@@ -114,6 +114,8 @@ import dev.javai18n.swing.ResourcefulJToggleButton;
 import dev.javai18n.swing.ResourcefulJToolBar;
 import dev.javai18n.swing.ResourcefulJTree;
 import dev.javai18n.swing.SwingLogger;
+import java.awt.Container;
+import javax.swing.JPopupMenu;
 
 /**
  * A file explorer AppFrame that showcases all localized Swing component types.
@@ -133,6 +135,11 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
     {
         AppFrame frame = new AppFrame();
 
+        Locale best = bestMatchLocale(frame.getAvailableLocales(), Locale.getDefault());
+        if (!best.equals(frame.getBundleLocale()))
+        {
+            frame.setBundleLocale(best);
+        }
         frame.updateLocaleSpecificValues();
 
         frame.initialize();
@@ -298,6 +305,30 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
     }
 
     /**
+     * Returns the best match from {@code available} for {@code target}: exact match first,
+     * then language+country, then language-only, finally Locale.ROOT.
+     */
+    private static Locale bestMatchLocale(Locale[] available, Locale target)
+    {
+        Locale best = Locale.ROOT;
+        int bestScore = 0;
+        for (Locale l : available)
+        {
+            if (l.equals(target)) return l;
+            if (!l.getLanguage().isEmpty() && l.getLanguage().equals(target.getLanguage()))
+            {
+                int score = l.getCountry().equals(target.getCountry()) ? 2 : 1;
+                if (score > bestScore)
+                {
+                    best = l;
+                    bestScore = score;
+                }
+            }
+        }
+        return best;
+    }
+
+    /**
      * Populate the items in the localeMenu.
      */
     public void populateLocaleMenu()
@@ -332,9 +363,35 @@ public class AppFrame extends LocalizableJFrame implements ActionListener
         localeMenuItems.sort((a, b) -> sortCollator.compare(a.getText(), b.getText()));
 
         Locale current = getBundleLocale();
+        ButtonGroup localeGroup = new ButtonGroup();
         localeMenu.removeAll();
+
+        // When the list is long, pin the currently selected locale at the top so it
+        // is immediately visible when the menu opens, then list all locales (excluding
+        // the pinned one) in sorted order below a separator.
+        LocaleJMenuItem pinnedItem = null;
+        if (localeMenuItems.size() > 20)
+        {
+            for (LocaleJMenuItem item : localeMenuItems)
+            {
+                if (item.getItemLocale().equals(current))
+                {
+                    pinnedItem = item;
+                    break;
+                }
+            }
+        }
+        if (pinnedItem != null)
+        {
+            localeGroup.add(pinnedItem);
+            pinnedItem.setSelected(true);
+            localeMenu.add(pinnedItem);
+            localeMenu.addSeparator();
+        }
         for (LocaleJMenuItem item : localeMenuItems)
         {
+            if (item == pinnedItem) continue;
+            localeGroup.add(item);
             item.setSelected(item.getItemLocale().equals(current));
             localeMenu.add(item);
         }

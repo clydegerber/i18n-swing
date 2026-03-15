@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.2] - 2026-03-15
+
+### Fixed
+
+- Test factory methods (`TestComponentSource.create()`, `AppWindow.create()`,
+  `AppDialog.create()`) now call `setBundleLocale(Locale.ROOT)` immediately after
+  construction so that `testInitialProperties` assertions pass regardless of the
+  JVM default locale.
+- `TestAppFrame.testAppFrameJsonBundle()` now passes `Locale.ROOT` explicitly to
+  `ResourceBundle.getBundle()` before asserting English string values.
+
 ## [1.2.1] - 2026-03-15
 
 ### Changed

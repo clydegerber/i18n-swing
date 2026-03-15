@@ -34,12 +34,16 @@ public class TestComponentSource extends LocalizableImpl
     }
 
     /**
-     * Create and initialize a new TestComponentSource.
+     * Create and initialize a new TestComponentSource with {@link Locale#ROOT} as the initial
+     * locale, regardless of the JVM default locale.
+     *
      * @return A TestComponentSource with locale-sensitive attributes updated from its bundle.
      */
     public static TestComponentSource create()
     {
-        return new TestComponentSource();
+        TestComponentSource source = new TestComponentSource();
+        source.setBundleLocale(Locale.ROOT);
+        return source;
     }
 
     @Override

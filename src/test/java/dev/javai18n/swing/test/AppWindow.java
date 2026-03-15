@@ -16,6 +16,7 @@
 
 package dev.javai18n.swing.test;
 
+import java.util.Locale;
 import dev.javai18n.swing.LocalizableJWindow;
 
 /**
@@ -37,6 +38,7 @@ public class AppWindow extends LocalizableJWindow
     public static AppWindow create()
     {
         AppWindow window = new AppWindow();
+        window.setBundleLocale(Locale.ROOT);
         window.updateLocaleSpecificValues();
         return window;
     }

@@ -56,7 +56,7 @@ public class TestAppFrame
         JsonResourceBundle jsonBundle = assertDoesNotThrow(()->new JsonResourceBundle(stream));
         FramePropertyBundle fb = (FramePropertyBundle) jsonBundle.getObject("FrameProperties");
         assertEquals("File Explorer", fb.getTitle());
-        ResourceBundle rb = ResourceBundle.getBundle("dev.javai18n.swing.test.AppFrame");
+        ResourceBundle rb = ResourceBundle.getBundle("dev.javai18n.swing.test.AppFrame", Locale.ROOT);
         fb = (FramePropertyBundle) rb.getObject("FrameProperties");
         assertEquals("File Explorer", fb.getTitle());
         rb = ResourceBundle.getBundle("dev.javai18n.swing.test.AppFrame", Locale.FRANCE);

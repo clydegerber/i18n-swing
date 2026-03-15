@@ -48,9 +48,8 @@ public class AppDialog extends LocalizableJDialog
     public static AppDialog create()
     {
         AppDialog dialog = new AppDialog();
-
+        dialog.setBundleLocale(Locale.ROOT);
         dialog.updateLocaleSpecificValues();
-
         return dialog;
     }
 
@@ -62,9 +61,8 @@ public class AppDialog extends LocalizableJDialog
     public static AppDialog create(Frame owner)
     {
         AppDialog dialog = new AppDialog(owner);
-
+        dialog.setBundleLocale(Locale.ROOT);
         dialog.updateLocaleSpecificValues();
-
         return dialog;
     }
 

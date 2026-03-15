@@ -19,7 +19,7 @@ when the application locale changes.
 <dependency>
     <groupId>dev.javai18n</groupId>
     <artifactId>i18n-swing</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 </dependency>
 ```
 
@@ -302,6 +302,15 @@ To execute unit tests under JPMS:
 ```bash
 mvn clean test -Ptest-modulepath
 ```
+
+### Default Locale and Surefire
+
+`LocalizationDelegate` initializes its locale field from `Locale.getDefault()` at construction time.
+Passing `-Duser.language=fr` to Maven on the command line does **not** change `Locale.getDefault()` in the forked Surefire JVM: Surefire propagates Maven `-D` system properties via `System.setProperty()` inside the already-running JVM, after the default locale has been initialized by the JVM startup sequence.
+
+To ensure tests pass regardless of the OS default locale, every `create()` factory method in test-only `Localizable` classes (`TestComponentSource`, `AppWindow`, `AppDialog`) calls `setBundleLocale(Locale.ROOT)` immediately after construction. Tests that call `ResourceBundle.getBundle()` and assert English string values pass `Locale.ROOT` explicitly rather than using the no-locale overload.
+
+When writing new tests that assert string values from a bundle, always pin the locale explicitly (e.g. `setBundleLocale(Locale.ROOT)`) rather than relying on `Locale.getDefault()`.
 
 ## License
 

@@ -228,9 +228,17 @@ public class LocalizableJWindow extends JWindow implements Localizable
     }
 
     /**
-     * Set the Locale for ResourceBundles provided by this object. Also sets the Locale for this
-     * object and triggers {@link #updateLocaleSpecificValues()}.
-     * @param locale The Locale for ResourceBundles provided by this object and for this object.
+     * Sets the bundle locale, fires a {@link dev.javai18n.core.Localizable.LocaleEvent} to all
+     * registered listeners, calls {@link #updateLocaleSpecificValues()} to refresh this window's
+     * locale-specific properties, and calls {@link #setLocale(Locale)} to keep the AWT component
+     * locale in sync.  Each registered {@code Resourceful} listener component also calls
+     * {@code setLocale()} on itself when it processes the event on the EDT.
+     *
+     * <p>Always use {@code setBundleLocale()} to change the application locale.  Calling
+     * {@link #setLocale(Locale)} directly updates the AWT rendering locale but does not reload
+     * bundle content or notify any listeners.</p>
+     *
+     * @param locale The new bundle locale.
      */
     @Override
     public void setBundleLocale(Locale locale)

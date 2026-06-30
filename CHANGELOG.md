@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.3] - 2026-06-30
+
+### Changed
+
+- Updated `i18n-core` dependency from 1.4.0 to 1.4.1, which transitively upgrades
+  `jackson-databind` from 3.1.0 to 3.2.0 and resolves multiple advisories
+  (see i18n-core 1.4.1 release notes for details)
+- Documented the relationship between `setBundleLocale()` and `setLocale()` in the
+  Localizable container classes (`LocalizableJFrame`, `LocalizableJDialog`,
+  `LocalizableJWindow`)
+- Release artifact: `README.html` is now copied into the `apidocs` output directory
+  alongside the generated Javadoc
+
 ## [1.2.2] - 2026-03-15
 
 ### Fixed

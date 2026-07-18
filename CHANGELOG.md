@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.4] - 2026-07-16
+
+### Changed
+
+- Updated `i18n-core` dependency from 1.4.1 to 1.4.2, which transitively upgrades
+  `jackson-databind` from 3.2.0 to 3.2.1 and resolves CVE-2026-59889 and
+  GHSA-mhm7-754m-9p8w (see i18n-core 1.4.2 release notes for details)
+
 ## [1.2.3] - 2026-06-30
 
 ### Changed

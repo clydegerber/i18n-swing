@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.javai18n</groupId>
     <artifactId>i18n-swing</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4</version>
     <packaging>jar</packaging>
 
     <name>i18n-swing</name>
@@ -52,7 +52,7 @@
         <dependency>
             <groupId>dev.javai18n</groupId>
             <artifactId>i18n-core</artifactId>
-            <version>1.4.1</version>
+            <version>1.4.2</version>
         </dependency>
     </dependencies>
     <properties>

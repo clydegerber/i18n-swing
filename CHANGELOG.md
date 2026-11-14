@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.8] - 2026-11-14
+
+### Changed
+
+- Updated `i18n-core` dependency from 1.4.5 to 1.4.6, which transitively upgrades
+  `jackson-databind` from 3.2.4 to 3.3.0. No advisory is associated with this
+  upgrade (see i18n-core 1.4.6 release notes for details)
+- Upgraded JUnit from 5.13.4 to 6.1.3 (`junit-jupiter-engine`,
+  `junit-platform-console`, `junit-platform-launcher`). Test scope only, with no
+  effect on consumers of this library.
+- Upgraded the Maven compiler plugin from 3.15.0 to 3.16.0, the Maven Surefire
+  plugin from 3.5.6 to 3.6.1, and the Central publishing plugin from 0.11.0 to
+  0.12.0. Build-time only, with no effect on consumers of this library.
+- The classpath-mode Surefire configuration now applies regardless of which Maven
+  profiles are active, instead of living in an `activeByDefault` profile that Maven
+  deactivated whenever another profile (such as `release`) was selected. Build-time
+  only, with no effect on consumers of this library.
+
 ## [1.2.7] - 2026-10-30
 
 ### Changed
